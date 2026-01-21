@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Internal-PluginState" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Internal Plugin State | ElysPerceptionPlugin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rogueparadigm.github.io/ElysPerceptionPlugin/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rogueparadigm.github.io/ElysPerceptionPlugin/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rogueparadigm.github.io/ElysPerceptionPlugin/docs/Internal-PluginState"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Internal Plugin State | ElysPerceptionPlugin"><meta data-rh="true" name="description" content="Note: This is an internal technical state document for plugin developers and maintainers. For user-facing documentation, see the Documentation README."><meta data-rh="true" property="og:description" content="Note: This is an internal technical state document for plugin developers and maintainers. For user-facing documentation, see the Documentation README."><link data-rh="true" rel="icon" href="/ElysPerceptionPlugin/img/rogue-paradigm-logo.png"><link data-rh="true" rel="canonical" href="https://rogueparadigm.github.io/ElysPerceptionPlugin/docs/Internal-PluginState"><link data-rh="true" rel="alternate" href="https://rogueparadigm.github.io/ElysPerceptionPlugin/docs/Internal-PluginState" hreflang="en"><link data-rh="true" rel="alternate" href="https://rogueparadigm.github.io/ElysPerceptionPlugin/docs/Internal-PluginState" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Internal Plugin State","item":"https://rogueparadigm.github.io/ElysPerceptionPlugin/docs/Internal-PluginState"}]}</script><link rel="stylesheet" href="/ElysPerceptionPlugin/assets/css/styles.ab7886a4.css">
+<script src="/ElysPerceptionPlugin/assets/js/runtime~main.16dae2b3.js" defer="defer"></script>
+<script src="/ElysPerceptionPlugin/assets/js/main.5faa3772.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ElysPerceptionPlugin/"><b class="navbar__title text--truncate">ElysPerceptionPlugin</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ElysPerceptionPlugin/docs/">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item"><a href="https://rogueparadigm.com" target="_blank" rel="noopener noreferrer"><img src="/ElysPerceptionPlugin/img/rogue-paradigm-logo.png" alt="Rogue Paradigm by Elys" style="height:32px;"></a></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysPerceptionPlugin/docs/"><span title="ElysPerceptionPlugin" class="linkLabel_WmDU">ElysPerceptionPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysPerceptionPlugin/docs/GettingStarted"><span title="Getting Started" class="linkLabel_WmDU">Getting Started</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysPerceptionPlugin/docs/Pipeline-Architecture"><span title="Pipeline Architecture" class="linkLabel_WmDU">Pipeline Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysPerceptionPlugin/docs/API-Reference"><span title="API Reference" class="linkLabel_WmDU">API Reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysPerceptionPlugin/docs/Examples"><span title="Examples" class="linkLabel_WmDU">Examples</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/ElysPerceptionPlugin/docs/Internal-PluginState"><span title="Advanced" class="categoryLinkLabel_W154">Advanced</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ElysPerceptionPlugin/docs/Internal-PluginState"><span title="Internal Plugin State" class="linkLabel_WmDU">Internal Plugin State</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ElysPerceptionPlugin/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Advanced</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Internal Plugin State</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Internal Plugin State</h1></header><blockquote>
+<p><strong>Note:</strong> This is an internal technical state document for plugin developers and maintainers. For user-facing documentation, see the <a class="" href="/ElysPerceptionPlugin/">Documentation README</a>.</p>
+</blockquote>
+<p>Date: 2026-01-15</p>
+<p>This document is a snapshot of the plugin&#x27;s <strong>current architecture, features, and file roles</strong>.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-current-source-layout">1) Current source layout<a href="#1-current-source-layout" class="hash-link" aria-label="Direct link to 1) Current source layout" title="Direct link to 1) Current source layout" translate="no">​</a></h2>
+<p>Root: <code>Plugins/ElysPerceptionPlugin/Source/ElysPerceptionPlugin</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="public">Public<a href="#public" class="hash-link" aria-label="Direct link to Public" title="Direct link to Public" translate="no">​</a></h3>
+<ul>
+<li class=""><code>Public/ElysPerceptionPlugin.h</code></li>
+<li class=""><code>Public/Core/ERPPerceptionComponent.h</code></li>
+<li class=""><code>Public/Core/ERPTargetable.h</code></li>
+<li class=""><code>Public/Core/ERPInteractable.h</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="private">Private<a href="#private" class="hash-link" aria-label="Direct link to Private" title="Direct link to Private" translate="no">​</a></h3>
+<ul>
+<li class=""><code>Private/ElysPerceptionPlugin.cpp</code></li>
+<li class=""><code>Private/Core/ERPPerceptionComponent.cpp</code></li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li class="">Targeting/Interaction folders were removed to keep a minimal API surface.</li>
+<li class="">Initiator interfaces were intentionally removed. Initiator-side rules are now <strong>overridable functions on the perception component</strong>.</li>
+<li class=""><code>ERPHelpers</code> was removed (dead code).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-file-by-file-responsibilities">2) File-by-file responsibilities<a href="#2-file-by-file-responsibilities" class="hash-link" aria-label="Direct link to 2) File-by-file responsibilities" title="Direct link to 2) File-by-file responsibilities" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publicelysperceptionpluginh"><code>Public/ElysPerceptionPlugin.h</code><a href="#publicelysperceptionpluginh" class="hash-link" aria-label="Direct link to publicelysperceptionpluginh" title="Direct link to publicelysperceptionpluginh" translate="no">​</a></h3>
+<ul>
+<li class="">Declares the Unreal module interface <code>FElysPerceptionPluginModule</code>.</li>
+<li class="">No gameplay logic.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="privateelysperceptionplugincpp"><code>Private/ElysPerceptionPlugin.cpp</code><a href="#privateelysperceptionplugincpp" class="hash-link" aria-label="Direct link to privateelysperceptionplugincpp" title="Direct link to privateelysperceptionplugincpp" translate="no">​</a></h3>
+<ul>
+<li class="">Implements module startup/shutdown.</li>
+<li class="">No gameplay logic.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publiccoreerptargetableh"><code>Public/Core/ERPTargetable.h</code><a href="#publiccoreerptargetableh" class="hash-link" aria-label="Direct link to publiccoreerptargetableh" title="Direct link to publiccoreerptargetableh" translate="no">​</a></h3>
+<p><strong>Target-side opt-in interface</strong> for being considered a <em>Target</em> (combat/lock channel).</p>
+<ul>
+<li class="">Contract: if an Actor does <strong>not</strong> implement this interface → it is <strong>not targetable</strong>.</li>
+<li class="">Must return <code>true</code> to allow targeting.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publiccoreerpinteractableh"><code>Public/Core/ERPInteractable.h</code><a href="#publiccoreerpinteractableh" class="hash-link" aria-label="Direct link to publiccoreerpinteractableh" title="Direct link to publiccoreerpinteractableh" translate="no">​</a></h3>
+<p><strong>Target-side opt-in interface</strong> for being considered an <em>Interactable</em> (interaction/UI channel).</p>
+<ul>
+<li class="">Contract: if an Actor does <strong>not</strong> implement this interface → it is <strong>not interactable</strong>.</li>
+<li class="">Must return <code>true</code> to allow interaction detection.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publiccoreerpperceptioncomponenth"><code>Public/Core/ERPPerceptionComponent.h</code><a href="#publiccoreerpperceptioncomponenth" class="hash-link" aria-label="Direct link to publiccoreerpperceptioncomponenth" title="Direct link to publiccoreerpperceptioncomponenth" translate="no">​</a></h3>
+<p>Defines:</p>
+<ul>
+<li class=""><code>UERPPerceptionComponent</code> — the main runtime system.</li>
+<li class="">Result structs:<!-- -->
+<ul>
+<li class=""><code>FERPTargetCandidate { Actor, Score }</code></li>
+<li class=""><code>FERPFocusEvaluationResult { BestTargetCandidate, BestInteractionCandidate, WinnerCode }</code></li>
+</ul>
+</li>
+</ul>
+<p>Exposes:</p>
+<ul>
+<li class=""><strong>Initiator-side permission hooks</strong> (BlueprintNativeEvent):<!-- -->
+<ul>
+<li class=""><code>CanTargetActor(TargetActor)</code> (default <code>true</code>)</li>
+<li class=""><code>CanInteractWithActor(TargetActor)</code> (default <code>true</code>)</li>
+</ul>
+</li>
+<li class="">Targeting API:<!-- -->
+<ul>
+<li class=""><code>LockTarget</code>, <code>UnlockTarget</code>, <code>GetPrimaryTarget</code>, <code>IsTargetLocked</code></li>
+</ul>
+</li>
+<li class="">Interaction API:<!-- -->
+<ul>
+<li class=""><code>GetCurrentInteractable</code></li>
+</ul>
+</li>
+<li class="">Perception API:<!-- -->
+<ul>
+<li class=""><code>EvaluateFocus</code>, <code>GetCurrentWinnerCode</code></li>
+</ul>
+</li>
+</ul>
+<p>Events:</p>
+<ul>
+<li class="">
+<p>Legacy channels (Target/Interaction, symmetric winner semantics):</p>
+<ul>
+<li class=""><code>OnTargetAcquired(Target, bHasCurrentFocus)</code></li>
+<li class=""><code>OnTargetLost(Target, bHadCurrentFocus)</code></li>
+<li class=""><code>OnTargetFocusStatusChanged(Target, bHasCurrentFocus)</code></li>
+<li class=""><code>OnInteractableFound(Interactable, bHasCurrentFocus)</code></li>
+<li class=""><code>OnInteractableLost(Interactable, bHadCurrentFocus)</code></li>
+<li class=""><code>OnInteractableFocusStatusChanged(Interactable, bHasCurrentFocus)</code></li>
+</ul>
+</li>
+<li class="">
+<p>Generic multi-channel events (focus-agnostic):</p>
+<ul>
+<li class=""><code>OnChannelCandidateAcquired(ChannelId, Candidate)</code></li>
+<li class=""><code>OnChannelCandidateLost(ChannelId, Candidate)</code></li>
+</ul>
+</li>
+</ul>
+<p>Tip: for gameplay/UI that wants a single channel mirror without cross-channel logic, use <code>UERPChannelListenerComponent</code>.</p>
+<p>Where:</p>
+<ul>
+<li class=""><code>bHasCurrentFocus / bHadCurrentFocus</code> means this legacy channel was (or is) the <strong>current winner</strong>.</li>
+<li class="">Focus is symmetric: if Target has focus, Interaction is secondary, and vice-versa.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="privatecoreerpperceptioncomponentcpp"><code>Private/Core/ERPPerceptionComponent.cpp</code><a href="#privatecoreerpperceptioncomponentcpp" class="hash-link" aria-label="Direct link to privatecoreerpperceptioncomponentcpp" title="Direct link to privatecoreerpperceptioncomponentcpp" translate="no">​</a></h3>
+<p>Implements the runtime behavior:</p>
+<ul>
+<li class="">Continuous evaluation (tick)</li>
+<li class="">Candidate collection via <code>SphereOverlapActors</code></li>
+<li class="">Screen-space ellipse filtering</li>
+<li class="">Best candidate selection per channel</li>
+<li class="">Winner selection and focus switching</li>
+<li class="">Event emission (acquired/lost/focus-status-changed)</li>
+</ul>
+<p>Also contains:</p>
+<ul>
+<li class="">Default implementations:<!-- -->
+<ul>
+<li class=""><code>CanTargetActor_Implementation(...) -&gt; true</code></li>
+<li class=""><code>CanInteractWithActor_Implementation(...) -&gt; true</code></li>
+</ul>
+</li>
+<li class="">Guard against division by zero when ellipse halves are 0.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-architecture-overview">3) Architecture overview<a href="#3-architecture-overview" class="hash-link" aria-label="Direct link to 3) Architecture overview" title="Direct link to 3) Architecture overview" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-concept-passive-perception-two-channels">Core concept: Passive Perception, two channels<a href="#core-concept-passive-perception-two-channels" class="hash-link" aria-label="Direct link to Core concept: Passive Perception, two channels" title="Direct link to Core concept: Passive Perception, two channels" translate="no">​</a></h3>
+<p>A single component (<code>UERPPerceptionComponent</code>) produces, every tick:</p>
+<ul>
+<li class="">A <strong>best Target candidate</strong> (combat/lock channel)</li>
+<li class="">A <strong>best Interactable candidate</strong> (interaction/UI channel)</li>
+<li class="">A <strong>WinnerCode</strong> that indicates which channel currently has focus</li>
+</ul>
+<p>This enables:</p>
+<ul>
+<li class="">One shared &quot;perception pass&quot; (overlap + ellipse + scoring)</li>
+<li class="">Two independent query channels evaluated from the same input</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="winner-code">Winner code<a href="#winner-code" class="hash-link" aria-label="Direct link to Winner code" title="Direct link to Winner code" translate="no">​</a></h3>
+<p><code>WinnerCode</code> values:</p>
+<ul>
+<li class=""><code>0</code> = none</li>
+<li class=""><code>1</code> = Target has current focus</li>
+<li class=""><code>2</code> = Interactable has current focus</li>
+</ul>
+<p>Symmetry:</p>
+<ul>
+<li class="">If <code>WinnerCode == 1</code>, Target is the current focus and Interaction is secondary.</li>
+<li class="">If <code>WinnerCode == 2</code>, Interaction is the current focus and Target is secondary.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="focus-switching">Focus switching<a href="#focus-switching" class="hash-link" aria-label="Direct link to Focus switching" title="Direct link to Focus switching" translate="no">​</a></h3>
+<p>When not locked:</p>
+<ul>
+<li class="">The component&#x27;s <code>PrimaryTarget</code> is driven by the <strong>current focus winner</strong>.
+When locked:</li>
+<li class="">Target candidate is frozen to the locked one.</li>
+<li class="">Interaction continues to evaluate normally.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-candidate-selection-runtime-details">4) Candidate selection (runtime details)<a href="#4-candidate-selection-runtime-details" class="hash-link" aria-label="Direct link to 4) Candidate selection (runtime details)" title="Direct link to 4) Candidate selection (runtime details)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="candidate-pool">Candidate pool<a href="#candidate-pool" class="hash-link" aria-label="Direct link to Candidate pool" title="Direct link to Candidate pool" translate="no">​</a></h3>
+<ul>
+<li class="">Uses <code>UKismetSystemLibrary::SphereOverlapActors</code> around the owner character.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="screen-space-filtering">Screen-space filtering<a href="#screen-space-filtering" class="hash-link" aria-label="Direct link to Screen-space filtering" title="Direct link to Screen-space filtering" translate="no">​</a></h3>
+<ul>
+<li class="">Each candidate is projected to screen.</li>
+<li class="">The candidate is kept only if it lies inside the configured ellipse.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scoring">Scoring<a href="#scoring" class="hash-link" aria-label="Direct link to Scoring" title="Direct link to Scoring" translate="no">​</a></h3>
+<ul>
+<li class="">Score is the candidate&#x27;s ellipse normalized distance (<code>EllipseDistNorm</code>).</li>
+<li class="">Lower score is better.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="channel-allow-list-target-side">Channel allow-list (target-side)<a href="#channel-allow-list-target-side" class="hash-link" aria-label="Direct link to Channel allow-list (target-side)" title="Direct link to Channel allow-list (target-side)" translate="no">​</a></h3>
+<p>Target channel:</p>
+<ul>
+<li class="">Actor must implement <code>ERPTargetable</code>.</li>
+<li class=""><code>CanBeTargetedBy(TargetingActor)</code> must be <code>true</code>.</li>
+</ul>
+<p>Interaction channel:</p>
+<ul>
+<li class="">Actor must implement <code>ERPInteractable</code>.</li>
+<li class=""><code>CanInteract(InteractingActor)</code> must be <code>true</code>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="initiator-side-permissions-component-hooks">Initiator-side permissions (component hooks)<a href="#initiator-side-permissions-component-hooks" class="hash-link" aria-label="Direct link to Initiator-side permissions (component hooks)" title="Direct link to Initiator-side permissions (component hooks)" translate="no">​</a></h3>
+<p>If a target-side interface passes, the component applies:</p>
+<ul>
+<li class=""><code>CanTargetActor(Actor)</code> for Target channel</li>
+<li class=""><code>CanInteractWithActor(Actor)</code> for Interaction channel</li>
+</ul>
+<p>Defaults are <code>true</code>. Users override in BP or derived component classes.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-events-rules-and-expectations">5) Events: rules and expectations<a href="#5-events-rules-and-expectations" class="hash-link" aria-label="Direct link to 5) Events: rules and expectations" title="Direct link to 5) Events: rules and expectations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="acquiredfound-and-lost">Acquired/Found and Lost<a href="#acquiredfound-and-lost" class="hash-link" aria-label="Direct link to Acquired/Found and Lost" title="Direct link to Acquired/Found and Lost" translate="no">​</a></h3>
+<ul>
+<li class="">A channel emits <strong>Acquired/Found</strong> when its best candidate changes to a new actor.</li>
+<li class="">A channel emits <strong>Lost</strong> when its previous best candidate is replaced (or becomes none).</li>
+</ul>
+<p>Each event includes whether that actor <strong>has/had current focus</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="focus-status-changed-without-lost">Focus-status-changed (without Lost)<a href="#focus-status-changed-without-lost" class="hash-link" aria-label="Direct link to Focus-status-changed (without Lost)" title="Direct link to Focus-status-changed (without Lost)" translate="no">​</a></h3>
+<p>Case handled explicitly:</p>
+<ul>
+<li class="">Winner changes (1 ↔ 2)</li>
+<li class="">But the candidate did not change (actor is still the channel&#x27;s candidate)</li>
+</ul>
+<p>Then the component emits:</p>
+<ul>
+<li class=""><code>OnTargetFocusStatusChanged(Target, bHasCurrentFocus)</code></li>
+<li class=""><code>OnInteractableFocusStatusChanged(Interactable, bHasCurrentFocus)</code></li>
+</ul>
+<p>This is used to update UI/logic when a candidate becomes secondary/primary without disappearing.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-feature-set-recap">6) Feature set recap<a href="#6-feature-set-recap" class="hash-link" aria-label="Direct link to 6) Feature set recap" title="Direct link to 6) Feature set recap" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="targeting-combat--lock">Targeting (combat / lock)<a href="#targeting-combat--lock" class="hash-link" aria-label="Direct link to Targeting (combat / lock)" title="Direct link to Targeting (combat / lock)" translate="no">​</a></h3>
+<ul>
+<li class="">Primary target state + optional lock</li>
+<li class="">Events: acquired/lost + focus-status-changed</li>
+<li class="">No gameplay actions are executed by the plugin</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interaction-ui">Interaction (UI)<a href="#interaction-ui" class="hash-link" aria-label="Direct link to Interaction (UI)" title="Direct link to Interaction (UI)" translate="no">​</a></h3>
+<ul>
+<li class="">Best interactable tracking</li>
+<li class="">Events: found/lost + focus-status-changed</li>
+<li class="">No interaction is executed by the plugin</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="extensibility">Extensibility<a href="#extensibility" class="hash-link" aria-label="Direct link to Extensibility" title="Direct link to Extensibility" translate="no">​</a></h3>
+<ul>
+<li class="">Override <code>CanTargetActor</code> and <code>CanInteractWithActor</code> (BP or derived component)</li>
+<li class="">Implement <code>ERPTargetable</code> / <code>ERPInteractable</code> on actors to opt-in</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-non-goals-intentionally-excluded">7) Non-goals (intentionally excluded)<a href="#7-non-goals-intentionally-excluded" class="hash-link" aria-label="Direct link to 7) Non-goals (intentionally excluded)" title="Direct link to 7) Non-goals (intentionally excluded)" translate="no">​</a></h2>
+<ul>
+<li class="">No UI prompts</li>
+<li class="">No input binding</li>
+<li class="">No gameplay orchestration</li>
+<li class="">No GAS dependencies</li>
+<li class="">No extra editor settings for permissions</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/RogueParadigm/ElysPerceptionPlugin/tree/main/website/docs/Internal-PluginState.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ElysPerceptionPlugin/docs/Examples"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Examples</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-current-source-layout" class="table-of-contents__link toc-highlight">1) Current source layout</a><ul><li><a href="#public" class="table-of-contents__link toc-highlight">Public</a></li><li><a href="#private" class="table-of-contents__link toc-highlight">Private</a></li></ul></li><li><a href="#2-file-by-file-responsibilities" class="table-of-contents__link toc-highlight">2) File-by-file responsibilities</a><ul><li><a href="#publicelysperceptionpluginh" class="table-of-contents__link toc-highlight"><code>Public/ElysPerceptionPlugin.h</code></a></li><li><a href="#privateelysperceptionplugincpp" class="table-of-contents__link toc-highlight"><code>Private/ElysPerceptionPlugin.cpp</code></a></li><li><a href="#publiccoreerptargetableh" class="table-of-contents__link toc-highlight"><code>Public/Core/ERPTargetable.h</code></a></li><li><a href="#publiccoreerpinteractableh" class="table-of-contents__link toc-highlight"><code>Public/Core/ERPInteractable.h</code></a></li><li><a href="#publiccoreerpperceptioncomponenth" class="table-of-contents__link toc-highlight"><code>Public/Core/ERPPerceptionComponent.h</code></a></li><li><a href="#privatecoreerpperceptioncomponentcpp" class="table-of-contents__link toc-highlight"><code>Private/Core/ERPPerceptionComponent.cpp</code></a></li></ul></li><li><a href="#3-architecture-overview" class="table-of-contents__link toc-highlight">3) Architecture overview</a><ul><li><a href="#core-concept-passive-perception-two-channels" class="table-of-contents__link toc-highlight">Core concept: Passive Perception, two channels</a></li><li><a href="#winner-code" class="table-of-contents__link toc-highlight">Winner code</a></li><li><a href="#focus-switching" class="table-of-contents__link toc-highlight">Focus switching</a></li></ul></li><li><a href="#4-candidate-selection-runtime-details" class="table-of-contents__link toc-highlight">4) Candidate selection (runtime details)</a><ul><li><a href="#candidate-pool" class="table-of-contents__link toc-highlight">Candidate pool</a></li><li><a href="#screen-space-filtering" class="table-of-contents__link toc-highlight">Screen-space filtering</a></li><li><a href="#scoring" class="table-of-contents__link toc-highlight">Scoring</a></li><li><a href="#channel-allow-list-target-side" class="table-of-contents__link toc-highlight">Channel allow-list (target-side)</a></li><li><a href="#initiator-side-permissions-component-hooks" class="table-of-contents__link toc-highlight">Initiator-side permissions (component hooks)</a></li></ul></li><li><a href="#5-events-rules-and-expectations" class="table-of-contents__link toc-highlight">5) Events: rules and expectations</a><ul><li><a href="#acquiredfound-and-lost" class="table-of-contents__link toc-highlight">Acquired/Found and Lost</a></li><li><a href="#focus-status-changed-without-lost" class="table-of-contents__link toc-highlight">Focus-status-changed (without Lost)</a></li></ul></li><li><a href="#6-feature-set-recap" class="table-of-contents__link toc-highlight">6) Feature set recap</a><ul><li><a href="#targeting-combat--lock" class="table-of-contents__link toc-highlight">Targeting (combat / lock)</a></li><li><a href="#interaction-ui" class="table-of-contents__link toc-highlight">Interaction (UI)</a></li><li><a href="#extensibility" class="table-of-contents__link toc-highlight">Extensibility</a></li></ul></li><li><a href="#7-non-goals-intentionally-excluded" class="table-of-contents__link toc-highlight">7) Non-goals (intentionally excluded)</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ElysPerceptionPlugin/docs/GettingStarted">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/ElysPerceptionPlugin/docs/Pipeline-Architecture">Pipeline Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/ElysPerceptionPlugin/docs/API-Reference">API Reference</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ElysPerceptionPlugin/docs/Examples">Examples</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Elys. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
