@@ -1,12 +1,75 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #000000;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.top-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 200ms ease, transform 200ms ease;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.icon-link:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+}
+
+.icon-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 300;
+}
+
+.docs-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.docs-link:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -19,6 +82,25 @@ body {
     width: 90%;
     height: auto;
     margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.cta-button:hover {
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 .subtitle {
@@ -44,4 +126,21 @@ body {
 .contact:hover {
     border-color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .top-bar-content {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+    
+    .logo {
+        max-width: 350px;
+    }
 }
