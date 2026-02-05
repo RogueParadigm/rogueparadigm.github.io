@@ -3,43 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogue Paradigm</title>
+    <meta name="description" content="Rogue Paradigm by Elys - Professional Unreal Engine plugins for perception, targeting, and AI">
+    <title>Rogue Paradigm - Unreal Engine Plugins</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <nav class="top-bar">
         <div class="top-bar-content">
-            <div class="icon-links-left">
-                <a href="https://www.patreon.com/c/ElysGameCreation" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Patreon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M15.386.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.614-3.864 8.614-8.613C24 4.4 20.136.524 15.386.524M.003 23.537h4.22V.524H.003"/>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/playlist?list=PL_z_boaokQaMepqujehNt2K21F1biMJS9" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="YouTube Playlist">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                </a>
-                <a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Discord">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                    </svg>
-                </a>
-                <span class="separator">|</span>
-                <a href="https://rogueparadigm.com/docs/ElysPerceptionPlugin/" target="_blank" rel="noopener noreferrer" class="docs-link">Docs</a>
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="Rogue Paradigm" class="nav-logo">
+                <span class="nav-title">Rogue Paradigm</span>
             </div>
+            <div class="nav-links">
+                <a href="#plugins" class="nav-link">Plugins</a>
+                <a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="nav-link">Discord</a>
+                <a href="https://www.youtube.com/playlist?list=PL_z_boaokQaMepqujehNt2K21F1biMJS9" target="_blank" rel="noopener noreferrer" class="nav-link">YouTube</a>
+                <a href="https://www.patreon.com/c/ElysGameCreation" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-primary">Support</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
-    <div class="container">
-        <img src="assets/images/logo.png" alt="Rogue Paradigm" class="logo">
-        <div class="carousel-container">
-            <div class="wip-badge">WIP</div>
-            <h2 class="carousel-title">Elys Perception Plugin</h2>
-            <p class="carousel-description">An extensible perception system for Unreal Engine focused on targeting and interaction, built around a multi-channel, event-driven evaluation architecture.</p>
-            <a href="https://rogueparadigm.com/docs/ElysPerceptionPlugin/" target="_blank" rel="noopener noreferrer" class="carousel-link">View Documentation →</a>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="assets/images/logo.png" alt="Rogue Paradigm" class="hero-logo">
+            <h1 class="hero-title">Professional Unreal Engine Plugins</h1>
+            <p class="hero-subtitle">by <span class="highlight">Elys</span></p>
+            <p class="hero-description">High-quality, production-ready plugins for perception systems, AI integration, and more.</p>
+            <div class="hero-buttons">
+                <a href="#plugins" class="btn btn-primary">View Plugins</a>
+                <a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Join Discord</a>
+            </div>
         </div>
-    </div>
+        <div class="hero-gradient"></div>
+    </header>
+
+    <section id="plugins" class="plugins-section">
+        <div class="container">
+            <h2 class="section-title">Unreal Engine Plugins</h2>
+            <p class="section-subtitle">Modular, extensible, and production-ready</p>
+            
+            <div class="plugins-grid">
+                <!-- Perception Plugin -->
+                <article class="plugin-card">
+                    <div class="plugin-badge wip">Work in Progress</div>
+                    <div class="plugin-icon">🎯</div>
+                    <h3 class="plugin-title">Elys Perception Plugin</h3>
+                    <p class="plugin-description">
+                        An extensible perception system for Unreal Engine focused on targeting and interaction. 
+                        Built around a multi-channel, event-driven evaluation architecture.
+                    </p>
+                    <ul class="plugin-features">
+                        <li>Multi-channel perception pipeline</li>
+                        <li>Customizable samplers, filters, scorers</li>
+                        <li>Interaction system with rules</li>
+                        <li>Blueprint & C++ support</li>
+                    </ul>
+                    <div class="plugin-links">
+                        <a href="/ElysPerceptionPlugin/" class="btn btn-primary">Documentation</a>
+                        <a href="https://github.com/RogueParadigm/ElysPerceptionPlugin" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- GenAI Plugin -->
+                <article class="plugin-card">
+                    <div class="plugin-badge wip">Work in Progress</div>
+                    <div class="plugin-icon">🧠</div>
+                    <h3 class="plugin-title">Elys GenAI Plugin</h3>
+                    <p class="plugin-description">
+                        Local, offline, real-time GenAI features for Unreal Engine 5. 
+                        Speech-to-text with Whisper, LLM inference with llama.cpp.
+                    </p>
+                    <ul class="plugin-features">
+                        <li>100% offline - no cloud required</li>
+                        <li>Speech-to-text (Whisper.cpp)</li>
+                        <li>LLM dialogue (Phi-3/llama.cpp)</li>
+                        <li>Multiplayer-safe design</li>
+                    </ul>
+                    <div class="plugin-links">
+                        <a href="/ElysGenAIPlugin/" class="btn btn-primary">Documentation</a>
+                        <a href="https://github.com/RogueParadigm/ElysGenAIPlugin" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Elys Plugins?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📦</div>
+                    <h3>Modular Architecture</h3>
+                    <p>Clean separation of concerns. Use only what you need, extend what you want.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Blueprint-Friendly</h3>
+                    <p>Full Blueprint support with events, async nodes, and clear APIs.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance-First</h3>
+                    <p>Optimized C++ core with efficient data structures and minimal overhead.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multiplayer-Ready</h3>
+                    <p>Designed with networking in mind. Client-side processing, smart replication.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <h3>Comprehensive Docs</h3>
+                    <p>Detailed documentation with examples, guides, and API references.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💬</div>
+                    <h3>Active Support</h3>
+                    <p>Join our Discord for help, feedback, and feature requests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Join our community and start building amazing games with Elys plugins.</p>
+            <div class="cta-buttons">
+                <a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                    </svg>
+                    Join Discord
+                </a>
+                <a href="https://www.patreon.com/c/ElysGameCreation" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+                    Support on Patreon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Rogue Paradigm" class="footer-logo">
+                    <p>Professional Unreal Engine plugins by Elys</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Plugins</h4>
+                        <a href="/ElysPerceptionPlugin/">Perception Plugin</a>
+                        <a href="/ElysGenAIPlugin/">GenAI Plugin</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer">Discord</a>
+                        <a href="https://www.youtube.com/playlist?list=PL_z_boaokQaMepqujehNt2K21F1biMJS9" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="https://www.patreon.com/c/ElysGameCreation" target="_blank" rel="noopener noreferrer">Patreon</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://github.com/RogueParadigm" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 Rogue Paradigm by Elys. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
