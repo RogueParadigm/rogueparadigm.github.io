@@ -4,20 +4,20 @@
    =================================== */
 
 :root {
-    --color-bg: #0a0a0f;
-    --color-bg-secondary: #12121a;
-    --color-bg-card: #16161f;
-    --color-border: rgba(255, 255, 255, 0.1);
-    --color-text: #ffffff;
+    --color-bg: #09090b;
+    --color-bg-secondary: #111113;
+    --color-bg-card: #18181b;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-text: #fafafa;
     --color-text-secondary: rgba(255, 255, 255, 0.7);
-    --color-text-muted: rgba(255, 255, 255, 0.5);
+    --color-text-muted: rgba(255, 255, 255, 0.45);
     --color-primary: #b02730;
     --color-primary-dark: #8a0c13;
+    --color-primary-light: #e64c58;
     --color-accent: #c0131f;
     --color-success: #10b981;
     --color-warning: #f59e0b;
     --gradient-primary: linear-gradient(135deg, #8a0c13 0%, #b02730 100%);
-    --gradient-hero: linear-gradient(180deg, #1a0508 0%, #0a0a0f 100%);
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
@@ -60,7 +60,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 15, 0.9);
+    background: rgba(9, 9, 11, 0.9);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border);
     z-index: 1000;
@@ -176,16 +176,18 @@ body {
 }
 
 .hero-logo {
-    max-width: 400px;
-    width: 90%;
+    max-width: 340px;
+    width: 80%;
     height: auto;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 32px;
 }
 
 .hero-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     letter-spacing: -0.02em;
 }
 
@@ -430,7 +432,7 @@ body {
 
 .cta-section {
     padding: 100px 0;
-    background: var(--gradient-hero);
+    background: var(--color-bg-secondary);
     text-align: center;
 }
 
