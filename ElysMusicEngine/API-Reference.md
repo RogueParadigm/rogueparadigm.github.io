@@ -4,190 +4,396 @@ Complete reference for Elys Music Engine Blueprint functions and components.
 
 ---
 
-## Blueprint Function Library: ERP_BPF_MusicHelper
+## Blueprint Function Library: UERP_MusicHelper
 
-Helper functions for controlling music playback.
+Blueprint-callable functions for controlling the music system. No actor placement needed - functions automatically access the GameInstanceSubsystem.
 
-### Play Music
+---
+
+## Layer Control
+
+### Push Music Layer
 
 ```cpp
-Play Music(Sound Wave Music, Float Fade In Time, Float Volume)
+Push Music Layer(WorldContext, LayerName, Music, Priority, LayerMode, VolumeMultiplier, FadeInTime, FadeOutTime, bLooping, bPersistAcrossLevels)
 ```
 
-**Description:** Starts playing a music track with optional fade-in.
+**Description:** Adds a new music layer to the stack. If a layer with the same name exists, the call is ignored.
 
 **Parameters:**
-- `Music` (Sound Wave) - The music asset to play
-- `Fade In Time` (Float) - Duration of fade-in effect in seconds (default: 0.0)
-- `Volume` (Float) - Playback volume 0.0 to 1.0 (default: 1.0)
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Layer Name` (Name) - Unique identifier for this layer (e.g., "Combat", "Menu")
+- `Music` (Sound Base) - The music asset to play (Sound Wave or Sound Cue)
+- `Priority` (Integer) - Layer priority, 0-100 (default: 0, higher = more important)
+- `Layer Mode` (Enum) - Replace or Additive (default: Replace)
+- `Volume Multiplier` (Float) - Volume 0.0 to 1.0 (default: 1.0)
+- `Fade In Time` (Float) - Fade in duration in seconds (default: 1.0)
+- `Fade Out Time` (Float) - Fade out duration in seconds (default: 1.0)
+- `bLooping` (Boolean) - Loop the music (default: true)
+- `bPersist Across Levels` (Boolean) - Keep playing across level transitions (default: false)
 
 **Usage Example:**
 ```
 Event BeginPlay
     ↓
-Play Music
-    ├─ Music: MainTheme_Sound
-    ├─ Fade In: 2.0
-    └─ Volume: 0.8
+Push Music Layer
+    ├─ Layer Name: "Exploration"
+    ├─ Music: Exploration_Music
+    ├─ Priority: 0
+    ├─ Layer Mode: Replace
+    ├─ Volume Multiplier: 1.0
+    ├─ Fade In Time: 2.0
+    └─ Persist Across Levels: true
 ```
 
 ---
 
-### Stop Music
+### Pop Music Layer
 
 ```cpp
-Stop Music(Float Fade Out Time)
+Pop Music Layer(WorldContext, LayerName)
 ```
 
-**Description:** Stops the currently playing music with optional fade-out.
+**Description:** Removes a music layer by name. The layer fades out using its FadeOutTime before being removed.
 
 **Parameters:**
-- `Fade Out Time` (Float) - Duration of fade-out effect in seconds (default: 0.0)
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Layer Name` (Name) - Name of the layer to remove
 
----
-
-### Set Music Volume
-
-```cpp
-Set Music Volume(Float Volume, Float Fade Time)
+**Usage Example:**
 ```
-
-**Description:** Changes the volume of currently playing music.
-
-**Parameters:**
-- `Volume` (Float) - Target volume 0.0 to 1.0
-- `Fade Time` (Float) - Duration to reach target volume (default: 0.0)
-
----
-
-### Is Music Playing
-
-```cpp
-Is Music Playing() → Boolean
-```
-
-**Description:** Checks if music is currently playing.
-
-**Returns:** True if music is playing, false otherwise.
-
----
-
-## Blueprint Actor: ERP_MusicManager
-
-The central music management system.
-
-### Properties
-
-- **Default Volume** (Float) - Starting volume for music playback
-- **Allow Overlap** (Boolean) - Whether multiple tracks can play simultaneously
-- **Max Concurrent Tracks** (Integer) - Maximum number of simultaneous music tracks
-
-### Functions
-
-#### Get Current Track
-
-```cpp
-Get Current Track() → Sound Wave
-```
-
-**Returns:** Reference to the currently playing music track, or null if none.
-
-#### Get Music State
-
-```cpp
-Get Music State() → Enum
-```
-
-**Returns:** Current state of the music system (Playing, Stopped, Fading, etc.)
-
----
-
-## Data Structure: ERP_Music_Structure
-
-Defines music track data and playback parameters.
-
-### Fields
-
-- **Music Track** (Sound Wave) - Reference to the audio asset
-- **Loop Start** (Float) - Loop start point in seconds
-- **Loop End** (Float) - Loop end point in seconds (0 = end of track)
-- **Fade In Time** (Float) - Default fade-in duration
-- **Fade Out Time** (Float) - Default fade-out duration
-- **Volume** (Float) - Default volume level
-- **Priority** (Integer) - Playback priority (higher = more important)
-- **Track Name** (String) - Descriptive name for debugging
-
----
-
-## Interface: ERP_MusicStateInterface
-
-Interface for actors that need to communicate with the music system.
-
-### Functions to Implement
-
-#### Get Current Music State
-
-```cpp
-Get Current Music State() → Name
-```
-
-**Description:** Returns the current music state identifier (e.g., "Combat", "Exploration", "Menu").
-
-**Implementation Example:**
-```
-Get Current Music State
+Event OnCombatEnd
     ↓
-Branch (Is In Combat)
-    True → Return "Combat"
-    False → Return "Exploration"
+Pop Music Layer
+    └─ Layer Name: "Combat"
 ```
 
-#### On Music State Changed
+---
+
+### Push Music Layer Advanced
 
 ```cpp
-On Music State Changed(Name New State)
+Push Music Layer Advanced(WorldContext, Layer)
 ```
 
-**Description:** Called when music state changes. Implement to react to state transitions.
+**Description:** Push a music layer using a full FERP_MusicLayer struct. Useful when passing layer data from configs or variables.
 
 **Parameters:**
-- `New State` (Name) - The new music state identifier
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Layer` (FERP_MusicLayer) - Complete layer struct with all settings
 
 ---
 
-## MetaSound Source: ERP_MSS_MusicPlayer
+### Clear All Music Layers
 
-Advanced music player with looping and crossfade support.
+```cpp
+Clear All Music Layers(WorldContext)
+```
 
-### Inputs
+**Description:** Immediately stops and removes all active music layers. Use for hard transitions or cleanup.
 
-- **Music** (Audio) - Audio input
-- **Loop Start** (Float) - Loop point start in seconds
-- **Loop End** (Float) - Loop point end in seconds
-- **Volume** (Float) - Output volume multiplier
-- **Enabled** (Boolean) - Enable/disable playback
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
 
-### Outputs
-
-- **Audio** (Audio) - Processed audio output
-- **Is Playing** (Boolean) - Current playback state
-- **Current Time** (Float) - Current playback position
+**Usage Example:**
+```
+Event OnReturnToMainMenu
+    ↓
+Clear All Music Layers
+```
 
 ---
 
-## MetaSound Source: MSS_LoopingMusic
+## Configuration
 
-Simple looping music player.
+### Apply Music Config
 
-### Inputs
+```cpp
+Apply Music Config(WorldContext, Config, bClearExisting)
+```
 
-- **Music** (Audio) - Audio input
-- **Volume** (Float) - Output volume
-- **Loop** (Boolean) - Enable looping
+**Description:** Applies a reusable music configuration asset, which can contain multiple layers.
 
-### Outputs
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Config` (UERP_MusicLayerConfig) - The configuration asset to apply
+- `bClear Existing` (Boolean) - Clear all layers before applying config (default: true)
 
-- **Audio** (Audio) - Audio output
+**Usage Example:**
+```
+Event OnEnterDungeon
+    ↓
+Apply Music Config
+    ├─ Config: MC_DungeonAmbiance
+    └─ Clear Existing: true
+```
+
+---
+
+## Query Functions
+
+### Is Layer Active
+
+```cpp
+Is Layer Active(WorldContext, LayerName) → Boolean
+```
+
+**Description:** Checks if a specific layer is currently active in the stack.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Layer Name` (Name) - Name of the layer to check
+
+**Returns:** True if layer exists in the active stack, false otherwise.
+
+**Usage Example:**
+```
+Branch (Is Layer Active "Combat")
+    True → Continue Combat Logic
+    False → Start Combat Music
+```
+
+---
+
+### Get Active Layer Names
+
+```cpp
+Get Active Layer Names(WorldContext) → Array&lt;Name&gt;
+```
+
+**Description:** Returns the names of all currently active music layers.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+
+**Returns:** Array of layer names currently in the stack.
+
+**Usage Example:**
+```
+Get Active Layer Names
+    ↓
+For Each Loop (Array)
+    ↓
+Print String (Current Layer Name)
+```
+
+---
+
+## Stingers
+
+### Play Stinger
+
+```cpp
+Play Stinger(WorldContext, StingerSound, bDuckMusic, DuckVolume, DuckFadeTime, RestoreFadeTime)
+```
+
+**Description:** Plays a short musical accent (stinger) without interrupting background music. Optionally ducks (lowers) music volume during playback.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Stinger Sound` (Sound Base) - The stinger audio to play (usually short, &lt;3 seconds)
+- `bDuck Music` (Boolean) - Lower background music during stinger (default: true)
+- `Duck Volume` (Float) - Music volume during stinger, 0.0 to 1.0 (default: 0.3)
+- `Duck Fade Time` (Float) - Time to fade music down (default: 0.2)
+- `Restore Fade Time` (Float) - Time to restore music after stinger (default: 0.5)
+
+**Usage Example:**
+```
+Event OnAchievementUnlocked
+    ↓
+Play Stinger
+    ├─ Stinger Sound: Achievement_Fanfare
+    ├─ Duck Music: true
+    ├─ Duck Volume: 0.3
+    ├─ Duck Fade Time: 0.2
+    └─ Restore Fade Time: 0.5
+```
+
+---
+
+### Play Stinger Advanced
+
+```cpp
+Play Stinger Advanced(WorldContext, Params)
+```
+
+**Description:** Play a stinger using a full FERP_StingerParams struct.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Params` (FERP_StingerParams) - Complete stinger parameters struct
+
+---
+
+## Dialogue Ducking
+
+### Enable Dialogue Ducking
+
+```cpp
+Enable Dialogue Ducking(WorldContext, DialogueComponent, DuckVolume, FadeTime)
+```
+
+**Description:** Automatically lowers music volume while dialogue plays, then restores it when dialogue finishes. Binds to the AudioComponent's OnAudioFinished event.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Dialogue Component` (Audio Component) - The audio component playing dialogue
+- `Duck Volume` (Float) - Music volume during dialogue, 0.0 to 1.0 (default: 0.4)
+- `Fade Time` (Float) - Fade duration for ducking and restoration (default: 0.3)
+
+**Usage Example:**
+```
+Event OnDialogueStart
+    ↓
+Spawn Sound 2D (Dialogue Audio)
+    ↓ [Audio Component output]
+Enable Dialogue Ducking
+    ├─ Dialogue Component: [from above]
+    ├─ Duck Volume: 0.4
+    └─ Fade Time: 0.3
+```
+
+---
+
+## Volume Control
+
+### Set Master Music Volume
+
+```cpp
+Set Master Music Volume(WorldContext, Volume, FadeTime)
+```
+
+**Description:** Sets the master volume for all music layers. Affects all active and future layers.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+- `Volume` (Float) - Master volume 0.0 to 1.0
+- `Fade Time` (Float) - Fade duration in seconds (default: 0.5)
+
+**Usage Example:**
+```
+Event OnSettingsChanged
+    ↓
+Set Master Music Volume
+    ├─ Volume: 0.5
+    └─ Fade Time: 1.0
+```
+
+---
+
+### Get Master Music Volume
+
+```cpp
+Get Master Music Volume(WorldContext) → Float
+```
+
+**Description:** Returns the current master music volume.
+
+**Parameters:**
+- `World Context Object` (Object) - World context (automatic in Blueprint)
+
+**Returns:** Current master volume (0.0 to 1.0).
+
+---
+
+## Data Structures
+
+### FERP_MusicLayer
+
+Defines a single music layer with all its properties.
+
+**Fields:**
+- `Layer Name` (Name) - Unique identifier for this layer
+- `Music` (Soft Object Ptr&lt;Sound Base&gt;) - Music asset reference (lazy-loaded)
+- `Priority` (int32) - Layer priority 0-100 (higher plays first)
+- `Layer Mode` (ERP_EMusicLayerMode) - Replace or Additive
+- `Volume Multiplier` (float) - Volume 0.0 to 1.0
+- `Fade In Time` (float) - Fade in duration in seconds
+- `Fade Out Time` (float) - Fade out duration in seconds
+- `bLooping` (bool) - Loop the music
+- `bPersist Across Levels` (bool) - Keep playing during level transitions
+
+---
+
+### FERP_StingerParams
+
+Parameters for playing a stinger.
+
+**Fields:**
+- `Stinger Sound` (Sound Base*) - The stinger audio asset
+- `bDuck Music` (bool) - Lower background music during stinger
+- `Duck Volume` (float) - Music volume during stinger (0.0-1.0)
+- `Duck Fade Time` (float) - Fade time for ducking
+- `Restore Fade Time` (float) - Fade time for restoration
+
+---
+
+## Enums
+
+### ERP_EMusicLayerMode
+
+Defines how a layer interacts with others.
+
+**Values:**
+- `Replace` - Replaces all lower-priority layers. Only one Replace layer plays at a time.
+- `Additive` - Adds on top of the current Replace layer if priority is high enough.
+
+---
+
+## Data Assets
+
+### UERP_MusicLayerConfig
+
+Reusable configuration containing multiple music layers.
+
+**Fields:**
+- `Config Name` (String) - Descriptive name for this configuration
+- `Layers` (Array&lt;FERP_MusicLayer&gt;) - All layers in this configuration
+- `Default Fade Time` (float) - Default fade time for layers without explicit values
+
+**Usage:** Create in Content Browser → Right-click → Miscellaneous → Data Asset → UERP_MusicLayerConfig
+
+---
+
+## Actors & Components
+
+### AERP_MusicZone
+
+Level-placed trigger volume that automatically pushes/pops music layers based on player overlap.
+
+**Properties:**
+- `Layer Name` (Name) - Name of the layer to push when entering
+- `Music` (Sound Base) - Music to play in this zone
+- `Priority` (int32) - Layer priority
+- `Layer Mode` (ERP_EMusicLayerMode) - Replace or Additive
+- `Volume Multiplier` (float) - Volume 0.0 to 1.0
+- `Fade In Time` (float) - Fade in duration
+- `Fade Out Time` (float) - Fade out duration
+- `bPersist Across Levels` (bool) - Keep layer when leaving zone and changing levels
+- `Required Actor Tag` (Name) - Optional tag filter (only trigger for actors with this tag)
+- `bTrigger Once` (bool) - Only trigger the first time
+
+**Usage:** Place actor in level, resize box, configure properties. Music plays automatically when player enters.
+
+---
+
+### UERP_MusicZoneComponent
+
+Component version of music zone. Attach to any actor to make it a music trigger.
+
+**Same properties as AERP_MusicZone.**
+
+---
+
+## Subsystem
+
+### UERP_MusicSubsystem
+
+GameInstanceSubsystem that manages all music layers. Automatically created by Unreal Engine - no manual setup needed.
+
+**Lifetime:** Created on game start, persists across levels, destroyed on game shutdown.
+
+**Access:** All UERP_MusicHelper functions internally use this subsystem. Direct access not needed in Blueprint.
 
 ---
 
@@ -198,52 +404,60 @@ Simple looping music player.
 ```
 Level BeginPlay
     ↓
-Get Music Manager
-    ↓
-Play Music
+Push Music Layer
+    ├─ Layer Name: "Background"
     ├─ Music: BackgroundMusic
-    └─ Volume: 0.5
+    └─ Priority: 0
 ```
 
-### Pattern 2: State-Based Music
+### Pattern 2: Combat Music System
 
 ```
-On Game State Changed
+On Enter Combat
     ↓
-Switch (New State)
-    ├─ Combat → Play Combat Music
-    ├─ Exploration → Play Ambient Music
-    └─ Menu → Stop Music
+Push Music Layer
+    ├─ Layer Name: "Combat"
+    ├─ Priority: 10
+    └─ Layer Mode: Replace
+
+On Exit Combat
+    ↓
+Pop Music Layer
+    └─ Layer Name: "Combat"
 ```
 
-### Pattern 3: Crossfade Between Tracks
+### Pattern 3: Additive Tension Layer
 
 ```
-Crossfade
+Base exploration playing at Priority 0
     ↓
-Stop Current Music (Fade Out: 1.0)
+On Enemy Nearby
     ↓
-Delay 0.5 seconds
-    ↓
-Play New Music (Fade In: 1.0)
+Push Music Layer
+    ├─ Layer Name: "Tension"
+    ├─ Priority: 5
+    ├─ Layer Mode: Additive
+    └─ Volume: 0.7
 ```
 
 ---
 
 ## Best Practices
 
-1. **Always use fade transitions** - Prevents audio clicks and pops
-2. **Manage music globally** - Use Game Instance for persistent music
-3. **Use compressed formats** - OGG for smaller file sizes
-4. **Set appropriate loop points** - For seamless music loops
-5. **Implement Music State Interface** - For dynamic music systems
-6. **Cache references** - Store Music Manager reference instead of finding repeatedly
+1. **Use descriptive layer names** - "Combat", "BossFight", "TensionLayer" are clear
+2. **Reserve priority 15+** for special events (bosses, cutscenes)
+3. **Always Pop layers** - Prevents memory leaks and layer stack bloat
+4. **Use Replace for main music** - Combat, exploration, menu themes
+5. **Use Additive for atmospheres** - Tension layers, weather, environmental sounds
+6. **Enable persistence sparingly** - Only for music that should span level loads
+7. **Set appropriate fade times** - 1-2 seconds for smooth transitions, avoid &gt;5 seconds
 
 ---
 
 ## Performance Considerations
 
-- Maximum recommended concurrent tracks: 2-3
-- Use audio streaming for long tracks (>2 minutes)
-- Compressed formats (OGG) use less memory
-- Crossfades briefly use 2x memory during transition
+- System is lightweight: ~10-50 KB memory overhead
+- Audio component pooling: automatic, no management needed
+- Typical usage: 2-5 active layers (optimal)
+- 10+ layers: still fine, consider consolidation if more
+- Music assets loaded on-demand via soft references

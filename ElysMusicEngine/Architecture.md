@@ -80,7 +80,7 @@ ElysMusicEngine uses a **priority-based layer stack** managed by a single **Game
 
 **Key:**
 - **Single instance** per game
-- Always accessible via `GetGameInstance()->GetSubsystem<UERP_MusicSubsystem>()`
+- Always accessible via `GetGameInstance()-&gt;GetSubsystem&lt;UERP_MusicSubsystem&gt;()`
 - **Thread-safe** (all calls on game thread)
 
 ### 2. Music Layer (FERP_MusicLayer)
@@ -91,7 +91,7 @@ ElysMusicEngine uses a **priority-based layer stack** managed by a single **Game
 **Fields:**
 ```cpp
 FName LayerName;                    // Unique identifier
-TSoftObjectPtr<USoundBase> Music;   // The music asset (lazy-loaded)
+TSoftObjectPtr&lt;USoundBase&gt; Music;   // The music asset (lazy-loaded)
 int32 Priority;                     // 0-100 (higher = more important)
 ERP_EMusicLayerMode LayerMode;      // Replace or Additive
 float VolumeMultiplier;             // 0.0-1.0
@@ -121,7 +121,7 @@ bool bIsFadingOut;                  // Currently fading out?
 **Fields:**
 ```cpp
 FString ConfigName;                 // Descriptive name
-TArray<FERP_MusicLayer> Layers;     // All layers in this config
+TArray&lt;FERP_MusicLayer&gt; Layers;     // All layers in this config
 float DefaultFadeTime;              // Default fade duration
 ```
 
@@ -236,7 +236,7 @@ UpdatePlayingLayers()
 │     If Replace:                        │
 │       → Play if this is top Replace    │
 │     If Additive:                       │
-│       → Play if priority >= TopReplace │
+│       → Play if priority &gt;= TopReplace │
 └────────────────────────────────────────┘
      │
      ▼
@@ -272,8 +272,8 @@ Active Layers:
 ```
 Active Layers:
   Combat [10] Replace      ← PLAYS (highest Replace)
-  Tension [5] Additive     ← STOPS (5 < 10)
-  Rain [12] Additive       ← PLAYS (12 >= 10, adds on top)
+  Tension [5] Additive     ← STOPS (5 &lt; 10)
+  Rain [12] Additive       ← PLAYS (12 &gt;= 10, adds on top)
 ```
 
 **Result:** Combat music + Rain layer play together.
@@ -284,8 +284,8 @@ Active Layers:
 Stack:
   Boss [15] Replace        → PLAYS
   Combat [10] Replace      → Ignored (lower Replace)
-  Tension [12] Additive    → STOPS (12 < 15)
-  Wind [16] Additive       → PLAYS (16 >= 15, adds on top)
+  Tension [12] Additive    → STOPS (12 &lt; 15)
+  Wind [16] Additive       → PLAYS (16 &gt;= 15, adds on top)
   Exploration [0] Replace  → Ignored (lower Replace)
 
 Playing: Boss Music + Wind Layer
@@ -314,7 +314,7 @@ GetOrCreateAudioComponent():
       Return component (reuse)
   
   // All busy, create new
-  NewComponent = NewObject<UAudioComponent>()
+  NewComponent = NewObject&lt;UAudioComponent&gt;()
   Add to pool
   Return NewComponent
 ```
@@ -345,8 +345,8 @@ User calls: Play Stinger(FanfareSound, bDuck=true, DuckVolume=0.3)
      ▼
 ┌────────────────────────────────────────┐
 │  2. Play stinger on dedicated component│
-│     → StingerComponent->SetSound()     │
-│     → StingerComponent->Play()         │
+│     → StingerComponent-&gt;SetSound()     │
+│     → StingerComponent-&gt;Play()         │
 │     → Bind OnAudioFinished callback    │
 └────────────────────────────────────────┘
      │
@@ -489,7 +489,7 @@ Single-threaded design = no mutexes or locks.
 
 ### Why Soft Object Pointers?
 
-`TSoftObjectPtr<USoundBase>` allows:
+`TSoftObjectPtr&lt;USoundBase&gt;` allows:
 - ✅ Lazy loading (only load when needed)
 - ✅ Smaller config assets
 - ✅ Async loading possible (future)

@@ -136,7 +136,7 @@ Push Tension [5] Additive:
 
 Push Combat [10] Replace:
   Combat [10] Replace     → PLAYING ✅ (highest Replace)
-  Tension [5] Additive    → STOPPED (5 < 10)
+  Tension [5] Additive    → STOPPED (5 &lt; 10)
   Exploration [0] Replace → STOPPED (lower Replace)
 
 Result: Only Combat plays
@@ -152,6 +152,8 @@ Result: Only Combat plays
 | **Additive + Replace** | Additive plays if priority ≥ Replace |
 | **Multiple Additive** | All with priority ≥ Replace play |
 | **Same priority** | Both can play (if different modes) |
+| **Push high priority Replace** | Lower Additive layers STOP |
+| **Pop high priority Replace** | Lower Additive layers RESTART |
 
 ---
 
@@ -163,7 +165,7 @@ Result: Only Combat plays
 
 **Behavior:**
 - Stops ALL **lower priority** Replace layers
-- Stops **Additive** layers with priority < this Replace
+- Stops **Additive** layers with priority &lt; this Replace
 - Only ONE Replace layer plays at a time
 
 **Examples:**
@@ -185,7 +187,9 @@ After:  Combat [10] playing (Exploration stopped)
 - **Does NOT stop** the Replace layer
 - Plays **on top** of current music
 - Multiple Additive layers can play together
-- Only plays if priority ≥ current Replace layer
+- **CRITICAL RULE:** Only plays if **priority ≥ current Replace layer**
+  - If Replace priority goes higher than Additive → Additive stops
+  - If Replace priority goes lower → Additive restarts automatically
 
 **Examples:**
 - Add tension strings during stealth
@@ -197,6 +201,25 @@ Before: Exploration [0] playing
 Push:   Wind [3] Additive
 After:  Exploration [0] + Wind [3] both playing
 ```
+
+### Additive Priority Rules in Detail
+
+**Example: Tension Layer (Priority 5)**
+
+```
+1. Push Exploration [0] Replace → Exploration plays
+
+2. Push Tension [5] Additive → Tension plays (5 ≥ 0) ✅
+   Result: Exploration + Tension
+
+3. Push Combat [10] Replace → Combat plays, Tension STOPS (5 < 10) ❌
+   Result: Only Combat
+
+4. Pop Combat → Exploration returns, Tension RESTARTS (5 ≥ 0) ✅
+   Result: Exploration + Tension again!
+```
+
+**Key insight:** Additive layers automatically stop/start based on current Replace priority!
 
 ### Visual Comparison
 
@@ -309,7 +332,7 @@ The **Subsystem** (UERP_MusicSubsystem) is a **GameInstanceSubsystem**:
 
 Persistent audio components marked with:
 ```cpp
-AudioComponent->bIsMusic = true
+AudioComponent-&gt;bIsMusic = true
 ```
 This tells Unreal's audio system: "Don't stop this during level loads!"
 
@@ -385,7 +408,7 @@ Pop "Dungeon"
 Push "BossPhase1" [15] Replace
   → Boss phase 1 music
 
-🔴 Boss health < 50%
+🔴 Boss health &lt; 50%
 Pop "BossPhase1"
 Push "BossPhase2" [15] Replace
   → Boss phase 2 music (more intense)
@@ -561,14 +584,14 @@ Push Music Layer
 
 **Problem:** Pushed Additive but it doesn't play.
 
-**Cause:** Additive priority < current Replace priority.
+**Cause:** Additive priority &lt; current Replace priority.
 
 **Solution:**
 ```
 Replace layer: Combat [10]
-Additive layer: Tension [5]  ← 5 < 10, won't play!
+Additive layer: Tension [5]  ← 5 &lt; 10, won't play!
 
-Fix: Tension [12] → Now plays (12 >= 10)
+Fix: Tension [12] → Now plays (12 &gt;= 10)
 ```
 
 ---
@@ -654,14 +677,14 @@ music.clear      → Stop all music immediately
 ```
 Active Layers:
 [Combat] Priority: 10 Mode: Replace PLAYING ✅
-[Tension] Priority: 5 Mode: Additive (Stopped, priority < 10)
+[Tension] Priority: 5 Mode: Additive (Stopped, priority &lt; 10)
 [Exploration] Priority: 0 Mode: Replace (Lower priority Replace)
 Master Volume: 1.0
 ```
 
 This tells you:
 - Combat is playing (highest Replace)
-- Tension isn't playing (5 < 10)
+- Tension isn't playing (5 &lt; 10)
 - Exploration isn't playing (lower Replace)
 
 ### Output Log
@@ -698,9 +721,12 @@ If you don't see these → Plugin not initializing properly.
 
 1. **Higher priority wins** (for Replace layers)
 2. **Additive plays if priority ≥ current Replace**
-3. **Pop automatically returns previous music**
-4. **Persist = keep playing between levels**
-5. **One Replace at a time, multiple Additives OK**
+3. **Additive STOPS when Replace priority goes above it**
+4. **Additive RESTARTS when Replace priority goes below it**
+5. **Pop automatically returns previous music (and Additive layers!)**
+6. **Persist = keep playing between levels**
+7. **One Replace at a time, multiple Additives OK**
+8. **Each layer needs a unique name**
 
 ### Mental Model
 
@@ -708,7 +734,22 @@ Think of it like:
 - **Replace** = Changing channels on a TV
 - **Additive** = Adding subtitles/effects on top
 - **Priority** = Channel number (higher = more important)
+- **Additive Rule** = Subtitles only show if channel number allows it
 - **Persist** = TV stays on when you leave the room
+
+### Common Questions
+
+**Q: My Additive layer stopped playing, why?**  
+A: A Replace layer with higher priority was pushed. The Additive will restart when that Replace is popped.
+
+**Q: Can I have multiple Additive layers?**  
+A: Yes! All Additive layers with priority ≥ current Replace play simultaneously.
+
+**Q: Do I need different names for each layer?**  
+A: Yes! Pushing the same name twice is ignored. Use unique names like "Combat_Drums", "Combat_Strings".
+
+**Q: How do I remove an Additive layer?**  
+A: Use `Pop Music Layer` with its name, just like Replace layers.
 
 ---
 

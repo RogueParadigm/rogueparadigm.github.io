@@ -11,8 +11,10 @@ Play background music when a level loads.
 ```
 Level Blueprint → Event BeginPlay
     ↓
-Play Music (Music Helper)
+Push Music Layer
+    ├─ Layer Name: "LevelMusic"
     ├─ Music: LevelTheme_Sound
+    ├─ Priority: 0
     ├─ Fade In: 3.0
     └─ Volume: 0.6
 ```
@@ -35,11 +37,12 @@ Branch (Enemies Found AND Not In Combat)
         ↓
     Set In Combat = True
         ↓
-    Stop Music (Fade Out: 1.0)
-        ↓
-    Delay 1.0
-        ↓
-    Play Music (Combat Theme, Fade In: 0.5)
+    Push Music Layer
+        ├─ Layer Name: "Combat"
+        ├─ Music: Combat Theme
+        ├─ Priority: 10
+        ├─ Layer Mode: Replace
+        └─ Fade In: 0.5
     
     False:
         ↓
@@ -48,11 +51,10 @@ Branch (Enemies Found AND Not In Combat)
             ↓
         Set In Combat = False
             ↓
-        Stop Music (Fade Out: 2.0)
+        Pop Music Layer
+            └─ Layer Name: "Combat"
             ↓
-        Delay 2.0
-            ↓
-        Play Music (Exploration Theme, Fade In: 3.0)
+        (Exploration music automatically returns)
 ```
 
 ---
@@ -64,233 +66,277 @@ Play music in the main menu with automatic looping.
 ```
 Main Menu Widget → Event Construct
     ↓
-Get Music Manager
-    ↓
-Play Music
+Push Music Layer
+    ├─ Layer Name: "MenuMusic"
     ├─ Music: MenuTheme_Sound
+    ├─ Priority: 0
     ├─ Fade In: 1.0
     └─ Volume: 0.4
     
 Main Menu Widget → Event Destruct
     ↓
-Stop Music (Fade Out: 1.0)
+Pop Music Layer
+    └─ Layer Name: "MenuMusic"
 ```
 
 ---
 
-## Example 4: Dynamic Volume Control
+## Example 4: Dialogue Ducking
 
-Adjust music volume based on gameplay events (e.g., during dialogue).
+Automatically lower music volume during dialogue.
 
 ```
 On Dialogue Start
     ↓
-Get Music Manager
-    ↓
-Set Music Volume
-    ├─ Volume: 0.2
+Spawn Sound 2D (Dialogue Audio)
+    ↓ [Audio Component output]
+Enable Dialogue Ducking
+    ├─ Dialogue Component: [from above]
+    ├─ Duck Volume: 0.3
     └─ Fade Time: 0.5
 
-On Dialogue End
-    ↓
-Get Music Manager
-    ↓
-Set Music Volume
-    ├─ Volume: 0.6
-    └─ Fade Time: 1.0
+(Music automatically restores when dialogue finishes)
 ```
 
 ---
 
 ## Example 5: Persistent Music Across Levels
 
-Use Game Instance to keep music playing during level transitions.
+Keep music playing during level transitions.
 
-```
-Game Instance Blueprint:
-
-Event Init
-    ↓
-Spawn Actor (ERP_MusicManager)
-    ↓
-Set Music Manager (Store Reference)
-
-Function: Play Persistent Music
-    ↓
-Get Music Manager
-    ↓
-Is Music Playing?
-    False:
-        ↓
-    Play Music
-        ├─ Music: Game Theme
-        ├─ Fade In: 2.0
-        └─ Volume: 0.5
-```
-
-Call this function from each level's BeginPlay:
 ```
 Level Blueprint → Event BeginPlay
     ↓
-Get Game Instance
-    ↓
-Cast to YourGameInstance
-    ↓
-Play Persistent Music
+Push Music Layer
+    ├─ Layer Name: "GameMusic"
+    ├─ Music: Game Theme
+    ├─ Priority: 0
+    ├─ Fade In: 2.0
+    ├─ Volume: 0.5
+    └─ Persist Across Levels: true
+
+(Music continues when loading new levels)
 ```
 
 ---
 
-## Example 6: Music Playlist System
+## Example 6: Music Zones
 
-Cycle through multiple music tracks.
+Use music zones for area-based music (easiest method).
 
 ```
-Game Mode Blueprint:
+Level Editor:
+1. Place Actor: Add → ERP_MusicZone
+2. Resize box to cover area
+3. Configure:
+   ├─ Layer Name: "DungeonMusic"
+   ├─ Music: Dungeon_Ambiance
+   ├─ Priority: 5
+   └─ Layer Mode: Replace
 
-Variables:
-- Music Playlist (Array of Sound Waves)
-- Current Track Index (Integer) = 0
-
-Function: Play Next Track
-    ↓
-Stop Music (Fade Out: 2.0)
-    ↓
-Delay 2.0
-    ↓
-Get from Array (Music Playlist, Current Track Index)
-    ↓
-Play Music (Retrieved Sound, Fade In: 2.0)
-    ↓
-Increment Track Index
-    ↓
-Branch (Index >= Array Length)
-    True: Set Index = 0
-    False: Continue
-
-Event BeginPlay
-    ↓
-Play Next Track
-    ↓
-Set Timer by Event (Play Next Track, 180.0 seconds, Looping: True)
+(Music plays automatically when player enters zone)
+(Music stops when player exits zone)
 ```
 
 ---
 
-## Example 7: Ambient + Music Layers
+## Example 7: Additive Tension Layer
 
-Play ambient sounds alongside music.
+Add tension music on top of base exploration music.
 
 ```
-Level Blueprint:
+// Base exploration already playing at Priority 0
 
-Event BeginPlay
+Event OnEnemyNearby
     ↓
-[Branch 1] Play Music
-    ├─ Music: Music Layer
-    └─ Volume: 0.5
-    
-[Branch 2] Spawn Sound 2D
-    ├─ Sound: Ambient Loop
-    └─ Volume: 0.3
+Push Music Layer
+    ├─ Layer Name: "Tension"
+    ├─ Music: Tension_Strings
+    ├─ Priority: 5
+    ├─ Layer Mode: Additive    ← Adds on top!
+    └─ Volume: 0.7
+
+// Now BOTH exploration + tension play together
+
+Event OnEnemyLeft
+    ↓
+Pop Music Layer
+    └─ Layer Name: "Tension"
 ```
 
 ---
 
 ## Example 8: Boss Fight Music
 
-Trigger special music for boss encounters with health-based intensity.
+Special music for boss encounters with phase transitions.
 
 ```
 Boss Actor Blueprint:
 
-Event Take Damage
+Event OnBossStart
     ↓
-Get Health Percentage
+Push Music Layer
+    ├─ Layer Name: "BossFight"
+    ├─ Music: Boss_Phase1_Music
+    ├─ Priority: 15
+    └─ Layer Mode: Replace
+
+Event OnPhase2Start (Health &lt; 50%)
     ↓
-Branch (Health < 0.3 AND Not Playing Phase 2 Music)
-    True:
-        ↓
-    Stop Music (Fade Out: 0.5)
-        ↓
-    Delay 0.5
-        ↓
-    Play Music (Boss Phase 2 Theme, Fade In: 0.5, Volume: 0.7)
-        ↓
-    Set Playing Phase 2 = True
+Pop Music Layer ("BossFight")
+    ↓
+Push Music Layer
+    ├─ Layer Name: "BossPhase2"
+    ├─ Music: Boss_Phase2_Music
+    ├─ Priority: 15
+    └─ Fade In: 0.5
 
 Event Death
     ↓
-Stop Music (Fade Out: 3.0)
+Pop Music Layer ("BossPhase2")
     ↓
-Delay 3.0
-    ↓
-Play Music (Victory Theme, Fade In: 1.0)
+Play Stinger
+    ├─ Stinger Sound: Victory_Fanfare
+    └─ Duck Music: true
 ```
 
 ---
 
-## Example 9: Area-Based Music
+## Example 9: Stinger on Achievement
 
-Change music when entering different areas.
+Play a musical accent when player unlocks an achievement.
 
 ```
-Trigger Volume Blueprint:
+Event OnAchievementUnlocked
+    ↓
+Play Stinger
+    ├─ Stinger Sound: Achievement_Fanfare
+    ├─ Duck Music: true       ← Lowers background music
+    ├─ Duck Volume: 0.3       ← 30% volume during stinger
+    ├─ Duck Fade Time: 0.2
+    └─ Restore Fade Time: 0.5
 
-Event ActorBeginOverlap (Other Actor = Player)
-    ↓
-Stop Music (Fade Out: 2.0)
-    ↓
-Delay 2.0
-    ↓
-Play Music
-    ├─ Music: Area Specific Theme
-    ├─ Fade In: 3.0
-    └─ Volume: 0.6
+(Music automatically restores after stinger finishes)
 ```
 
 ---
 
-## Example 10: Stinger System
+## Example 10: Music Configuration Asset
 
-Play short musical stings without interrupting main music.
+Use reusable configs for complex multi-layer setups.
 
 ```
-Function: Play Stinger
+Content Browser:
+1. Right-click → Miscellaneous → Data Asset
+2. Select: UERP_MusicLayerConfig
+3. Name: MC_DungeonAmbiance
 
-Input: Stinger Sound (Sound Wave)
+Configure in asset:
+Config Name: "Dungeon Ambiance"
+Layers:
+  [0] Dungeon Base
+      ├─ Layer Name: "DungeonBase"
+      ├─ Music: Dungeon_Base_Loop
+      ├─ Priority: 0
+      └─ Mode: Replace
+      
+  [1] Wind Layer
+      ├─ Layer Name: "DungeonWind"
+      ├─ Music: Wind_Layer
+      ├─ Priority: 2
+      ├─ Mode: Additive
+      └─ Volume: 0.6
+
+Use in Blueprint:
+Event OnEnterDungeon
     ↓
-Get Music Manager
+Apply Music Config
+    ├─ Config: MC_DungeonAmbiance
+    └─ Clear Existing: true
     ↓
-Get Current Volume
-    ↓
-Set Music Volume (Volume * 0.3, Fade: 0.2)
-    ↓
-Play Sound 2D (Stinger Sound)
-    ↓
-Delay (Stinger Duration + 0.5)
-    ↓
-Set Music Volume (Original Volume, Fade: 1.0)
+(All layers from config now playing)
 ```
 
-Usage:
+---
+
+## Example 11: Day/Night Music Cycle
+
+Switch music based on time of day.
+
 ```
-On Achievement Unlocked
+Time of Day Manager:
+
+Event OnDayStart
     ↓
-Play Stinger (Achievement Stinger Sound)
+Pop Music Layer ("NightMusic")
+    ↓
+Push Music Layer
+    ├─ Layer Name: "DayMusic"
+    ├─ Music: Day_Ambiance
+    ├─ Priority: 0
+    └─ Fade In: 5.0
+
+Event OnNightStart
+    ↓
+Pop Music Layer ("DayMusic")
+    ↓
+Push Music Layer
+    ├─ Layer Name: "NightMusic"
+    ├─ Music: Night_Ambiance
+    ├─ Priority: 0
+    └─ Fade In: 5.0
+```
+
+---
+
+## Example 12: Master Volume Control
+
+Adjust music volume from settings menu.
+
+```
+Settings Menu Widget:
+
+Event OnMusicVolumeSliderChanged
+    ↓
+Set Master Music Volume
+    ├─ Volume: [Slider Value 0.0-1.0]
+    └─ Fade Time: 0.5
+```
+
+---
+
+## Example 13: Check Active Layers (Debugging)
+
+Query which layers are currently playing.
+
+```
+Debug Blueprint:
+
+Event OnKeyPress (F1)
+    ↓
+Get Active Layer Names
+    ↓
+For Each Loop (Array of Names)
+    ↓
+Print String
+    ├─ Text: [Current Layer Name]
+    └─ Duration: 5.0
 ```
 
 ---
 
 ## Tips for Each Pattern
 
-- **Level Music**: Use long fade-ins for smooth entry
-- **Combat Music**: Keep fade-outs short for responsive feel
-- **Menu Music**: Use lower volume to not overwhelm UI
-- **Dialogue**: Automate volume reduction to avoid manual control
-- **Persistent Music**: Check if already playing to avoid restart
-- **Playlist**: Add randomization for variety
-- **Layers**: Balance volumes carefully
-- **Boss Fight**: Use dramatic timing for phase transitions
-- **Area Music**: Use longer fades for smoother transitions
-- **Stingers**: Keep them short (&lt;3 seconds) and punchy
+- **Level Music**: Use long fade-ins (2-5s) for smooth entry
+- **Combat Music**: Higher priority (10) replaces exploration (0)
+- **Menu Music**: Lower volume (0.3-0.5) to not overwhelm UI
+- **Dialogue**: Use Enable Dialogue Ducking for automatic control
+- **Persistence**: Enable for music that should span level transitions
+- **Music Zones**: Easiest way to handle area-based music
+- **Additive Layers**: Perfect for subtle atmosphere (wind, tension)
+- **Boss Fight**: Use priority 15+ for critical music
+- **Stingers**: Keep short (&lt;3 seconds) and punchy
+- **Configs**: Reuse setups across multiple levels
+- **Day/Night**: Use smooth fade transitions (5+ seconds)
+- **Volume**: Provide user control via settings
+- **Debugging**: Use Get Active Layer Names during development

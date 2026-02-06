@@ -197,7 +197,7 @@ Exploration    [Priority 0]  ← Base layer
 **Additive Mode:**  
 - Plays on top of the current replace layer
 - Multiple additive layers can play together
-- Only plays if priority >= current replace layer
+- Only plays if priority &gt;= current replace layer
 
 **Example:**
 ```
@@ -273,7 +273,7 @@ music.clear                       # Stop all music
 - Don't push the same layer name twice (it's ignored)
 - Don't forget to pop layers (memory leak)
 - Don't use Replace mode for subtle layers
-- Don't set very long fade times (>5s feels unresponsive)
+- Don't set very long fade times (&gt;5s feels unresponsive)
 
 ---
 

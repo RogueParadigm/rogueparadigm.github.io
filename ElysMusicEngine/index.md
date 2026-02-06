@@ -92,9 +92,9 @@ ElysMusicEngine uses a **priority-based layer system** for dynamic music:
 
 | Use Case | How to Implement |
 |----------|------------------|
-| **Combat Music** | Push layer (Priority 10, Replace) on combat start<br/>Pop layer on combat end |
+| **Combat Music** | Push layer (Priority 10, Replace) on combat start&lt;br/&gt;Pop layer on combat end |
 | **Boss Music** | Push layer (Priority 15, Replace) in boss room |
-| **Music Zones** | Place `ERP_MusicZone` actor in level<br/>Auto-triggers on player overlap |
+| **Music Zones** | Place `ERP_MusicZone` actor in level&lt;br/&gt;Auto-triggers on player overlap |
 | **Tension Layers** | Push layer (Priority 5, Additive) when enemy nearby |
 | **Stingers** | Call `Play Stinger` on achievement/discovery |
 | **Dialogue** | Call `Enable Dialogue Ducking` when NPC talks |
