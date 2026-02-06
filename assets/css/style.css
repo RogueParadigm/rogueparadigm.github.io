@@ -272,6 +272,12 @@ body {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+.btn-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .btn-lg {
     padding: 16px 32px;
     font-size: 1rem;
