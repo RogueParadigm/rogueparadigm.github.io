@@ -112,6 +112,13 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
     transition: color var(--transition), background var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-link svg {
+    flex-shrink: 0;
 }
 
 .nav-link:hover {
@@ -158,19 +165,8 @@ body {
     text-align: center;
     padding: 120px 24px 80px;
     position: relative;
-    background: var(--gradient-hero);
+    background: var(--color-bg);
     overflow: hidden;
-}
-
-.hero-gradient {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    height: 600px;
-    background: radial-gradient(ellipse, rgba(138, 12, 19, 0.2) 0%, transparent 70%);
-    pointer-events: none;
 }
 
 .hero-content {
