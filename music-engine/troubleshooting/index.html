@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-troubleshooting" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Troubleshooting | Elys Music Engine</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rogueparadigm.com/ElysMusicEngine/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rogueparadigm.com/ElysMusicEngine/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rogueparadigm.com/ElysMusicEngine/troubleshooting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Troubleshooting | Elys Music Engine"><meta data-rh="true" name="description" content="Solutions to common issues with ElysMusicEngine."><meta data-rh="true" property="og:description" content="Solutions to common issues with ElysMusicEngine."><link data-rh="true" rel="icon" href="/ElysMusicEngine/img/rogue-paradigm-logo.png"><link data-rh="true" rel="canonical" href="https://rogueparadigm.com/ElysMusicEngine/troubleshooting"><link data-rh="true" rel="alternate" href="https://rogueparadigm.com/ElysMusicEngine/troubleshooting" hreflang="en"><link data-rh="true" rel="alternate" href="https://rogueparadigm.com/ElysMusicEngine/troubleshooting" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Troubleshooting","item":"https://rogueparadigm.com/ElysMusicEngine/troubleshooting"}]}</script><link rel="stylesheet" href="/ElysMusicEngine/assets/css/styles.1077209b.css">
+<script src="/ElysMusicEngine/assets/js/runtime~main.fed2d82d.js" defer="defer"></script>
+<script src="/ElysMusicEngine/assets/js/main.d21b9f80.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ElysMusicEngine/img/rogue-paradigm-logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a href="https://rogueparadigm.com" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/ElysMusicEngine/img/rogue-paradigm-logo.png" alt="Elys" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ElysMusicEngine/img/rogue-paradigm-logo.png" alt="Elys" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Elys Music Engine</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ElysMusicEngine/intro">Documentation</a><a href="https://rogueparadigm.com/ElysGenAIPlugin/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GenAI Plugin<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://rogueparadigm.com/ElysPerceptionPlugin/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Perception Plugin<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/intro"><span title="ElysMusicEngine" class="linkLabel_WmDU">ElysMusicEngine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/setup-guide"><span title="Getting Started" class="linkLabel_WmDU">Getting Started</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/user-guide"><span title="User Guide" class="linkLabel_WmDU">User Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/advanced"><span title="Advanced Features" class="linkLabel_WmDU">Advanced Features</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/cpp-usage"><span title="Using from C++" class="linkLabel_WmDU">Using from C++</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/multiplayer"><span title="Multiplayer Guide" class="linkLabel_WmDU">Multiplayer Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ElysMusicEngine/API-Reference"><span title="API Reference" class="linkLabel_WmDU">API Reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/ElysMusicEngine/troubleshooting"><span title="Troubleshooting" class="linkLabel_WmDU">Troubleshooting</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ElysMusicEngine/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Troubleshooting</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Troubleshooting</h1></header>
+<p>Solutions to common issues with ElysMusicEngine.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="general-debugging">General Debugging<a href="#general-debugging" class="hash-link" aria-label="Direct link to General Debugging" title="Direct link to General Debugging" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-use-console-commands">Step 1: Use Console Commands<a href="#step-1-use-console-commands" class="hash-link" aria-label="Direct link to Step 1: Use Console Commands" title="Direct link to Step 1: Use Console Commands" translate="no">​</a></h3>
+<p>Open console (<code>~</code> key) and try:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">music.debug</span><br></span></code></pre></div></div>
+<p>This shows:</p>
+<ul>
+<li class="">All active layers</li>
+<li class="">Their priorities</li>
+<li class="">Which ones are playing</li>
+<li class="">Current master volume</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-check-output-log">Step 2: Check Output Log<a href="#step-2-check-output-log" class="hash-link" aria-label="Direct link to Step 2: Check Output Log" title="Direct link to Step 2: Check Output Log" translate="no">​</a></h3>
+<p><strong>Window → Developer Tools → Output Log</strong></p>
+<p>Look for:</p>
+<ul>
+<li class=""><code>ERP Music Subsystem Initialized</code> (plugin loaded)</li>
+<li class=""><code>Pushed music layer: LayerName</code> (layer added)</li>
+<li class=""><code>Started playing layer: LayerName</code> (music started)</li>
+<li class="">Warnings about missing assets or invalid states</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="music-not-playing">Music Not Playing<a href="#music-not-playing" class="hash-link" aria-label="Direct link to Music Not Playing" title="Direct link to Music Not Playing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom">Symptom<a href="#symptom" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>You call <code>Push Music Layer</code> but hear nothing.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions">Solutions<a href="#solutions" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-plugin-enabled">1. Check Plugin Enabled<a href="#1-check-plugin-enabled" class="hash-link" aria-label="Direct link to 1. Check Plugin Enabled" title="Direct link to 1. Check Plugin Enabled" translate="no">​</a></h4>
+<p><strong>Edit → Plugins → Search &quot;Elys Music Engine&quot;</strong></p>
+<ul>
+<li class="">(Success) Must be enabled</li>
+<li class="">Restart editor if you just enabled it</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-verify-music-asset">2. Verify Music Asset<a href="#2-verify-music-asset" class="hash-link" aria-label="Direct link to 2. Verify Music Asset" title="Direct link to 2. Verify Music Asset" translate="no">​</a></h4>
+<ul>
+<li class="">Double-click music asset in Content Browser</li>
+<li class="">Does it play?</li>
+<li class="">If not → Reimport or use different asset</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-layer-already-active">3. Check Layer Already Active<a href="#3-check-layer-already-active" class="hash-link" aria-label="Direct link to 3. Check Layer Already Active" title="Direct link to 3. Check Layer Already Active" translate="no">​</a></h4>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Branch: Is Layer Active(&quot;YourLayerName&quot;)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  If TRUE: Layer already playing (Push ignored)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  If FALSE: Should work</span><br></span></code></pre></div></div>
+<p><strong>Fix:</strong> Pop the layer first, or use different name.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-check-master-volume">4. Check Master Volume<a href="#4-check-master-volume" class="hash-link" aria-label="Direct link to 4. Check Master Volume" title="Direct link to 4. Check Master Volume" translate="no">​</a></h4>
+<p>Console: <code>music.debug</code></p>
+<p>Look for <code>Master Volume: 0.0</code> → That&#x27;s your problem!</p>
+<p><strong>Fix:</strong></p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Set Master Music Volume</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Volume: 1.0</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-check-layer-volume">5. Check Layer Volume<a href="#5-check-layer-volume" class="hash-link" aria-label="Direct link to 5. Check Layer Volume" title="Direct link to 5. Check Layer Volume" translate="no">​</a></h4>
+<p>When pushing layer:</p>
+<ul>
+<li class="">Volume Multiplier: Should be <code>1.0</code> (not <code>0.0</code>)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-check-audio-settings">6. Check Audio Settings<a href="#6-check-audio-settings" class="hash-link" aria-label="Direct link to 6. Check Audio Settings" title="Direct link to 6. Check Audio Settings" translate="no">​</a></h4>
+<p><strong>Edit → Project Settings → Audio</strong></p>
+<ul>
+<li class="">Master Volume: Should be &gt; 0</li>
+<li class="">Audio Device: Should be valid</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="music-stops-abruptly">Music Stops Abruptly<a href="#music-stops-abruptly" class="hash-link" aria-label="Direct link to Music Stops Abruptly" title="Direct link to Music Stops Abruptly" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-1">Symptom<a href="#symptom-1" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Music cuts off suddenly instead of fading.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-1">Solutions<a href="#solutions-1" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-increase-fade-times">1. Increase Fade Times<a href="#1-increase-fade-times" class="hash-link" aria-label="Direct link to 1. Increase Fade Times" title="Direct link to 1. Increase Fade Times" translate="no">​</a></h4>
+<p>When pushing layer:</p>
+<ul>
+<li class=""><strong>Fade Out Time:</strong> Increase to <code>1.5</code> or <code>2.0</code> seconds</li>
+<li class=""><strong>Fade In Time:</strong> Match the fade out time</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-pop-timing">2. Check Pop Timing<a href="#2-check-pop-timing" class="hash-link" aria-label="Direct link to 2. Check Pop Timing" title="Direct link to 2. Check Pop Timing" translate="no">​</a></h4>
+<p>If you Pop a layer immediately after Push:</p>
+<ul>
+<li class="">The fade might not complete</li>
+<li class="">Add delay or check if already active first</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-clear-all-layers">3. Check Clear All Layers<a href="#3-check-clear-all-layers" class="hash-link" aria-label="Direct link to 3. Check Clear All Layers" title="Direct link to 3. Check Clear All Layers" translate="no">​</a></h4>
+<p><code>Clear All Music Layers</code> stops everything immediately:</p>
+<ul>
+<li class="">Use <code>Pop Music Layer</code> for graceful fadeout</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wrong-music-playing">Wrong Music Playing<a href="#wrong-music-playing" class="hash-link" aria-label="Direct link to Wrong Music Playing" title="Direct link to Wrong Music Playing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-2">Symptom<a href="#symptom-2" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Different music plays than expected.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-2">Solutions<a href="#solutions-2" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-priorities">1. Check Priorities<a href="#1-check-priorities" class="hash-link" aria-label="Direct link to 1. Check Priorities" title="Direct link to 1. Check Priorities" translate="no">​</a></h4>
+<p>Console: <code>music.debug</code></p>
+<p>Higher priority <strong>wins</strong>. Example:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Combat [10] Replace   ← This plays</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Exploration [0]       ← This doesn&#x27;t (lower priority)</span><br></span></code></pre></div></div>
+<p><strong>Fix:</strong> Adjust priorities when pushing layers.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-layer-mode">2. Check Layer Mode<a href="#2-check-layer-mode" class="hash-link" aria-label="Direct link to 2. Check Layer Mode" title="Direct link to 2. Check Layer Mode" translate="no">​</a></h4>
+<p><strong>Replace:</strong> Stops lower priority music<br>
+<strong>Additive:</strong> Adds on top (both may play)</p>
+<p>If you want <strong>only</strong> combat music:</p>
+<ul>
+<li class="">Mode: <code>Replace</code></li>
+<li class="">Priority: Higher than exploration (e.g., 10 vs 0)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-layer-names">3. Check Layer Names<a href="#3-check-layer-names" class="hash-link" aria-label="Direct link to 3. Check Layer Names" title="Direct link to 3. Check Layer Names" translate="no">​</a></h4>
+<p>Case-sensitive! These are different:</p>
+<ul>
+<li class=""><code>&quot;Combat&quot;</code></li>
+<li class=""><code>&quot;combat&quot;</code></li>
+<li class=""><code>&quot;Combat &quot;</code> (trailing space)</li>
+</ul>
+<p><strong>Fix:</strong> Use consistent naming.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="music-wont-stop">Music Won&#x27;t Stop<a href="#music-wont-stop" class="hash-link" aria-label="Direct link to Music Won&#x27;t Stop" title="Direct link to Music Won&#x27;t Stop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-3">Symptom<a href="#symptom-3" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Pop Music Layer doesn&#x27;t stop the music.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-3">Solutions<a href="#solutions-3" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-layer-name-matches">1. Check Layer Name Matches<a href="#1-check-layer-name-matches" class="hash-link" aria-label="Direct link to 1. Check Layer Name Matches" title="Direct link to 1. Check Layer Name Matches" translate="no">​</a></h4>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Push Music Layer</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Layer Name: &quot;Combat&quot;  ← Must match exactly</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Pop Music Layer</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Layer Name: &quot;Combat&quot;  ← Same name!</span><br></span></code></pre></div></div>
+<p><strong>Common mistake:</strong></p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Push: &quot;Combat&quot;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Pop: &quot;combat&quot;  ← Wrong! Case-sensitive</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-fade-out-time">2. Check Fade Out Time<a href="#2-check-fade-out-time" class="hash-link" aria-label="Direct link to 2. Check Fade Out Time" title="Direct link to 2. Check Fade Out Time" translate="no">​</a></h4>
+<p>Music <strong>does</strong> fade out, it just takes time:</p>
+<ul>
+<li class="">Default: 1.0 seconds</li>
+<li class="">Wait for fade to complete</li>
+</ul>
+<p>Console: <code>music.debug</code> will show <code>(FADING OUT)</code> status.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-force-stop">3. Force Stop<a href="#3-force-stop" class="hash-link" aria-label="Direct link to 3. Force Stop" title="Direct link to 3. Force Stop" translate="no">​</a></h4>
+<p>If stuck, use:</p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Clear All Music Layers</span><br></span></code></pre></div></div>
+<p>This immediately stops everything.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="music-volumes-not-triggering">Music Volumes Not Triggering<a href="#music-volumes-not-triggering" class="hash-link" aria-label="Direct link to Music Volumes Not Triggering" title="Direct link to Music Volumes Not Triggering" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-4">Symptom<a href="#symptom-4" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Walk into <code>ERP_MusicVolume</code> but music doesn&#x27;t change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-4">Solutions<a href="#solutions-4" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-collision-settings">1. Check Collision Settings<a href="#1-check-collision-settings" class="hash-link" aria-label="Direct link to 1. Check Collision Settings" title="Direct link to 1. Check Collision Settings" translate="no">​</a></h4>
+<p>Select the <code>ERP_MusicVolume</code> actor:</p>
+<p><strong>Details Panel:</strong></p>
+<ul>
+<li class="">Collision Enabled: ✅ Query and Physics</li>
+<li class="">Generate Overlap Events: ✅ True</li>
+</ul>
+<p><strong>Note:</strong> Music Volumes use BrushComponent - shape it however you need (box, sphere, custom).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-player-collision">2. Check Player Collision<a href="#2-check-player-collision" class="hash-link" aria-label="Direct link to 2. Check Player Collision" title="Direct link to 2. Check Player Collision" translate="no">​</a></h4>
+<p>Your player character:</p>
+<ul>
+<li class="">Must have collision enabled</li>
+<li class="">Must generate overlap events</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-content-configuration">3. Check Content Configuration<a href="#3-check-content-configuration" class="hash-link" aria-label="Direct link to 3. Check Content Configuration" title="Direct link to 3. Check Content Configuration" translate="no">​</a></h4>
+<p>Make sure content is properly configured:</p>
+<ul>
+<li class=""><strong>Single Layer:</strong> Layer Name must be set, Music asset assigned</li>
+<li class=""><strong>Single Preset:</strong> Music Preset must be assigned</li>
+<li class=""><strong>Layer/Preset List:</strong> List must contain valid entries</li>
+<li class=""><strong>By Tag:</strong> Tags must exist in the appropriate registry (Layer or Preset)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-check-actor-filter-tag">4. Check Actor Filter Tag<a href="#4-check-actor-filter-tag" class="hash-link" aria-label="Direct link to 4. Check Actor Filter Tag" title="Direct link to 4. Check Actor Filter Tag" translate="no">​</a></h4>
+<p>If <code>Actor Filter Tag</code> is set:</p>
+<ul>
+<li class="">Player <strong>must</strong> implement <code>IGameplayTagAssetInterface</code></li>
+<li class="">Player <strong>must</strong> have that tag</li>
+<li class=""><strong>Fix:</strong> Add tag to player or leave field empty</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-check-trigger-once">5. Check Trigger Once<a href="#5-check-trigger-once" class="hash-link" aria-label="Direct link to 5. Check Trigger Once" title="Direct link to 5. Check Trigger Once" translate="no">​</a></h4>
+<p>If <code>Trigger Once: true</code>:</p>
+<ul>
+<li class="">Volume only triggers first time</li>
+<li class=""><strong>Fix:</strong> Set to <code>false</code> or reset (re-enter level)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-visualize-volume">5. Visualize Volume<a href="#5-visualize-volume" class="hash-link" aria-label="Direct link to 5. Visualize Volume" title="Direct link to 5. Visualize Volume" translate="no">​</a></h4>
+<p>Select volume → <strong>Show → Collision</strong></p>
+<ul>
+<li class="">Should see the box bounds</li>
+<li class="">Make sure it&#x27;s large enough to actually hit</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-check-output-log">6. Check Output Log<a href="#6-check-output-log" class="hash-link" aria-label="Direct link to 6. Check Output Log" title="Direct link to 6. Check Output Log" translate="no">​</a></h4>
+<p>Look for:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Music Volume: Pushed layer &#x27;VolumeName&#x27;</span><br></span></code></pre></div></div>
+<p>If not there → Volume not triggering overlap.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="music-stops-between-levels">Music Stops Between Levels<a href="#music-stops-between-levels" class="hash-link" aria-label="Direct link to Music Stops Between Levels" title="Direct link to Music Stops Between Levels" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-5">Symptom<a href="#symptom-5" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Music stops when loading new level.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-5">Solutions<a href="#solutions-5" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-enable-persistence">1. Enable Persistence<a href="#1-enable-persistence" class="hash-link" aria-label="Direct link to 1. Enable Persistence" title="Direct link to 1. Enable Persistence" translate="no">​</a></h4>
+<p>When pushing layer:</p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Push Music Layer</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Persist Across Levels: (Success) TRUE</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-level-streaming">2. Check Level Streaming<a href="#2-check-level-streaming" class="hash-link" aria-label="Direct link to 2. Check Level Streaming" title="Direct link to 2. Check Level Streaming" translate="no">​</a></h4>
+<p>If using <strong>Level Streaming</strong>:</p>
+<ul>
+<li class="">Persistence should work automatically</li>
+<li class="">If not, check Audio settings (Master Volume reset?)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-re-push-after-load">3. Re-Push After Load<a href="#3-re-push-after-load" class="hash-link" aria-label="Direct link to 3. Re-Push After Load" title="Direct link to 3. Re-Push After Load" translate="no">​</a></h4>
+<p>Alternative if persistence doesn&#x27;t work:</p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Event BeginPlay (new level)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ↓</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Check: Is Layer Active(&quot;MenuMusic&quot;)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  If FALSE:</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    Push Music Layer(&quot;MenuMusic&quot;, ...)</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stingers-not-working">Stingers Not Working<a href="#stingers-not-working" class="hash-link" aria-label="Direct link to Stingers Not Working" title="Direct link to Stingers Not Working" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-6">Symptom<a href="#symptom-6" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Call <code>Play Stinger</code> but nothing happens.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-6">Solutions<a href="#solutions-6" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-stinger-asset">1. Check Stinger Asset<a href="#1-check-stinger-asset" class="hash-link" aria-label="Direct link to 1. Check Stinger Asset" title="Direct link to 1. Check Stinger Asset" translate="no">​</a></h4>
+<ul>
+<li class="">Verify sound asset is valid</li>
+<li class="">Double-click to preview</li>
+<li class="">Should be <strong>short</strong> (1-5 seconds typical)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-music-ducking">2. Check Music Ducking<a href="#2-check-music-ducking" class="hash-link" aria-label="Direct link to 2. Check Music Ducking" title="Direct link to 2. Check Music Ducking" translate="no">​</a></h4>
+<p>If <code>bDuckMusic: true</code> but music too loud:</p>
+<ul>
+<li class="">Increase <code>Duck Volume</code> (e.g., <code>0.2</code> = very quiet)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-stinger-volume">3. Check Stinger Volume<a href="#3-check-stinger-volume" class="hash-link" aria-label="Direct link to 3. Check Stinger Volume" title="Direct link to 3. Check Stinger Volume" translate="no">​</a></h4>
+<p>Stinger itself might be too quiet:</p>
+<ul>
+<li class="">Check asset volume</li>
+<li class="">Increase in Sound Cue/Wave settings</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-check-simultaneous-stingers">4. Check Simultaneous Stingers<a href="#4-check-simultaneous-stingers" class="hash-link" aria-label="Direct link to 4. Check Simultaneous Stingers" title="Direct link to 4. Check Simultaneous Stingers" translate="no">​</a></h4>
+<p>Only <strong>one stinger at a time</strong>:</p>
+<ul>
+<li class="">If already playing, new stinger ignored</li>
+<li class=""><strong>Future:</strong> Queue system</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-ducking-not-working">Audio Ducking Not Working<a href="#audio-ducking-not-working" class="hash-link" aria-label="Direct link to Audio Ducking Not Working" title="Direct link to Audio Ducking Not Working" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-7">Symptom<a href="#symptom-7" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Music doesn&#x27;t lower during important audio (dialogue, cutscenes, narration, etc.).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-7">Solutions<a href="#solutions-7" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-audio-component-valid">1. Check Audio Component Valid<a href="#1-check-audio-component-valid" class="hash-link" aria-label="Direct link to 1. Check Audio Component Valid" title="Direct link to 1. Check Audio Component Valid" translate="no">​</a></h4>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Spawn Sound 2D (your audio)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ↓ Audio Component pin</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Branch: Is Valid?</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  If Valid:</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    Enable Audio Ducking</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-duck-volume">2. Check Duck Volume<a href="#2-check-duck-volume" class="hash-link" aria-label="Direct link to 2. Check Duck Volume" title="Direct link to 2. Check Duck Volume" translate="no">​</a></h4>
+<ul>
+<li class=""><code>0.0</code> = complete silence</li>
+<li class=""><code>0.5</code> = half volume</li>
+<li class=""><code>1.0</code> = no ducking (no effect)</li>
+</ul>
+<p>TIP: Use <code>0.3</code> - <code>0.5</code> for best results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-audio-finishes">3. Check Audio Finishes<a href="#3-check-audio-finishes" class="hash-link" aria-label="Direct link to 3. Check Audio Finishes" title="Direct link to 3. Check Audio Finishes" translate="no">​</a></h4>
+<p>Ducking <strong>restores</strong> when audio finishes:</p>
+<ul>
+<li class="">If audio loops forever → Music stays ducked</li>
+<li class="">If audio component destroyed → No restore callback</li>
+</ul>
+<p><strong>Fix:</strong> Use non-looping audio or manually restore:</p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Set Master Music Volume</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Volume: 1.0</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-issues">Performance Issues<a href="#performance-issues" class="hash-link" aria-label="Direct link to Performance Issues" title="Direct link to Performance Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-8">Symptom<a href="#symptom-8" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>FPS drop or stuttering when music changes.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-8">Solutions<a href="#solutions-8" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-use-smaller-audio-files">1. Use Smaller Audio Files<a href="#1-use-smaller-audio-files" class="hash-link" aria-label="Direct link to 1. Use Smaller Audio Files" title="Direct link to 1. Use Smaller Audio Files" translate="no">​</a></h4>
+<ul>
+<li class="">Large uncompressed WAV: Slow loading</li>
+<li class=""><strong>Fix:</strong> Use compressed formats (OGG Vorbis)</li>
+<li class="">Or compress in Sound Wave settings</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-reduce-layer-count">2. Reduce Layer Count<a href="#2-reduce-layer-count" class="hash-link" aria-label="Direct link to 2. Reduce Layer Count" title="Direct link to 2. Reduce Layer Count" translate="no">​</a></h4>
+<ul>
+<li class="">10+ active layers: Check if all needed</li>
+<li class=""><strong>Fix:</strong> Consolidate layers or Pop unused</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-asset-streaming">3. Check Asset Streaming<a href="#3-check-asset-streaming" class="hash-link" aria-label="Direct link to 3. Check Asset Streaming" title="Direct link to 3. Check Asset Streaming" translate="no">​</a></h4>
+<p>Large music files:</p>
+<ul>
+<li class="">Enable <strong>Streaming</strong> in Sound Wave asset settings</li>
+<li class="">Reduces memory, improves load times (Performance tip)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-preload-critical-music">4. Preload Critical Music<a href="#4-preload-critical-music" class="hash-link" aria-label="Direct link to 4. Preload Critical Music" title="Direct link to 4. Preload Critical Music" translate="no">​</a></h4>
+<p>In Level Blueprint:</p>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Event BeginPlay</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ↓</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Load Asset (async)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Asset: Your Music Asset</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ↓</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">(Cache in variable for later use)</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="plugin-not-loading">Plugin Not Loading<a href="#plugin-not-loading" class="hash-link" aria-label="Direct link to Plugin Not Loading" title="Direct link to Plugin Not Loading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-9">Symptom<a href="#symptom-9" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Plugin missing in menus or nodes not available.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-9">Solutions<a href="#solutions-9" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-plugin-enabled-1">1. Check Plugin Enabled<a href="#1-check-plugin-enabled-1" class="hash-link" aria-label="Direct link to 1. Check Plugin Enabled" title="Direct link to 1. Check Plugin Enabled" translate="no">​</a></h4>
+<p><strong>Edit → Plugins → Search &quot;Elys Music Engine&quot;</strong></p>
+<p>If not found:</p>
+<ul>
+<li class="">Plugin not in <code>Plugins/</code> folder</li>
+<li class="">Check file structure: <code>Plugins/ElysMusicEngine/...</code></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-regenerate-project-files">2. Regenerate Project Files<a href="#2-regenerate-project-files" class="hash-link" aria-label="Direct link to 2. Regenerate Project Files" title="Direct link to 2. Regenerate Project Files" translate="no">​</a></h4>
+<p>Right-click <code>.uproject</code> → <strong>Generate Visual Studio project files</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-rebuild-project">3. Rebuild Project<a href="#3-rebuild-project" class="hash-link" aria-label="Direct link to 3. Rebuild Project" title="Direct link to 3. Rebuild Project" translate="no">​</a></h4>
+<ul>
+<li class="">Close editor</li>
+<li class="">Build in Visual Studio (Development Editor configuration)</li>
+<li class="">Reopen editor</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-check-engine-version">4. Check Engine Version<a href="#4-check-engine-version" class="hash-link" aria-label="Direct link to 4. Check Engine Version" title="Direct link to 4. Check Engine Version" translate="no">​</a></h4>
+<p>Plugin requires <strong>Unreal Engine 5.0+</strong>:</p>
+<ul>
+<li class="">Check <code>.uplugin</code> file: <code>&quot;EngineVersion&quot;: &quot;5.0.0&quot;</code></li>
+<li class="">If older engine → Update or modify plugin for UE4</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-crackling--distortion">Audio Crackling / Distortion<a href="#audio-crackling--distortion" class="hash-link" aria-label="Direct link to Audio Crackling / Distortion" title="Direct link to Audio Crackling / Distortion" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-10">Symptom<a href="#symptom-10" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Music sounds distorted or crackly.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-10">Solutions<a href="#solutions-10" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-audio-device-settings">1. Check Audio Device Settings<a href="#1-check-audio-device-settings" class="hash-link" aria-label="Direct link to 1. Check Audio Device Settings" title="Direct link to 1. Check Audio Device Settings" translate="no">​</a></h4>
+<p><strong>Edit → Project Settings → Platforms → Windows → Audio</strong></p>
+<ul>
+<li class="">Buffer Size: Increase if too low</li>
+<li class="">Sample Rate: Match your music files</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-cpu-load">2. Check CPU Load<a href="#2-check-cpu-load" class="hash-link" aria-label="Direct link to 2. Check CPU Load" title="Direct link to 2. Check CPU Load" translate="no">​</a></h4>
+<ul>
+<li class="">Too many layers playing?</li>
+<li class="">Other systems causing hitches?</li>
+</ul>
+<p><strong>Fix:</strong> Reduce layer count or optimize other systems.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-music-asset-quality">3. Check Music Asset Quality<a href="#3-check-music-asset-quality" class="hash-link" aria-label="Direct link to 3. Check Music Asset Quality" title="Direct link to 3. Check Music Asset Quality" translate="no">​</a></h4>
+<ul>
+<li class="">Bitrate too low?</li>
+<li class="">Compression artifacts?</li>
+</ul>
+<p><strong>Fix:</strong> Use higher quality source or adjust compression.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="preset-assets-not-working">Preset Assets Not Working<a href="#preset-assets-not-working" class="hash-link" aria-label="Direct link to Preset Assets Not Working" title="Direct link to Preset Assets Not Working" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-11">Symptom<a href="#symptom-11" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p><code>Apply music preset</code> doesn&#x27;t play music.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-11">Solutions<a href="#solutions-11" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-preset-asset-valid">1. Check Preset Asset Valid<a href="#1-check-preset-asset-valid" class="hash-link" aria-label="Direct link to 1. Check Preset Asset Valid" title="Direct link to 1. Check Preset Asset Valid" translate="no">​</a></h4>
+<p>Open <code>ERP_MusicLayerPreset</code> asset:</p>
+<ul>
+<li class="">At least one layer defined?</li>
+<li class="">Music assets assigned?</li>
+<li class="">Layer names set?</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-clear-existing">2. Check Clear Existing<a href="#2-check-clear-existing" class="hash-link" aria-label="Direct link to 2. Check Clear Existing" title="Direct link to 2. Check Clear Existing" translate="no">​</a></h4>
+<div class="language-blueprint codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blueprint codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Apply music preset</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Clear Existing: TRUE   ← Stops all current music</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  - Clear Existing: FALSE  ← Adds on top of current</span><br></span></code></pre></div></div>
+<p>Choose based on your needs.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-check-layer-priorities">3. Check Layer Priorities<a href="#3-check-layer-priorities" class="hash-link" aria-label="Direct link to 3. Check Layer Priorities" title="Direct link to 3. Check Layer Priorities" translate="no">​</a></h4>
+<p>Preset layers still subject to priority rules:</p>
+<ul>
+<li class="">Higher priority Preset layers play first</li>
+<li class="">Lower priority may be overridden by active layers</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="blueprint-node-missing">Blueprint Node Missing<a href="#blueprint-node-missing" class="hash-link" aria-label="Direct link to Blueprint Node Missing" title="Direct link to Blueprint Node Missing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="symptom-12">Symptom<a href="#symptom-12" class="hash-link" aria-label="Direct link to Symptom" title="Direct link to Symptom" translate="no">​</a></h3>
+<p>Can&#x27;t find &quot;Push Music Layer&quot; or other nodes.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions-12">Solutions<a href="#solutions-12" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-context-sensitivity">1. Check Context-Sensitivity<a href="#1-check-context-sensitivity" class="hash-link" aria-label="Direct link to 1. Check Context-Sensitivity" title="Direct link to 1. Check Context-Sensitivity" translate="no">​</a></h4>
+<p>Blueprint search is context-aware:</p>
+<ul>
+<li class=""><strong>Disable</strong> &quot;Context Sensitive&quot; checkbox in search</li>
+<li class="">Type: <code>Push Music Layer</code></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-check-category">2. Check Category<a href="#2-check-category" class="hash-link" aria-label="Direct link to 2. Check Category" title="Direct link to 2. Check Category" translate="no">​</a></h4>
+<p>All nodes in category: <strong>&quot;ERP Music&quot;</strong></p>
+<p>Search: <code>category:ERP</code> or <code>category:Music</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-refresh-nodes">3. Refresh Nodes<a href="#3-refresh-nodes" class="hash-link" aria-label="Direct link to 3. Refresh Nodes" title="Direct link to 3. Refresh Nodes" translate="no">​</a></h4>
+<ul>
+<li class="">Save and close Blueprint</li>
+<li class="">Reopen</li>
+<li class="">Try searching again</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-check-plugin-compiled">4. Check Plugin Compiled<a href="#4-check-plugin-compiled" class="hash-link" aria-label="Direct link to 4. Check Plugin Compiled" title="Direct link to 4. Check Plugin Compiled" translate="no">​</a></h4>
+<p>If nodes missing after adding plugin:</p>
+<ul>
+<li class="">Close editor</li>
+<li class="">Rebuild project</li>
+<li class="">Reopen editor</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-mistakes">Common Mistakes<a href="#common-mistakes" class="hash-link" aria-label="Direct link to Common Mistakes" title="Direct link to Common Mistakes" translate="no">​</a></h2>
+<table><thead><tr><th>Mistake</th><th>Problem</th><th>Solution</th></tr></thead><tbody><tr><td>Layer name typo</td><td>Pop doesn&#x27;t work</td><td>Use exact same name (case-sensitive)</td></tr><tr><td>Priority too low</td><td>Combat doesn&#x27;t override</td><td>Set combat priority higher (10 vs 0)</td></tr><tr><td>Replace vs Additive</td><td>Music behavior wrong</td><td>Use Replace for main, Additive for layers</td></tr><tr><td>Forget to Pop</td><td>Music plays forever</td><td>Always Pop when done</td></tr><tr><td>No Persist flag</td><td>Music stops on level load</td><td>Enable &quot;Persist Across Levels&quot;</td></tr><tr><td>Volume collision off</td><td>Volume doesn&#x27;t trigger</td><td>Enable collision + overlap events</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="still-need-help">Still Need Help?<a href="#still-need-help" class="hash-link" aria-label="Direct link to Still Need Help?" title="Direct link to Still Need Help?" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="check-other-documentation">Check Other Documentation<a href="#check-other-documentation" class="hash-link" aria-label="Direct link to Check Other Documentation" title="Direct link to Check Other Documentation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong><a class="" href="/ElysMusicEngine/setup-guide">Getting Started</a></strong> — Step-by-step setup</li>
+<li class=""><strong><a class="" href="/ElysMusicEngine/user-guide">User Guide</a></strong> — Layers, volumes, configs</li>
+<li class=""><strong><a class="" href="/ElysMusicEngine/advanced">Advanced Features</a></strong> — MetaSound, Quartz, Tags</li>
+<li class=""><strong><a class="" href="/ElysMusicEngine/API-Reference">API Reference</a></strong> — All functions</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="debug-checklist">Debug Checklist<a href="#debug-checklist" class="hash-link" aria-label="Direct link to Debug Checklist" title="Direct link to Debug Checklist" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Console command: <code>music.debug</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Output Log for errors</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Plugin enabled and compiled</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Music assets valid and play directly</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Layer names match exactly</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Priorities make sense</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fade times reasonable</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Persistence flag set if needed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="report-a-bug">Report a Bug<a href="#report-a-bug" class="hash-link" aria-label="Direct link to Report a Bug" title="Direct link to Report a Bug" translate="no">​</a></h3>
+<p>If you found a real bug:</p>
+<ol>
+<li class="">Check FAB marketplace reviews/Q&amp;A first</li>
+<li class="">Provide:<!-- -->
+<ul>
+<li class="">Unreal version</li>
+<li class="">Plugin version</li>
+<li class="">Minimal repro steps</li>
+<li class="">Output log excerpt</li>
+</ul>
+</li>
+<li class="">Contact support via FAB or email</li>
+</ol>
+<hr>
+<p><strong>Most issues are simple configuration problems. Use <code>music.debug</code> first!</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/RogueParadigm/ElysMusicEngine/tree/main/Documentation/../Documentation/Troubleshooting.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ElysMusicEngine/API-Reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">API Reference</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#general-debugging" class="table-of-contents__link toc-highlight">General Debugging</a><ul><li><a href="#step-1-use-console-commands" class="table-of-contents__link toc-highlight">Step 1: Use Console Commands</a></li><li><a href="#step-2-check-output-log" class="table-of-contents__link toc-highlight">Step 2: Check Output Log</a></li></ul></li><li><a href="#music-not-playing" class="table-of-contents__link toc-highlight">Music Not Playing</a><ul><li><a href="#symptom" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#music-stops-abruptly" class="table-of-contents__link toc-highlight">Music Stops Abruptly</a><ul><li><a href="#symptom-1" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-1" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#wrong-music-playing" class="table-of-contents__link toc-highlight">Wrong Music Playing</a><ul><li><a href="#symptom-2" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-2" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#music-wont-stop" class="table-of-contents__link toc-highlight">Music Won&#39;t Stop</a><ul><li><a href="#symptom-3" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-3" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#music-volumes-not-triggering" class="table-of-contents__link toc-highlight">Music Volumes Not Triggering</a><ul><li><a href="#symptom-4" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-4" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#music-stops-between-levels" class="table-of-contents__link toc-highlight">Music Stops Between Levels</a><ul><li><a href="#symptom-5" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-5" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#stingers-not-working" class="table-of-contents__link toc-highlight">Stingers Not Working</a><ul><li><a href="#symptom-6" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-6" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#audio-ducking-not-working" class="table-of-contents__link toc-highlight">Audio Ducking Not Working</a><ul><li><a href="#symptom-7" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-7" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#performance-issues" class="table-of-contents__link toc-highlight">Performance Issues</a><ul><li><a href="#symptom-8" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-8" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#plugin-not-loading" class="table-of-contents__link toc-highlight">Plugin Not Loading</a><ul><li><a href="#symptom-9" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-9" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#audio-crackling--distortion" class="table-of-contents__link toc-highlight">Audio Crackling / Distortion</a><ul><li><a href="#symptom-10" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-10" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#preset-assets-not-working" class="table-of-contents__link toc-highlight">Preset Assets Not Working</a><ul><li><a href="#symptom-11" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-11" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#blueprint-node-missing" class="table-of-contents__link toc-highlight">Blueprint Node Missing</a><ul><li><a href="#symptom-12" class="table-of-contents__link toc-highlight">Symptom</a></li><li><a href="#solutions-12" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></li><li><a href="#common-mistakes" class="table-of-contents__link toc-highlight">Common Mistakes</a></li><li><a href="#still-need-help" class="table-of-contents__link toc-highlight">Still Need Help?</a><ul><li><a href="#check-other-documentation" class="table-of-contents__link toc-highlight">Check Other Documentation</a></li><li><a href="#debug-checklist" class="table-of-contents__link toc-highlight">Debug Checklist</a></li><li><a href="#report-a-bug" class="table-of-contents__link toc-highlight">Report a Bug</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ElysMusicEngine/setup-guide">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/ElysMusicEngine/user-guide">User Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/ElysMusicEngine/API-Reference">API Reference</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Other Plugins</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://rogueparadigm.com/ElysGenAIPlugin/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Elys GenAI Plugin<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://rogueparadigm.com/ElysPerceptionPlugin/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Elys Perception Plugin<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/jm3YjRRT" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/RogueParadigm/ElysMusicEngine" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/playlist?list=PL_z_boaokQaMepqujehNt2K21F1biMJS9" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Support</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/c/ElysGameCreation" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://rogueparadigm.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Rogue Paradigm<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Rogue Paradigm by Elys. All Rights Reserved.</div></div></div></footer></div>
+</body>
+</html>
