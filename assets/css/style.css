@@ -84,6 +84,19 @@ body {
     color: var(--color-text);
 }
 
+.nav-brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+.nav-brand-link:hover {
+    opacity: 0.8;
+}
+
 .nav-logo {
     height: 32px;
     width: auto;
