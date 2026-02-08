@@ -288,6 +288,17 @@ body {
 .btn-disabled {
     opacity: 0.4;
     cursor: not-allowed;
+}
+
+.btn-marketplace {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-marketplace:hover {
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
+}
     pointer-events: none;
 }
 
