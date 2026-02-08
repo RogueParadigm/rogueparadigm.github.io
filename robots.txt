@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+
+# Block legal notices page from all crawlers
+User-agent: *
+Disallow: /legal-notices.html
+
+# Block AI crawlers and scrapers site-wide on legal page
+User-agent: GPTBot
+Disallow: /legal-notices.html
+
+User-agent: ChatGPT-User
+Disallow: /legal-notices.html
+
+User-agent: Google-Extended
+Disallow: /legal-notices.html
+
+User-agent: CCBot
+Disallow: /legal-notices.html
+
+User-agent: anthropic-ai
+Disallow: /legal-notices.html
+
+User-agent: Claude-Web
+Disallow: /legal-notices.html
+
+User-agent: Bytespider
+Disallow: /legal-notices.html
+
+User-agent: FacebookBot
+Disallow: /legal-notices.html
+
+User-agent: Applebot-Extended
+Disallow: /legal-notices.html
+
+User-agent: PerplexityBot
+Disallow: /legal-notices.html
+
+User-agent: Amazonbot
+Disallow: /legal-notices.html
+
+User-agent: Omgilibot
+Disallow: /legal-notices.html
+
+User-agent: Diffbot
+Disallow: /legal-notices.html
+
+User-agent: Cohere-ai
+Disallow: /legal-notices.html
+
+Sitemap: https://rogueparadigm.com/sitemap.xml
