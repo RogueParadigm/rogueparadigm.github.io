@@ -7,7 +7,7 @@
     <title>Rogue Paradigm - Unreal Engine Plugins</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/plugins-grid.css">
+    <link rel="stylesheet" href="assets/css/plugins-list.css">
 </head>
 <body>
     <nav class="top-bar">
@@ -69,99 +69,162 @@
             
             <div class="plugins-list">
                 <!-- Music Engine Plugin -->
-                <article class="plugin-card" id="plugin-music">
-                    <div class="plugin-icon" style="padding: 8px; background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 68, 68, 0.1) 100%);">
-                        <img src="assets/images/ElysMusicLogo.png" alt="Elys Music Engine" style="width: 100%; height: 100%; object-fit: contain; border-radius: 4px;">
-                    </div>
-                    <div class="plugin-header-simple">
-                        <h3 class="plugin-title">Elys Music Engine</h3>
-                        <div class="plugin-meta">
-                            <span class="plugin-category">🎵 Audio</span>
-                            <span class="plugin-status-badge badge-released">
-                                <span class="status-dot"></span>
-                                On Marketplace
-                            </span>
+                <article class="plugin-item" id="plugin-music">
+                    <div class="plugin-header">
+                        <div class="plugin-icon-compact" style="padding: 8px;">
+                            <img src="assets/images/ElysMusicLogo.png" alt="Elys Music Engine" style="width: 100%; height: 100%; object-fit: contain; border-radius: 4px;">
                         </div>
+                        <div class="plugin-info-compact">
+                            <div class="plugin-header-top">
+                                <h3 class="plugin-title-compact">Elys Music Engine</h3>
+                                <span class="plugin-category">🎵 Audio</span>
+                                <span class="plugin-status-badge badge-released">
+                                    <span class="status-dot"></span>
+                                    Available on Marketplace
+                                </span>
+                            </div>
+                            <p class="plugin-description-compact">
+                                Advanced layer-based music system with Quartz beat synchronization, GameplayTags integration, 
+                                MetaSound control, and built-in multiplayer replication. Perfect for dynamic, adaptive game music.
+                            </p>
+                        </div>
+                        <div class="plugin-expand-icon">▼</div>
                     </div>
-                    <p class="plugin-description">
-                        Advanced layer-based music system with Quartz beat synchronization, GameplayTags integration,
-                        MetaSound control, and built-in multiplayer replication. Perfect for dynamic, adaptive game music.
-                    </p>
-                    <div class="plugin-actions">
-                        <a href="/ElysMusicEngine/" class="btn btn-primary">📚 Documentation</a>
-                        <a href="https://www.fab.com/listings/ab57dd0c-bf0e-442a-8b44-591c88bba0c1" target="_blank" rel="noopener noreferrer" class="btn btn-marketplace">🛒 Buy on FAB</a>
+                    <div class="plugin-details">
+                        <div class="plugin-details-content">
+                            <div class="plugin-features-grid">
+                                <div class="plugin-feature-item">🎯 Quartz beat/bar synchronization</div>
+                                <div class="plugin-feature-item">🏷️ GameplayTag music triggers</div>
+                                <div class="plugin-feature-item">🎛️ MetaSound parameter control</div>
+                                <div class="plugin-feature-item">🎚️ Per-layer volume mixing</div>
+                                <div class="plugin-feature-item">🔄 Dynamic transitions & stingers</div>
+                                <div class="plugin-feature-item">🌐 Multiplayer replication & sync</div>
+                                <div class="plugin-feature-item">🌍 Cross-level persistence</div>
+                            </div>
+                            <div class="plugin-actions">
+                                <a href="/ElysMusicEngine/" class="btn btn-primary">📚 Documentation</a>
+                                <a href="https://www.fab.com/listings/ab57dd0c-bf0e-442a-8b44-591c88bba0c1" target="_blank" rel="noopener noreferrer" class="btn btn-marketplace">🛒 Buy on Marketplace</a>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
                 <!-- Perception Plugin -->
-                <article class="plugin-card" id="plugin-perception">
-                    <div class="plugin-icon">🎯</div>
-                    <div class="plugin-header-simple">
-                        <h3 class="plugin-title">Elys Perception Plugin</h3>
-                        <div class="plugin-meta">
-                            <span class="plugin-category">⚡ Gameplay</span>
-                            <span class="plugin-status-badge badge-wip">
-                                <span class="status-dot"></span>
-                                WIP
-                            </span>
+                <article class="plugin-item" id="plugin-perception">
+                    <div class="plugin-header">
+                        <div class="plugin-icon-compact">🎯</div>
+                        <div class="plugin-info-compact">
+                            <div class="plugin-header-top">
+                                <h3 class="plugin-title-compact">Elys Perception Plugin</h3>
+                                <span class="plugin-category">⚡ Gameplay</span>
+                                <span class="plugin-status-badge badge-wip">
+                                    <span class="status-dot"></span>
+                                    WIP
+                                </span>
+                            </div>
+                            <p class="plugin-description-compact">
+                                An extensible perception system for Unreal Engine focused on targeting and interaction. 
+                                Built around a multi-channel, event-driven evaluation architecture.
+                            </p>
                         </div>
+                        <div class="plugin-expand-icon">▼</div>
                     </div>
-                    <p class="plugin-description">
-                        Multi-channel perception system for targeting and interaction. Extensible, event-driven architecture
-                        with customizable samplers, filters, and scorers. Full Blueprint & C++ support.
-                    </p>
-                    <div class="plugin-actions">
-                        <a href="/ElysPerceptionPlugin/" class="btn btn-primary">📚 Documentation</a>
-                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    <div class="plugin-details">
+                        <div class="plugin-details-content">
+                            <div class="plugin-features-grid">
+                                <div class="plugin-feature-item">Multi-channel perception pipeline</div>
+                                <div class="plugin-feature-item">Customizable samplers, filters, scorers</div>
+                                <div class="plugin-feature-item">Interaction system with rules</div>
+                                <div class="plugin-feature-item">Blueprint & C++ support</div>
+                                <div class="plugin-feature-item">Event-driven architecture</div>
+                                <div class="plugin-feature-item">Modular & extensible</div>
+                            </div>
+                            <div class="plugin-actions">
+                                <a href="/ElysPerceptionPlugin/" class="btn btn-primary">📚 Documentation</a>
+                                <button class="btn btn-outline btn-disabled" disabled>🛒 Buy Plugin (Coming Soon)</button>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
                 <!-- GenAI Plugin -->
-                <article class="plugin-card" id="plugin-genai">
-                    <div class="plugin-icon">🧠</div>
-                    <div class="plugin-header-simple">
-                        <h3 class="plugin-title">Elys GenAI Plugin</h3>
-                        <div class="plugin-meta">
-                            <span class="plugin-category">🤖 AI</span>
-                            <span class="plugin-status-badge badge-wip">
-                                <span class="status-dot"></span>
-                                WIP
-                            </span>
+                <article class="plugin-item" id="plugin-genai">
+                    <div class="plugin-header">
+                        <div class="plugin-icon-compact">🧠</div>
+                        <div class="plugin-info-compact">
+                            <div class="plugin-header-top">
+                                <h3 class="plugin-title-compact">Elys GenAI Plugin</h3>
+                                <span class="plugin-category">🤖 AI</span>
+                                <span class="plugin-status-badge badge-wip">
+                                    <span class="status-dot"></span>
+                                    WIP
+                                </span>
+                            </div>
+                            <p class="plugin-description-compact">
+                                Local, offline, real-time GenAI features for Unreal Engine 5.
+                                Speech-to-text with Whisper, LLM inference with llama.cpp.
+                            </p>
                         </div>
+                        <div class="plugin-expand-icon">▼</div>
                     </div>
-                    <p class="plugin-description">
-                        Local, offline GenAI for Unreal Engine. Speech-to-text with Whisper.cpp, LLM inference with llama.cpp.
-                        100% offline - no cloud required. Multiplayer-safe design with streaming responses.
-                    </p>
-                    <div class="plugin-actions">
-                        <a href="/ElysGenAIPlugin/" class="btn btn-primary">📚 Documentation</a>
-                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    <div class="plugin-details">
+                        <div class="plugin-details-content">
+                            <div class="plugin-features-grid">
+                                <div class="plugin-feature-item">100% offline - no cloud required</div>
+                                <div class="plugin-feature-item">Speech-to-text (Whisper.cpp)</div>
+                                <div class="plugin-feature-item">LLM dialogue (Phi-3/llama.cpp)</div>
+                                <div class="plugin-feature-item">Multiplayer-safe design</div>
+                                <div class="plugin-feature-item">Voice activity detection</div>
+                                <div class="plugin-feature-item">Streaming responses</div>
+                            </div>
+                            <div class="plugin-actions">
+                                <a href="/ElysGenAIPlugin/" class="btn btn-primary">📚 Documentation</a>
+                                <button class="btn btn-outline btn-disabled" disabled>🛒 Buy Plugin (Coming Soon)</button>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
                 <!-- Asset Tools Plugin -->
-                <article class="plugin-card" id="plugin-assettools">
-                    <div class="plugin-icon">🛠️</div>
-                    <div class="plugin-header-simple">
-                        <h3 class="plugin-title">Elys Asset Tools</h3>
-                        <div class="plugin-meta">
-                            <span class="plugin-category">🔧 Tools</span>
-                            <span class="plugin-status-badge badge-wip">
-                                <span class="status-dot"></span>
-                                WIP
-                            </span>
+                <article class="plugin-item" id="plugin-assettools">
+                    <div class="plugin-header">
+                        <div class="plugin-icon-compact">🛠️</div>
+                        <div class="plugin-info-compact">
+                            <div class="plugin-header-top">
+                                <h3 class="plugin-title-compact">Elys Asset Tools</h3>
+                                <span class="plugin-category">🔧 Tools</span>
+                                <span class="plugin-status-badge badge-wip">
+                                    <span class="status-dot"></span>
+                                    WIP
+                                </span>
+                            </div>
+                            <p class="plugin-description-compact">
+                                Complete asset management toolkit: analyze dependencies, move/delete assets safely,
+                                clean redirectors, and manage folder structures in your Unreal Engine project.
+                            </p>
                         </div>
+                        <div class="plugin-expand-icon">▼</div>
                     </div>
-                    <p class="plugin-description">
-                        Complete asset management toolkit for Unreal Engine. Analyze dependencies, move/delete assets safely,
-                        clean redirectors, manage folders. Features crash recovery and batch operations.
-                    </p>
-                    <div class="plugin-actions">
-                        <a href="/ElysAssetTools/" class="btn btn-primary">📚 Documentation</a>
-                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    <div class="plugin-details">
+                        <div class="plugin-details-content">
+                            <div class="plugin-features-grid">
+                                <div class="plugin-feature-item">Bidirectional dependency scanning</div>
+                                <div class="plugin-feature-item">Safe move with crash recovery</div>
+                                <div class="plugin-feature-item">Dependency-checked deletion</div>
+                                <div class="plugin-feature-item">Empty folder cleanup</div>
+                                <div class="plugin-feature-item">Batch operations</div>
+                                <div class="plugin-feature-item">Blueprint-callable API</div>
+                            </div>
+                            <div class="plugin-actions">
+                                <a href="/ElysAssetTools/" class="btn btn-primary">📚 Documentation</a>
+                                <button class="btn btn-outline btn-disabled" disabled>🛒 Buy Plugin (Coming Soon)</button>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
+        </div>
+    </section>
 
     <section class="features-section">
         <div class="container">
@@ -254,6 +317,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
-    
+    <script src="assets/js/plugins-list.js"></script>
 </body>
 </html>

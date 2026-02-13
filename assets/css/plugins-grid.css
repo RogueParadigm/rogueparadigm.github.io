@@ -1,0 +1,195 @@
+/* ===================================
+   Plugin Grid - Simple Cards Layout
+   =================================== */
+
+/* Add spacing before plugins section */
+.plugins-section {
+    padding-top: 4rem;
+}
+
+.plugins-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Plugin Card */
+.plugin-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.plugin-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+/* Icon */
+.plugin-icon {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(176, 39, 48, 0.1) 0%, rgba(192, 19, 31, 0.1) 100%);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(176, 39, 48, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+/* Header */
+.plugin-header-simple {
+    margin-bottom: 1rem;
+}
+
+.plugin-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 0.5rem 0;
+}
+
+.plugin-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.plugin-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    background: rgba(176, 39, 48, 0.15);
+    border: 1px solid rgba(176, 39, 48, 0.3);
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Badge Styles */
+.plugin-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-wip {
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
+}
+
+.badge-released {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #34d399;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Description */
+.plugin-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+/* Actions */
+.plugin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.plugin-actions .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Section Header */
+.plugins-section .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plugins-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-top: 1rem;
+}
+
+.plugins-count-number {
+    font-weight: 700;
+    color: var(--color-primary-light);
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .plugins-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .plugin-card {
+        padding: 1.5rem;
+    }
+
+    .plugin-icon {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    .plugin-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .plugins-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
