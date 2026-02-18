@@ -109,13 +109,13 @@
                     </div>
                 </article>
 
-                <!-- Perception Plugin -->
-                <article class="plugin-item" id="plugin-perception">
+                <!-- Awareness Plugin -->
+                <article class="plugin-item" id="plugin-awareness">
                     <div class="plugin-header">
                         <div class="plugin-icon-compact">🎯</div>
                         <div class="plugin-info-compact">
                             <div class="plugin-header-top">
-                                <h3 class="plugin-title-compact">Elys Perception Plugin</h3>
+                                <h3 class="plugin-title-compact">Elys Awareness</h3>
                                 <span class="plugin-category">⚡ Gameplay</span>
                                 <span class="plugin-status-badge badge-wip">
                                     <span class="status-dot"></span>
@@ -140,7 +140,7 @@
                                 <div class="plugin-feature-item">Modular & extensible</div>
                             </div>
                             <div class="plugin-actions">
-                                <a href="/ElysPerceptionPlugin/" class="btn btn-primary">📚 Documentation</a>
+                                <a href="/ElysAwareness/" class="btn btn-primary">📚 Documentation</a>
                                 <button class="btn btn-outline btn-disabled" disabled>🛒 Buy Plugin (Coming Soon)</button>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                     <div class="footer-column">
                         <h4>Plugins</h4>
                         <a href="/ElysMusicEngine/">Music Engine</a>
-                        <a href="/ElysPerceptionPlugin/">Perception Plugin</a>
+                        <a href="/ElysAwareness/">Awareness</a>
                         <a href="/ElysGenAIPlugin/">GenAI Plugin</a>
                         <a href="/ElysAssetTools/">Asset Tools</a>
                     </div>
