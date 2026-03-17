@@ -62,7 +62,7 @@
                 <h2 class="section-title">Unreal Engine Plugins</h2>
                 <p class="section-subtitle">Modular, extensible, and production-ready</p>
                 <div class="plugins-count">
-                    <span class="plugins-count-number">5</span>
+                    <span class="plugins-count-number">8</span>
                     <span>plugins available</span>
                 </div>
             </div>
@@ -188,6 +188,78 @@
                     </div>
                 </article>
 
+                <!-- Identity Plugin -->
+                <article class="plugin-card" id="plugin-identity">
+                    <div class="plugin-icon">🔐</div>
+                    <div class="plugin-header-simple">
+                        <h3 class="plugin-title">Elys Identity</h3>
+                        <div class="plugin-meta">
+                            <span class="plugin-category">🛡️ Multiplayer</span>
+                            <span class="plugin-status-badge badge-wip">
+                                <span class="status-dot"></span>
+                                WIP
+                            </span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">
+                        Persistent player identity system with PIN-based authentication, HMAC-SHA256 session tokens,
+                        external platform linking (Steam, Epic, Discord), and dual persistence backends (JSON/SQLite).
+                        No external backend required.
+                    </p>
+                    <div class="plugin-actions">
+                        <a href="/ElysIdentity/" class="btn btn-primary">📚 Documentation</a>
+                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    </div>
+                </article>
+
+                <!-- Chat Plugin -->
+                <article class="plugin-card" id="plugin-chat">
+                    <div class="plugin-icon">💬</div>
+                    <div class="plugin-header-simple">
+                        <h3 class="plugin-title">Elys Chat</h3>
+                        <div class="plugin-meta">
+                            <span class="plugin-category">🎭 Roleplay</span>
+                            <span class="plugin-status-badge badge-wip">
+                                <span class="status-dot"></span>
+                                WIP
+                            </span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">
+                        Full-featured roleplay chat system with multi-channel communication, fictional languages
+                        with proficiency-based corruption, slash commands, 3D speech bubbles, inline emotes,
+                        and social graph management (friends, guilds, groups).
+                    </p>
+                    <div class="plugin-actions">
+                        <a href="/ElysChat/" class="btn btn-primary">📚 Documentation</a>
+                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    </div>
+                </article>
+
+                <!-- QuestFlow Plugin -->
+                <article class="plugin-card" id="plugin-questflow">
+                    <div class="plugin-icon">📜</div>
+                    <div class="plugin-header-simple">
+                        <h3 class="plugin-title">Elys QuestFlow</h3>
+                        <div class="plugin-meta">
+                            <span class="plugin-category">⚡ Gameplay</span>
+                            <span class="plugin-status-badge badge-wip">
+                                <span class="status-dot"></span>
+                                WIP
+                            </span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">
+                        Data-driven quest system with GameplayTag event bus, abstract quest types,
+                        toast notifications, quest tracker HUD, and full quest journal UI.
+                        Three independently usable layers: Event Bus, Quest Core, and UI.
+                    </p>
+                    <div class="plugin-actions">
+                        <a href="/ElysQuestFlow/" class="btn btn-primary">📚 Documentation</a>
+                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    </div>
+                </article>
+
             </div>
 
     <section class="features-section">
@@ -258,10 +330,13 @@
                     <div class="footer-column">
                         <h4>Plugins</h4>
                         <a href="/ElysMusicEngine/">Music Engine</a>
+                        <a href="/ElysLicenseManager/">License Manager</a>
                         <a href="/ElysAwareness/">Awareness</a>
+                        <a href="/ElysIdentity/">Identity</a>
+                        <a href="/ElysChat/">Chat</a>
+                        <a href="/ElysQuestFlow/">QuestFlow</a>
                         <a href="/ElysImpact/">Impact</a>
                         <a href="/ElysGenAIPlugin/">GenAI Plugin</a>
-                        <a href="/ElysLicenseManager/">License Manager</a>
                     </div>
                     <div class="footer-column">
                         <h4>Community</h4>
