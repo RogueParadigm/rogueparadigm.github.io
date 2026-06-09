@@ -141,13 +141,13 @@
                     </div>
                 </article>
 
-                <!-- GenAI Plugin -->
-                <article class="plugin-card" id="plugin-genai">
-                    <div class="plugin-icon">🧠</div>
+                <!-- Elys Listen (STT) -->
+                <article class="plugin-card" id="plugin-listen">
+                    <div class="plugin-icon">🎙️</div>
                     <div class="plugin-header-simple">
-                        <h3 class="plugin-title">Elys GenAI Plugin</h3>
+                        <h3 class="plugin-title">Elys Listen</h3>
                         <div class="plugin-meta">
-                            <span class="plugin-category">🤖 AI</span>
+                            <span class="plugin-category">🤖 AI · Speech-to-Text</span>
                             <span class="plugin-status-badge badge-wip">
                                 <span class="status-dot"></span>
                                 WIP
@@ -155,11 +155,57 @@
                         </div>
                     </div>
                     <p class="plugin-description">
-                        Local, offline GenAI for Unreal Engine. Speech-to-text with Whisper.cpp, LLM inference with llama.cpp.
-                        100% offline - no cloud required. Multiplayer-safe design with streaming responses.
+                        Offline speech-to-text with Whisper.cpp. 100% local, multilingual, multiplayer-safe.
+                        Emits text that chains straight into Elys Mind and Elys Speak. Standalone — no dependencies.
                     </p>
                     <div class="plugin-actions">
-                        <a href="/ElysGenAIPlugin/" class="btn btn-primary">📚 Documentation</a>
+                        <a href="/ElysListen/" class="btn btn-primary">📚 Documentation</a>
+                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    </div>
+                </article>
+
+                <!-- Elys Mind (LLM) -->
+                <article class="plugin-card" id="plugin-mind">
+                    <div class="plugin-icon">🧠</div>
+                    <div class="plugin-header-simple">
+                        <h3 class="plugin-title">Elys Mind</h3>
+                        <div class="plugin-meta">
+                            <span class="plugin-category">🤖 AI · Local LLM</span>
+                            <span class="plugin-status-badge badge-wip">
+                                <span class="status-dot"></span>
+                                WIP
+                            </span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">
+                        Local LLM inference with llama.cpp. Run any GGUF model offline for NPC dialogue and assistants.
+                        Drops between Elys Listen and Elys Speak for a full offline voice assistant. Standalone.
+                    </p>
+                    <div class="plugin-actions">
+                        <a href="/ElysMind/" class="btn btn-primary">📚 Documentation</a>
+                        <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
+                    </div>
+                </article>
+
+                <!-- Elys Speak (TTS) -->
+                <article class="plugin-card" id="plugin-speak">
+                    <div class="plugin-icon">🗣️</div>
+                    <div class="plugin-header-simple">
+                        <h3 class="plugin-title">Elys Speak</h3>
+                        <div class="plugin-meta">
+                            <span class="plugin-category">🤖 AI · Text-to-Speech</span>
+                            <span class="plugin-status-badge badge-wip">
+                                <span class="status-dot"></span>
+                                Experimental
+                            </span>
+                        </div>
+                    </div>
+                    <p class="plugin-description">
+                        Offline text-to-speech with Sherpa-ONNX (Kokoro / Piper / Matcha), with phoneme timing for lipsync.
+                        Work in progress. Accepts text from Elys Listen or Elys Mind for end-to-end offline voice.
+                    </p>
+                    <div class="plugin-actions">
+                        <a href="/ElysSpeak/" class="btn btn-primary">📚 Documentation</a>
                         <button class="btn btn-outline btn-disabled" disabled>🛒 Coming Soon</button>
                     </div>
                 </article>
@@ -336,7 +382,9 @@
                         <a href="/ElysChat/">Chat</a>
                         <a href="/ElysQuestFlow/">QuestFlow</a>
                         <a href="/ElysImpact/">Impact</a>
-                        <a href="/ElysGenAIPlugin/">GenAI Plugin</a>
+                        <a href="/ElysListen/">Listen (STT)</a>
+                        <a href="/ElysMind/">Mind (LLM)</a>
+                        <a href="/ElysSpeak/">Speak (TTS)</a>
                     </div>
                     <div class="footer-column">
                         <h4>Community</h4>
