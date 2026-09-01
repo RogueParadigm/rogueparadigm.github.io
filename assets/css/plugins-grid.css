@@ -33,6 +33,15 @@
     transform: translateY(-4px);
 }
 
+.plugin-featured-action {
+    margin-bottom: 1.5rem;
+}
+
+.plugin-featured-action .btn {
+    width: 100%;
+    justify-content: center;
+}
+
 /* Icon */
 .plugin-icon {
     font-size: 3rem;
