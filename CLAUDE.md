@@ -15,7 +15,6 @@ Each plugin has its own CI workflow that builds and deploys docs to this repo:
 | Plugin | Source Docs | Build System | CI Workflow | Output Path |
 |--------|------------|--------------|-------------|-------------|
 | ElysMusicEngine | `ElysMusicEngine/Documentation/` | MkDocs | `ci.yml` | `ElysMusicEngine/` |
-| ElysGenAIPlugin | `ElysGenAIPlugin/Documentation/` | MkDocs | `deploy-docs.yml` | `ElysGenAIPlugin/` |
 | ElysAwareness | `ElysAwareness/website/docs/` | Docusaurus | `deploy-docs.yml` | `ElysAwareness/` |
 
 **To update docs:** Edit the source markdown in the plugin repo, push to GitHub. The CI pipeline handles the rest.
@@ -28,12 +27,11 @@ legal-notices.html      — Legal page
 CNAME                   — Domain config (rogueparadigm.com)
 assets/                 — Shared CSS, JS, images
 ElysMusicEngine/        — Generated plugin docs (HTML)
-ElysGenAIPlugin/        — Generated plugin docs (HTML)
 ElysAwareness/          — Generated plugin docs (HTML)
 ```
 
 ## Rules
 
-- **NEVER** edit files inside `ElysMusicEngine/`, `ElysGenAIPlugin/`, `ElysAwareness/` — they get overwritten by CI
+- **NEVER** edit files inside `ElysMusicEngine/`, `ElysAwareness/` — they get overwritten by CI
 - Only `index.html`, `legal-notices.html`, `assets/`, and root-level files should be manually edited
 - Plugin doc source lives in the plugin repos (see their CLAUDE.md files)
