@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://rogueparadigm.com/storefront-sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysAwareness/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysChat/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysIdentity/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysImpact/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysLicenseManager/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysListen/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysMind/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysMusicEngine/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysPersistentMusic/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysQuestFlow/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://rogueparadigm.com/ElysSpeak/sitemap.xml</loc></sitemap>
+</sitemapindex>
