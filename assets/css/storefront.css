@@ -20,3 +20,4 @@
 .games-section{padding-bottom:70px}.game-card{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}.game-media{display:block;position:relative;overflow:hidden;border-right:1px solid var(--line);background:#101719}.game-media img{width:100%;height:100%;object-fit:cover;transition:transform .25s}.game-media:hover img{transform:scale(1.02)}.game-card .card-content{justify-content:center}.game-card .promise{min-height:0;max-width:460px}.game-card .benefits{margin:18px 0 24px}
 @media(max-width:800px){.game-card{grid-template-columns:1fr}.game-media{border-right:0;border-bottom:1px solid var(--line);aspect-ratio:1.9}.games-section{padding-bottom:42px}}
 @media(prefers-reduced-motion:reduce){.game-media img{transition:none}.game-media:hover img{transform:none}}
+.hero .hero-actions{margin-top:28px}.hero .hero-actions .button{margin-top:0}
