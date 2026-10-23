@@ -1,0 +1,31 @@
+{
+  "steam_page": "https://store.steampowered.com/app/5236670/COILBREAKER/",
+  "updated": "2026-10-23",
+  "images": [
+    {
+      "files": "assets/screen-{01,02,04,05,06,07}-{en,fr}.webp",
+      "source": "COILBREAKER repository, docs/steam/galerie-ea/<language>/ (the Steam gallery, rendered by the game)",
+      "transformation": "WebP quality 85; original 1920x1080"
+    },
+    {
+      "file": "assets/share.jpg",
+      "source": "COILBREAKER repository, docs/steam/capsules/library_hero_3840x1240.png and library_logo_1280x720.png (rendered by the game)",
+      "transformation": "1200x630 crop around the snake, logo placed by tools/site-images.py"
+    },
+    {
+      "files": "assets/demo-poster-{en,fr}.webp",
+      "source": "The demo's own title frame, rendered by tools/capture-posters.cjs",
+      "transformation": "WebP quality 82, 1920x1080"
+    },
+    {
+      "file": "assets/steam-header.webp",
+      "source": "Steam header capsule",
+      "transformation": "WebP"
+    },
+    {
+      "files": "assets/trailer-{en,fr}.mp4",
+      "source": "web/showcase.mp4, web/showcase-fr.mp4 (720p derivatives of the 2026-10-19 v5 trailers)",
+      "transformation": "copied by tools/package-site.py"
+    }
+  ]
+}
