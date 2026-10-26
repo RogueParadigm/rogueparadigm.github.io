@@ -23,6 +23,11 @@
       "transformation": "WebP"
     },
     {
+      "files": "assets/favicon.ico, assets/apple-touch-icon.png (also web/ for the game page)",
+      "source": "The game's icon (COILBREAKER repository, tools/build_game_icon.py, piste D chosen by Elys on 2026-10-26): the Ferrailleur's sprites on a steel plate",
+      "transformation": "favicon.ico 16/32/48 and apple-touch-icon.png 180 on the plate's black edge, by the same reductions (atelier 2026-10-26-icone, outils/icones_web.py)"
+    },
+    {
       "files": "assets/trailer-{en,fr}.mp4",
       "source": "web/showcase.mp4, web/showcase-fr.mp4 (720p derivatives of the 2026-10-19 v5 trailers)",
       "transformation": "copied by tools/package-site.py"
