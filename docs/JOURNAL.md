@@ -1,3 +1,12 @@
+## 2026-11-06 — Médias de la refonte graphique D dans le brouillon
+
+- Page COILBREAKER : dix captures de la galerie Steam en rendu D (FR/EN, WebP 1920 px et vignettes 960 px), huit dans la galerie, la pose de la Cloueuse dans « La démo Steam » ; bande-annonce publicitaire de 63 s réencodée en H.264 1080p (29,8 Mo par langue) avec une affiche ; logo du 5 nov. ; `share.jpg` et l'en-tête Steam tirés des capsules E.
+- Textes : les images sont dites « de l'accès anticipé » (jeu filmé en `--early-access`) ; démo le 19 novembre, accès anticipé visé début décembre 2026. Trois serpents, cinq armes, quatre pilotes, Freya dans le jeu complet : inchangé.
+- Kit presse : mêmes médias, dix captures, ZIP `COILBREAKER-press-kit.zip` (PNG FR/EN, capsules E, logos ; remplace `COILBREAKER-demo-images.zip`), fiche avec la démo et l'accès anticipé, textes périmés de la démo navigateur retirés.
+- Recette : `node assets/site/update-coilbreaker-demo.cjs <bandes-annonces>` (x264 dans `E:/Dev/Tools/ffmpeg-x264`) ; aperçu : `assets/site/apercu-coilbreaker.cjs`.
+- Captures d'aperçu : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-06-site/`. Branche `draft/coilbreaker-demo-2026-11-06`, non fusionnée, non déployée.
+- Attend Elys : capsule E (question 4), musique de la publicité (question 1), dates affichées, galerie sans l'écran des pilotes.
+
 ## 2026-11-06 — Texte court retenu après revue
 
 - Elys retient la description centrée sur l’assemblage, les places d’armes et le contenu de La Casse (choix 5B) ; « Survies » corrigé en « Survis ».

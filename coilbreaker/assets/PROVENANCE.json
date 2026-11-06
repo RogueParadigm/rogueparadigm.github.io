@@ -1,26 +1,28 @@
 {
   "steam_page": "https://store.steampowered.com/app/5236670/COILBREAKER/",
-  "updated": "2026-10-23",
+  "updated": "2026-11-06",
+  "recipe": "assets/site/update-coilbreaker-demo.cjs (hashes in assets/site/coilbreaker-demo-2026-11-06.json)",
+  "game": "COILBREAKER fe8000fc (chantier/demo-ea-novembre), launched with --early-access, render D",
   "images": [
     {
-      "files": "assets/screen-{01,02,04,05,06,07}-{en,fr}.webp",
-      "source": "COILBREAKER repository, docs/steam/galerie-ea/<language>/ (the Steam gallery, rendered by the game)",
-      "transformation": "WebP quality 85; original 1920x1080"
+      "files": "assets/screen-{01..10}-{en,fr}.webp, assets/screen-{01..10}-{en,fr}-thumb.webp",
+      "source": "_atelier/COILBREAKER/2026-11-06-bandes-annonces/galerie-{fr,en}/ (Steam gallery, frames of real takes rendered by the game; provenance in galerie.json)",
+      "transformation": "WebP quality 88, 1920x1080; thumbnails 960x540, quality 82"
     },
     {
-      "file": "assets/share.jpg",
-      "source": "COILBREAKER repository, docs/steam/capsules/library_hero_3840x1240.png and library_logo_1280x720.png (rendered by the game)",
-      "transformation": "1200x630 crop around the snake, logo placed by tools/site-images.py"
-    },
-    {
-      "files": "assets/demo-poster-{en,fr}.webp",
-      "source": "The demo's own title frame, rendered by tools/capture-posters.cjs",
-      "transformation": "WebP quality 82, 1920x1080"
+      "files": "assets/share.jpg, press/assets/key-art-16x9.jpg",
+      "source": "capsules/E/main_1232x706.png (game render, logo of 2026-11-05 placed by script)",
+      "transformation": "crop 1232x647 -> 1200x630 JPEG 90; crop 1232x693 -> 1200x675 JPEG 92"
     },
     {
       "file": "assets/steam-header.webp",
-      "source": "Steam header capsule",
-      "transformation": "WebP"
+      "source": "capsules/E/header_920x430.png",
+      "transformation": "WebP quality 90"
+    },
+    {
+      "files": "assets/coilbreaker-logo.png, press/assets/coilbreaker-logo.png",
+      "source": "COILBREAKER repository, assets/ui/logo-2026-11-05.png (Elys's logo, unretouched)",
+      "transformation": "copied"
     },
     {
       "files": "assets/favicon.ico, assets/apple-touch-icon.png (also web/ for the game page)",
@@ -28,9 +30,14 @@
       "transformation": "favicon.ico 16/32/48 and apple-touch-icon.png 180 on the plate's black edge, by the same reductions (atelier 2026-10-26-icone, outils/icones_web.py)"
     },
     {
-      "files": "assets/trailer-{en,fr}.mp4",
-      "source": "web/showcase.mp4, web/showcase-fr.mp4 (720p derivatives of the 2026-10-19 v5 trailers)",
-      "transformation": "copied by tools/package-site.py"
+      "files": "assets/trailer-{en,fr}.mp4, assets/trailer-poster-{en,fr}.webp",
+      "source": "COILBREAKER-pub-{fr,en}.mp4 (63 s, 1080p30, 12.6 Mb/s, montage of real takes)",
+      "transformation": "x264 two-pass 3.6 Mb/s (max 6), High 4.1, AAC 128 kb/s, faststart, about 29.8 MB; poster = frame at 1.0 s, WebP 86"
+    },
+    {
+      "file": "press/assets/COILBREAKER-press-kit.zip",
+      "source": "galerie-{en,fr}/*.png, capsules/E/*.png, logo-2026-11-05.png, rogue-paradigm.png",
+      "transformation": "stored as-is (no recompression)"
     }
   ]
 }
