@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-06",
+  "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier",
+  "files": [
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-fr\\ferrailleur-00.png",
+      "source_sha256": "e645c0ab0668b83f69d8fc265f82ce0f40a4542da36f71f69fef35c4f7bdb468",
+      "output": "coilbreaker\\assets\\screen-01-fr.webp",
+      "sha256": "aa312986adb499b55663038c2c1a6802db4e68e568cd58ad529d3b50810fa77b"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-fr\\mecano-01.png",
+      "source_sha256": "929ea181d8f79f175918678a7c67141fedc88652bfad579ffceb865eca331c50",
+      "output": "coilbreaker\\assets\\screen-02-fr.webp",
+      "sha256": "f961af989b74572b48e98dfb577e0843e1121e018a13aa08514b48190cc8ef91"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-fr\\belier-01.png",
+      "source_sha256": "db42e6aa96c4ebec0594ac35a4d26f9ea00cec75047d18da8ea6103e0c557193",
+      "output": "coilbreaker\\assets\\screen-03-fr.webp",
+      "sha256": "1b146523cca4d59857e1867b3df8bd13f992f6599274cdf4c32a290525421419"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-fr\\belier-04.png",
+      "source_sha256": "a7b5bc856a1a5ef538070e6fa04e7ba53036745e670cc668f4b18fcccb4c388d",
+      "output": "coilbreaker\\assets\\screen-04-fr.webp",
+      "sha256": "5b2932a2e27868be13601a410af0a3b12c83b4c0816fc123e9e8186a2402cc66"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-fr\\forteresse-02.png",
+      "source_sha256": "8632674017f331da8286d2f4ff179445b20d933e2e54acd0b211544239617230",
+      "output": "coilbreaker\\assets\\screen-05-fr.webp",
+      "sha256": "f9bae901b90dba29e6c39f1af9e3236bdb562524e380bc58f929945963952e53"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\assemblage-fr\\frames\\frame-0064.png",
+      "source_sha256": "242eb79811b0c201628811ede617e0ee8fead44916aa3726ef77e0c0039f60e1",
+      "output": "coilbreaker\\assets\\screen-07-fr.webp",
+      "sha256": "53e3a413f4c2823fbac0432b99ae894788965986e3d0768ac35c28bdafa994e9"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\COILBREAKER-demo-fr.mp4",
+      "output": "coilbreaker\\assets\\trailer-fr.mp4",
+      "sha256": "991cca6c7e79276147f3bb75ecd879df9bd1ac01ef0d469468a9bda45d4a0dd5"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-en-2\\ferrailleur-00.png",
+      "source_sha256": "03b168b74f30cb62f3f294139968f696b6bdd5f93d6e59887936472e61e2573c",
+      "output": "coilbreaker\\assets\\screen-01-en.webp",
+      "sha256": "2a6df10906f303c581b65aa0e0ac43c2940b12a1d149047d81c99853f157f748"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-en-2\\mecano-01.png",
+      "source_sha256": "5d50c7f04c294be633cd62e327758dd1d8604a2004bb6030b36298f99ed3aae9",
+      "output": "coilbreaker\\assets\\screen-02-en.webp",
+      "sha256": "cdb506154392498b05b94aaba9659d026ca8d3de8d9b5baa996c1c4ddc54c882"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-en-2\\belier-01.png",
+      "source_sha256": "7cfd63fc244e5e2ef1a258b277b58d8e145ac8bfa4a6653a03e7f6d64771dde9",
+      "output": "coilbreaker\\assets\\screen-03-en.webp",
+      "sha256": "fe72fdd4aeebd204aa58ec883ff0043322f5c9fbd924683f9b59c27f0ec972c3"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-en-2\\belier-04.png",
+      "source_sha256": "d13cd410c847fc509e631f64c4624bb8b1ef6f5117e7d43f60c0340b5fcc04d1",
+      "output": "coilbreaker\\assets\\screen-04-en.webp",
+      "sha256": "3ade20a0962c5ee58f05aeb971168289ae11514abd7fa81008c453f81bbdb0ad"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\film-en-2\\forteresse-02.png",
+      "source_sha256": "68ecbd14060e21dfd453c0eff212a00234b80486cf7607b7836ca586e8ef32ac",
+      "output": "coilbreaker\\assets\\screen-05-en.webp",
+      "sha256": "0266f34be2dbfa056dd7c2c6ff9c7dbaf6dcd65bdb048dc3e52a58fcc17aa35c"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\assemblage-en\\frames\\frame-0064.png",
+      "source_sha256": "520cdaae82059b76f13558c9a5cf0b8c86592bd901a8f8880d6bff5aa91ab83f",
+      "output": "coilbreaker\\assets\\screen-07-en.webp",
+      "sha256": "b31afbae7d85bfc5088ee94558e4c3017cb6e426ab2b602413bba66da308c9d2"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-06-freya-belier\\COILBREAKER-demo-en.mp4",
+      "output": "coilbreaker\\assets\\trailer-en.mp4",
+      "sha256": "2ea961482da65bd02e8110e9c3fa05c5a3d26da990b07a9d2e87db90853b918c"
+    }
+  ]
+}
