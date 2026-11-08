@@ -3,8 +3,8 @@ const $ = id => document.getElementById(id);
 const strings = {
 fr: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Aller au contenu",navGame:"Le jeu",navScreens:"Captures",
- heroCopy:"Tu pilotes un serpent mécanique contre des centaines de machines. Ses armes tirent toutes seules. À chaque niveau, tu prends une arme et tu choisis où la poser.",
- wishlist:"Ajouter à ma liste de souhaits",demoLine:"Démo gratuite à venir sur Steam",trailer:"Bande-annonce",pilotRule:"Pleins gaz",
+ heroCopy:"Tu pilotes un serpent mécanique contre des centaines de machines. À chaque montée de niveau, tu gagnes des améliorations ou des armes dont tu choisis la position sur le serpent.",
+ wishlist:"Ajouter à ma liste de souhaits",demoLine:"Démo gratuite à venir sur Steam",trailer:"Bande-annonce",
  mountTitle:"Où poser l’arme",mountCopy:"En queue, la cloueuse tire vers l’arrière. Sur le corps, elle tire sur les côtés, une fois à gauche, une fois à droite.",
  galleryTitle:"Captures",shot0:"Boss : la Forteresse",shot1:"Boss : le Concasseur",shot2:"Choix de la pilote",
  offerTitle:"Démo et accès anticipé",
@@ -15,8 +15,8 @@ fr: {
 },
 en: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Skip to content",navGame:"The game",navScreens:"Screenshots",
- heroCopy:"You steer a mechanical snake against hundreds of machines. Its weapons fire on their own. At each level, you take a weapon and choose where to place it.",
- wishlist:"Add to your wishlist",demoLine:"Free demo coming to Steam",trailer:"Trailer",pilotRule:"Full Throttle",
+ heroCopy:"You steer a mechanical snake against hundreds of machines. At each level-up, you gain upgrades or weapons and choose their position on the snake.",
+ wishlist:"Add to your wishlist",demoLine:"Free demo coming to Steam",trailer:"Trailer",
  mountTitle:"Where to place the weapon",mountCopy:"On the tail, the nail gun fires backwards. On the body, it fires sideways, once to the left, once to the right.",
  galleryTitle:"Screenshots",shot0:"Boss: the Fortress",shot1:"Boss: the Pulverizer",shot2:"Choosing a driver",
  offerTitle:"Demo and Early Access",

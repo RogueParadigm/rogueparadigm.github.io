@@ -67,9 +67,6 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--second);outline-off
 .play i::after{content:"";position:absolute;inset:3px;background:#0d0d10;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
 .play i::before{content:"";position:relative;z-index:1;margin-left:6px;border-left:20px solid var(--paper);border-top:12px solid transparent;border-bottom:12px solid transparent}
 .pilot{position:absolute;z-index:3;left:-118px;bottom:-34px;height:440px;width:auto;max-width:none;pointer-events:none;filter:drop-shadow(0 14px 18px #000c)}
-.pilot-name{position:absolute;z-index:4;left:-96px;bottom:24px;padding:6px 14px 8px;background:var(--panel);border-left:5px solid var(--elys);pointer-events:none}
-.pilot-name .title{display:block;font-size:28px}
-.pilot-name small{display:block;font-weight:700;font-style:italic;font-size:16px;color:var(--grey);text-transform:uppercase}
 
 /* Sections */
 .section{margin-top:70px}
@@ -106,8 +103,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--second);outline-off
   .intro{font-size:22px}
   .hero-screen{margin-top:18px;padding-left:120px}
   .pilot{left:-14px;height:300px;bottom:-20px}
-  .pilot-name{left:4px;bottom:6px}.pilot-name .title{font-size:22px}
-  .play{right:16px;bottom:14px;font-size:18px}
+    .play{right:16px;bottom:14px;font-size:18px}
   .heading{font-size:34px}
   .gallery{grid-template-columns:1fr 1fr}
   .shot:first-child{grid-column:span 2}
@@ -118,8 +114,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--second);outline-off
   .demo-line{font-size:23px}
   .hero-screen{padding-left:0;padding-bottom:200px}
   .pilot{left:auto;right:0;bottom:-10px;height:250px}
-  .pilot-name{left:auto;right:150px;bottom:20px}
-  .heading{font-size:28px}
+    .heading{font-size:28px}
   .heading .slashes:last-child{display:none}
   .body{font-size:20px}
   .gallery{grid-template-columns:1fr}
