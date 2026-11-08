@@ -30,10 +30,11 @@ fs.mkdirSync(out, {recursive: true});
   for (const lang of ['fr', 'en']) {
     await page(`/coilbreaker/?lang=${lang}`, 1440, 900, `page-${lang}-1440.png`);
     await page(`/coilbreaker/?lang=${lang}`, 390, 844, `page-${lang}-390.png`);
+    await page(`/coilbreaker/?lang=${lang}`, 820, 1180, `page-${lang}-820.png`);
     await page(`/coilbreaker/press/${lang === 'fr' ? '?lang=fr' : ''}`, 1440, 900, `presse-${lang}-1440.png`);
   }
   await page('/coilbreaker/?lang=fr', 1440, 900, 'page-fr-galerie-ouverte.png', async p => {
-    await p.click('[data-shot="4"]'); await p.waitForTimeout(600);
+    await p.click('[data-shot="1"]'); await p.waitForTimeout(600);
   });
   await page('/coilbreaker/?lang=fr', 1440, 900, 'page-fr-bande-annonce.png', async p => {
     await p.click('#open-trailer');

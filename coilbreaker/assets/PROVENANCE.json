@@ -1,6 +1,6 @@
 {
   "steam_page": "https://store.steampowered.com/app/5236670/COILBREAKER/",
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "recipe": "assets/site/update-coilbreaker-demo.cjs (hashes in assets/site/coilbreaker-demo-2026-11-06.json)",
   "game": "COILBREAKER fe8000fc (chantier/demo-ea-novembre), launched with --early-access, render D",
   "images": [
@@ -38,6 +38,16 @@
       "file": "press/assets/COILBREAKER-press-kit.zip",
       "source": "galerie-{en,fr}/*.png, capsules/E/*.png, logo-2026-11-05.png, rogue-paradigm.png",
       "transformation": "stored as-is (no recompression)"
+    },
+    {
+      "file": "assets/elys-pilote.webp",
+      "source": "COILBREAKER repository, assets/refonte/menus/D/pilotes/nina.png (Elys, pilot portrait of the D interface)",
+      "transformation": "Lanczos 900x1200 -> 600x800, WebP quality 90"
     }
-  ]
+  ],
+  "fonts": {
+    "files": "assets/BarlowCondensed-{Medium,SemiBold,BoldItalic,BlackItalic}.ttf",
+    "source": "COILBREAKER repository, assets/fonts/ (the game's interface font)",
+    "licence": "SIL Open Font License, assets/OFL-barlowcondensed.txt"
+  }
 }
