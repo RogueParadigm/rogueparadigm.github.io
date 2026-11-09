@@ -1,3 +1,7 @@
+## 2026-11-09 — Galerie COILBREAKER sans les captures de boss
+
+- Elys : « t'as mis des captures des "boss" et on les voit même pas. Mets justes des captures normales ». Les deux captures de boss sont remplacées par « Début de partie » et « Dernière minute » (`screen-11`, `screen-12`, prises du 9 nov.) ; légendes et textes alternatifs FR/EN. « Choix de la pilote » reste, à refilmer avec les nouveaux portraits.
+
 ## 2026-11-09 — Page COILBREAKER en ligne, dessins d'après les fiches de modèle
 
 - Elys : « Ok, tu peux changer la page du site. Oublies pas de bien mettre à jour la vignette sur la page principale. » La branche `draft/coilbreaker-demo-2026-11-06` est fusionnée dans `main` (avance rapide) et publiée.

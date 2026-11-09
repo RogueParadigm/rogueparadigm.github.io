@@ -48,6 +48,12 @@
       "files": "assets/screen-{02,03,04,06,08}-{fr,en}.webp et -thumb.webp, assets/trailer-{fr,en}.mp4, trailer-poster-{fr,en}.webp",
       "source": "_atelier/COILBREAKER/2026-11-09-vitrine (prises du 9 nov. 2026, jeu 0.20.8 : nouvelles explosions, Elys pilote) : galerie-{fr,en}/ 01-concasseur, 03-forteresse, 05-belier, 02-pose, 06-pilote ; COILBREAKER-pub-{fr,en}.mp4 (58 s)",
       "transformation": "WebP 88 en 1920, vignettes 960 en 82 ; x264 3,6 Mb/s High 4.1, AAC 128 kb/s ; affiche = image à 1 s"
+    },
+    {
+      "files": "assets/screen-{11,12}-{fr,en}.webp et -thumb.webp",
+      "source": "_atelier/COILBREAKER/2026-11-09-vitrine/galerie-{fr,en}/07-horde.png (11) et 08-fin-de-partie.png (12), prises du 9 nov. 2026, jeu 0.20.8",
+      "transformation": "WebP 88 en 1920, vignettes 960 en 82",
+      "raison": "Elys, 9 nov. : « t'as mis des captures des \"boss\" et on les voit même pas. Mets justes des captures normales »"
     }
   ],
   "fonts": {
