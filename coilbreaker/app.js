@@ -5,25 +5,25 @@ fr: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Aller au contenu",navGame:"Le jeu",navScreens:"Captures",
  heroCopy:"Tu pilotes un serpent mécanique contre des centaines de machines. À chaque montée de niveau, tu gagnes des améliorations ou des armes dont tu choisis la position sur le serpent.",
  wishlist:"Ajouter à ma liste de souhaits",demoLine:"Démo gratuite à venir sur Steam",trailer:"Bande-annonce",
- mountTitle:"Où poser l’arme",mountCopy:"En queue, la cloueuse tire vers l’arrière. Sur le corps, elle tire sur les côtés, une fois à gauche, une fois à droite.",
+ mountTitle:"Où poser l’arme",mountCopy:"En queue, le roulement à billes lâche ses billes derrière toi. Sur le corps, il les lance sur un flanc, puis sur l’autre.",
  galleryTitle:"Captures",shot0:"Boss : la Forteresse",shot1:"Boss : le Concasseur",shot2:"Choix de la pilote",
  offerTitle:"Démo et accès anticipé",
  offerDemo:"<b>Démo.</b> Gratuite. Un terrain, la Casse, avec trois serpents, cinq armes et quatre pilotes. Une partie dure vingt minutes.",
  offerEarly:"<b>Accès anticipé, prévu en décembre 2026.</b> Plus de serpents et d’armes, et Freya, une pilote absente de la démo. D’autres terrains ensuite.",
  credit:"Un jeu d’Elys",press:"Kit presse",legal:"Mentions légales",close:"Fermer",previous:"Précédente",next:"Suivante",
- altMount:"Pose de la cloueuse : choix de sa place sur le serpent",altShot0:"Scies géantes et flammes autour de la Forteresse",altShot1:"Le Concasseur face à un long serpent armé",altShot2:"L’écran des pilotes"
+ altMount:"Pose du roulement à billes : choix de sa place sur le serpent",altShot0:"Scies géantes et flammes autour de la Forteresse",altShot1:"Le Concasseur face à un long serpent armé",altShot2:"L’écran des pilotes"
 },
 en: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Skip to content",navGame:"The game",navScreens:"Screenshots",
  heroCopy:"You steer a mechanical snake against hundreds of machines. At each level-up, you gain upgrades or weapons and choose their position on the snake.",
  wishlist:"Add to your wishlist",demoLine:"Free demo coming to Steam",trailer:"Trailer",
- mountTitle:"Where to place the weapon",mountCopy:"On the tail, the nail gun fires backwards. On the body, it fires sideways, once to the left, once to the right.",
+ mountTitle:"Where to place the weapon",mountCopy:"On the tail, the ball bearings drop behind you. On the body, they fly out to one side, then the other.",
  galleryTitle:"Screenshots",shot0:"Boss: the Fortress",shot1:"Boss: the Pulverizer",shot2:"Choosing a driver",
  offerTitle:"Demo and Early Access",
  offerDemo:"<b>Demo.</b> Free. One stage, the Scrapyard, with three snakes, five weapons and four drivers. A run lasts twenty minutes.",
  offerEarly:"<b>Early Access, planned for December 2026.</b> More snakes and weapons, and Freya, a driver who is not in the demo. More stages later.",
  credit:"A game by Elys",press:"Press kit",legal:"Legal notices",close:"Close",previous:"Previous",next:"Next",
- altMount:"Placing the nail gun: choosing its spot on the snake",altShot0:"Giant saws and flames around the Fortress",altShot1:"The Pulverizer boss facing a long armed snake",altShot2:"The driver screen"
+ altMount:"Placing the ball bearings: choosing their spot on the snake",altShot0:"Giant saws and flames around the Fortress",altShot1:"The Pulverizer boss facing a long armed snake",altShot2:"The driver screen"
 }
 };
 let language = new URLSearchParams(location.search).get("lang");

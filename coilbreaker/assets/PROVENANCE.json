@@ -43,6 +43,11 @@
       "file": "assets/elys-pilote.webp",
       "source": "COILBREAKER repository, assets/refonte/menus/D/pilotes/nina.png (Elys, pilot portrait of the D interface)",
       "transformation": "Lanczos 900x1200 -> 600x800, WebP quality 90"
+    },
+    {
+      "files": "assets/screen-{02,03,04,06,08}-{fr,en}.webp et -thumb.webp, assets/trailer-{fr,en}.mp4, trailer-poster-{fr,en}.webp",
+      "source": "_atelier/COILBREAKER/2026-11-09-vitrine (prises du 9 nov. 2026, jeu 0.20.8 : nouvelles explosions, Elys pilote) : galerie-{fr,en}/ 01-concasseur, 03-forteresse, 05-belier, 02-pose, 06-pilote ; COILBREAKER-pub-{fr,en}.mp4 (58 s)",
+      "transformation": "WebP 88 en 1920, vignettes 960 en 82 ; x264 3,6 Mb/s High 4.1, AAC 128 kb/s ; affiche = image à 1 s"
     }
   ],
   "fonts": {
