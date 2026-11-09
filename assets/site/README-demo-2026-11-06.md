@@ -34,3 +34,9 @@ Après l'audit du 8 nov. (`_atelier/COILBREAKER/2026-11-08-audit-site/`) et la m
 Les captures 02, 03, 04 et 08 montrent encore les anciennes explosions et Tomás : elles seront remplacées par la recette ci-dessus une fois la galerie refilmée. `Barlow-*.ttf` de `coilbreaker/assets/` ne sert plus à la page (le kit presse a ses propres copies).
 
 Aperçu sans fenêtre : `node assets/site/apercu-coilbreaker.cjs <dossier>` (1440, 820 et 390 px).
+
+## 9 nov. 2026 : dessins d'après les fiches de modèle
+
+- `coilbreaker/assets/share.jpg` (vignette de l'accueil et image de partage) et `press/assets/key-art-16x9.jpg` viennent maintenant de la capsule A (Elys et Freya), choix d'Elys : `_atelier/COILBREAKER/2026-11-09-vitrine/capsules/final/A/main.png`, centre recadré. `update-coilbreaker-demo.cjs` les referait d'après les capsules E : ne pas le relancer sans changer sa source.
+- `coilbreaker/assets/elys-pilote.webp` : nouveau portrait d'Elys du jeu (commit COILBREAKER `0de27198`).
+- La capture de l'écran des pilotes (`screen-06`) montre encore l'ancien dessin d'Elys : à refilmer quand le PC d'Elys est libre.

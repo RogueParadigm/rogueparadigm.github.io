@@ -1,3 +1,10 @@
+## 2026-11-09 — Page COILBREAKER en ligne, dessins d'après les fiches de modèle
+
+- Elys : « Ok, tu peux changer la page du site. Oublies pas de bien mettre à jour la vignette sur la page principale. » La branche `draft/coilbreaker-demo-2026-11-06` est fusionnée dans `main` (avance rapide) et publiée.
+- Elys en tête de page : nouveau portrait du jeu (`elys-pilote.webp`). Vignette de l'accueil et image de partage (`share.jpg`), image clé du kit presse : capsule A, Elys et Freya (choix d'Elys « A »).
+- Recettes et sources : `assets/site/README-demo-2026-11-06.md`, `coilbreaker/assets/PROVENANCE.json`. Aperçus : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-09-site-fiches/`.
+- Reste : la capture de l'écran des pilotes (`screen-06`) et le ZIP du kit presse (capsules E) montrent encore les anciens dessins ; à refaire quand le PC d'Elys est libre.
+
 ## 2026-11-06 — Médias de la refonte graphique D dans le brouillon
 
 - Page COILBREAKER : dix captures de la galerie Steam en rendu D (FR/EN, WebP 1920 px et vignettes 960 px), huit dans la galerie, la pose de la Cloueuse dans « La démo Steam » ; bande-annonce publicitaire de 63 s réencodée en H.264 1080p (29,8 Mo par langue) avec une affiche ; logo du 5 nov. ; `share.jpg` et l'en-tête Steam tirés des capsules E.
