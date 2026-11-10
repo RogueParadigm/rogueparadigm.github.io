@@ -74,29 +74,15 @@
       "sha256": "9edfed6d4107e92c70360a45622db86fe492a89622eef694732c3636ec7a8473"
     },
     {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-corps.png",
-      "source_sha256": "11e1bd017d3c115d3c98fff936db23b3e6cbfde6bd52043dd9b64d8645e006b1",
-      "output": "coilbreaker/assets/screen-18-fr.webp",
-      "bytes": 258186,
-      "sha256": "6a0508eaf514f754e0958f4c2897e6d5a37c739a2a1ce9096cd04e0d1a3fe7f0"
-    },
-    {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-corps.png",
-      "source_sha256": "11e1bd017d3c115d3c98fff936db23b3e6cbfde6bd52043dd9b64d8645e006b1",
-      "output": "coilbreaker/assets/screen-18-fr-thumb.webp",
-      "bytes": 68106,
-      "sha256": "acc8cb31910ee113286612532ed02a3c0bd3efa6b16a12a3026891c6549e9a54"
-    },
-    {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-fr.mp4",
-      "source_sha256": "31ecbf87b6855116654a8fe2a7e79ffc71dccd412bc3fa3b40905ff631106405",
+      "source_sha256": "79e759af2de1a58e741fd306d6c7a57b387a72f5728c1984818bd59ba764c536",
       "output": "coilbreaker/assets/trailer-fr.mp4",
-      "bytes": 23435421,
-      "sha256": "d66594f3c593fb7edeff5f9262614cf2a1e506359db4a80e754bf70615807a90"
+      "bytes": 22217597,
+      "sha256": "9f8671c3658149342d0ff1c2e30a45af62037903533ae8aa8004cd0f05a46c97"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-fr.mp4",
-      "source_sha256": "31ecbf87b6855116654a8fe2a7e79ffc71dccd412bc3fa3b40905ff631106405",
+      "source_sha256": "79e759af2de1a58e741fd306d6c7a57b387a72f5728c1984818bd59ba764c536",
       "output": "coilbreaker/assets/trailer-poster-fr.webp",
       "bytes": 295616,
       "sha256": "6e4521bbb5428826ebddd42fbe5117439ccc97d24c4183135318638ebd3c6574"
@@ -172,32 +158,74 @@
       "sha256": "f1086a16d932fc84c3bcc77ec2ecd172ac88b20842a4a9b63dba302971d0f05c"
     },
     {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-corps.png",
-      "source_sha256": "de5d622fa94d4f39258367cfa94905d78bbc5d54a493dc6df1a3f0a65c2f67e1",
-      "output": "coilbreaker/assets/screen-18-en.webp",
-      "bytes": 257066,
-      "sha256": "f402b4d95a8a2bc45a14f8a1af4e4eb0e515f1295dcba25eea051bc02cfbf41f"
-    },
-    {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-corps.png",
-      "source_sha256": "de5d622fa94d4f39258367cfa94905d78bbc5d54a493dc6df1a3f0a65c2f67e1",
-      "output": "coilbreaker/assets/screen-18-en-thumb.webp",
-      "bytes": 67714,
-      "sha256": "dcbb9e556a26986ac64993e4c02fceb84fcd0856f138a067b384e7b4f1eec3a8"
-    },
-    {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-en.mp4",
-      "source_sha256": "9cd4bcb718cabe12a5afe0ef294691fb5c2cb1ba5e220bf9281008e4414bcc11",
+      "source_sha256": "777a288dbb3417dc463bdf5cafcd3868ded8f1355af68e5aa1abba9c5cb065f2",
       "output": "coilbreaker/assets/trailer-en.mp4",
-      "bytes": 23438754,
-      "sha256": "d97632e26d1db4e06c64bc0319fbe8e806620a3a42712b113fa8cc05f97bce36"
+      "bytes": 22226186,
+      "sha256": "0f7548b792fcc4450dc8ff73ea4a65a895faf2deb530176d13f0a0cf58cbe4e2"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-en.mp4",
-      "source_sha256": "9cd4bcb718cabe12a5afe0ef294691fb5c2cb1ba5e220bf9281008e4414bcc11",
+      "source_sha256": "777a288dbb3417dc463bdf5cafcd3868ded8f1355af68e5aa1abba9c5cb065f2",
       "output": "coilbreaker/assets/trailer-poster-en.webp",
       "bytes": 295770,
       "sha256": "169f1a11bee9f2f4d5dee4dd93c4c8b286cc624250c04d8cf006cb6cc137e3d2"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\capsules\\bouclee\\A\\main.png",
+      "source_sha256": "b0e94b9b69e19e7e294151edec7d6dca2064265b2b6ebd1f4fde60f920d37086",
+      "output": "coilbreaker/press/assets/key-art-16x9.jpg",
+      "bytes": 274731,
+      "sha256": "79134bcfd290b1b6238cd82b5dd6bd414be1b275eb7a7a04630c5abb02d4aa4c"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\capsules\\bouclee\\A\\main.png",
+      "source_sha256": "b0e94b9b69e19e7e294151edec7d6dca2064265b2b6ebd1f4fde60f920d37086",
+      "output": "coilbreaker/assets/share.jpg",
+      "bytes": 233822,
+      "sha256": "9f300a64acdd58280acccdb5c008f7239e0f17d8f2de9621b48e69e986b936e6"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\capsules\\bouclee\\A\\header.png",
+      "source_sha256": "980383fb304d5923071b786757811521d5fe1a78d1eeead5ed9cec9952752734",
+      "output": "coilbreaker/assets/steam-header.webp",
+      "bytes": 137672,
+      "sha256": "3488551dc353bdcafd303be61947891f3a6a815a629a78d21862e2f0a8486514"
+    },
+    {
+      "output": "coilbreaker/press/assets/COILBREAKER-press-kit.zip",
+      "bytes": 49459578,
+      "sha256": "d1b9b31426e83292e32ae5b9f3f5f66161044efb8b82f83c4264a07faef3fe8b",
+      "contents": [
+        "screenshots-en/coilbreaker-01-fin-de-partie-en.png",
+        "screenshots-en/coilbreaker-02-concasseur-en.png",
+        "screenshots-en/coilbreaker-03-forteresse-en.png",
+        "screenshots-en/coilbreaker-04-belier-en.png",
+        "screenshots-en/coilbreaker-05-evolution-en.png",
+        "screenshots-en/coilbreaker-06-pose-en.png",
+        "screenshots-en/coilbreaker-07-niveau-en.png",
+        "screenshots-en/coilbreaker-08-pilote-en.png",
+        "screenshots-en/coilbreaker-09-caisse-en.png",
+        "screenshots-en/coilbreaker-10-victoire-en.png",
+        "screenshots-fr/coilbreaker-01-fin-de-partie-fr.png",
+        "screenshots-fr/coilbreaker-02-concasseur-fr.png",
+        "screenshots-fr/coilbreaker-03-forteresse-fr.png",
+        "screenshots-fr/coilbreaker-04-belier-fr.png",
+        "screenshots-fr/coilbreaker-05-evolution-fr.png",
+        "screenshots-fr/coilbreaker-06-pose-fr.png",
+        "screenshots-fr/coilbreaker-07-niveau-fr.png",
+        "screenshots-fr/coilbreaker-08-pilote-fr.png",
+        "screenshots-fr/coilbreaker-09-caisse-fr.png",
+        "screenshots-fr/coilbreaker-10-victoire-fr.png",
+        "steam-capsules/header_920x430.png",
+        "steam-capsules/main_1232x706.png",
+        "steam-capsules/vertical_748x896.png",
+        "steam-capsules/library_600x900.png",
+        "steam-capsules/library_hero_3840x1240.png",
+        "steam-capsules/small_462x174.png",
+        "logos/coilbreaker-logo.png",
+        "logos/rogue-paradigm.png"
+      ]
     }
   ]
 }

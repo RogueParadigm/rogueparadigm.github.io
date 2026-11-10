@@ -1,3 +1,13 @@
+## 2026-11-10 — Brouillon COILBREAKER refait après les réponses d'Elys (pas en ligne)
+
+- Branche `draft/coilbreaker-2026-11-10`, poussée, **pas fusionnée dans `main`** : rien n'est en ligne.
+- Elys : « Le serpent qui se touche la queue, ça arrive jamais. Il faut arrêter de phantasmer là dessus. » La section « Le corps du serpent », sa capture (`screen-18`, retirée par `git rm`, encore au commit `4dc972f`) et la phrase ajoutée à l'accroche sont retirées. L'accroche est le texte en ligne sur Steam, mot pour mot.
+- Bande-annonce : le montage YouTube remonté sans le plan où la tête touche le corps (47 s, « 0:47 » en dur dans `coilbreaker/index.html`).
+- Elys : « Je préfère la capsule avec Elys et Freya. », « Le cheveux bouclé c'est bien pour Freya. » La capsule A, Freya en queue de cheval bouclée, fait `share.jpg` (image de partage et vignette de l'accueil), `key-art-16x9.jpg`, `steam-header.webp` et les six capsules du ZIP du kit presse. Les vingt captures du ZIP restent celles du 6 nov.
+- Recette : `assets/site/update-coilbreaker-2026-11-10.cjs`, `assets/site/README-2026-11-10.md`, empreintes `assets/site/coilbreaker-2026-11-10.json`, `coilbreaker/assets/PROVENANCE.json`.
+- Contrôle sans fenêtre (1440, 820, 390 px, FR et EN, kit presse) : aucune erreur console ni réseau au second passage. Aperçus : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions/site-apercus/`.
+- Attend Elys : la mise en ligne (question 3 de `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions/propositions.html`), après écoute de la bande-annonce.
+
 ## 2026-11-09 — Galerie COILBREAKER sans les captures de boss
 
 - Elys : « t'as mis des captures des "boss" et on les voit même pas. Mets justes des captures normales ». Les deux captures de boss sont remplacées par « Début de partie » et « Dernière minute » (`screen-11`, `screen-12`, prises du 9 nov.) ; légendes et textes alternatifs FR/EN. « Choix de la pilote » reste, à refilmer avec les nouveaux portraits.

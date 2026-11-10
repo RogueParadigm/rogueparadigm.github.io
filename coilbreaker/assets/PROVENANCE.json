@@ -11,13 +11,13 @@
     },
     {
       "files": "assets/share.jpg, press/assets/key-art-16x9.jpg",
-      "source": "_atelier/COILBREAKER/2026-11-09-vitrine/capsules/final/A/main.png (capsule A, 1232x706 : rendu du jeu horde-route-06, Elys et Freya d'après les fiches de modèle du 9 nov. 2026, logo du 5 nov.) ; choix d'Elys le 9 nov. (« A : Elys et Freya »)",
+      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions/capsules/bouclee/A (capsule A : rendu du jeu horde-route-06, Elys et Freya d'après les fiches de modèle du 9 nov. 2026, Freya en queue de cheval bouclée, logo du 5 nov.) ; choix d'Elys le 10 nov. (« Je préfère la capsule avec Elys et Freya. », « Le cheveux bouclé c'est bien pour Freya. ») ; main.png, 1232x706",
       "transformation": "centre 1232x647 -> 1200x630 JPEG 90 ; centre 1232x693 -> 1200x675 JPEG 92"
     },
     {
       "file": "assets/steam-header.webp",
-      "source": "capsules/E/header_920x430.png",
-      "transformation": "WebP quality 90"
+      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions/capsules/bouclee/A (capsule A : rendu du jeu horde-route-06, Elys et Freya d'après les fiches de modèle du 9 nov. 2026, Freya en queue de cheval bouclée, logo du 5 nov.) ; choix d'Elys le 10 nov. (« Je préfère la capsule avec Elys et Freya. », « Le cheveux bouclé c'est bien pour Freya. ») ; header.png, 920x430",
+      "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : WebP quality 90"
     },
     {
       "files": "assets/coilbreaker-logo.png, press/assets/coilbreaker-logo.png",
@@ -36,8 +36,8 @@
     },
     {
       "file": "press/assets/COILBREAKER-press-kit.zip",
-      "source": "galerie-{en,fr}/*.png, capsules/E/*.png, logo-2026-11-05.png, rogue-paradigm.png",
-      "transformation": "stored as-is (no recompression)"
+      "source": "_atelier/COILBREAKER/2026-11-06-bandes-annonces/galerie-{en,fr}/*.png (les vingt captures du 6 nov., inchangées), les six capsules A du 10 nov. (capsules/bouclee/A), logo-2026-11-05.png, rogue-paradigm.png",
+      "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : stored as-is (no recompression)"
     },
     {
       "file": "assets/elys-pilote.webp",
@@ -57,9 +57,9 @@
     },
     {
       "files": "assets/screen-{13..17}-{fr,en}.webp et -thumb.webp, assets/trailer-{fr,en}.mp4, trailer-poster-{fr,en}.webp",
-      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions : galerie-{fr,en}/ 01-horde (13), 02-pose (14), 08-fin-de-partie (15), 07-pilote (16), 09-debut (17) ; COILBREAKER-youtube-{fr,en}.mp4 (49 s). Prises du Ferrailleur des 9 et 10 nov. 2026 (jeu 0.20.10, --early-access), recettes tools/bandes_annonces/galerie-2026-11-10.json et montages-2026-11-10.json du dépôt COILBREAKER (branche outils/bandes-annonces-2026-11)",
+      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions : galerie-{fr,en}/ 01-horde (13), 02-pose (14), 08-fin-de-partie (15), 07-pilote (16), 09-debut (17) ; COILBREAKER-youtube-{fr,en}.mp4 (47 s, remonté le 10 nov. sans le plan où la tête touche le corps). Prises du Ferrailleur des 9 et 10 nov. 2026 (jeu 0.20.10, --early-access), recettes tools/bandes_annonces/galerie-2026-11-10.json et montages-2026-11-10.json du dépôt COILBREAKER (branche outils/bandes-annonces-2026-11)",
       "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : WebP 88 en 1920, vignettes 960 en 82 ; x264 3,6 Mb/s High 4.1, AAC 128 kb/s ; affiche = image à 1 s",
-      "raison": "Proposition du 10 nov. 2026 (branche draft/coilbreaker-2026-11-10, pas en ligne) : la bande-annonce et les captures en ligne montrent encore le Mécano et l'ancien portrait d'Elys"
+      "raison": "Proposition du 10 nov. 2026 (branche draft/coilbreaker-2026-11-10, pas en ligne) : la bande-annonce et les captures en ligne montrent encore le Mécano et l'ancien portrait d'Elys ; refait après les réponses d'Elys du 10 nov. : « Le serpent qui se touche la queue, ça arrive jamais. » (la capture screen-18 et la section « Le corps du serpent » sont retirées)"
     }
   ],
   "fonts": {
