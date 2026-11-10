@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>COILBREAKER | Rogue Paradigm</title>
-<meta name="description" content="Drive a scrap-metal snake through a scrapyard full of machines. Its weapons fire on their own, and where you bolt each one changes how it fires. Coming to Steam.">
-<meta name="theme-color" content="#0a0a0c"><meta property="og:type" content="website"><meta property="og:site_name" content="Rogue Paradigm"><meta property="og:title" content="COILBREAKER"><meta property="og:description" content="Drive a scrap-metal snake through a scrapyard full of machines. Its weapons fire on their own, and where you bolt each one changes how it fires."><meta property="og:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><link rel="canonical" href="https://rogueparadigm.com/coilbreaker/"><meta property="og:url" content="https://rogueparadigm.com/coilbreaker/"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Steer a scrap-metal snake through hordes of machines. Its weapons fire on their own, and where they sit on the head, body or tail changes how they fire. Coming to Steam.">
+<meta name="theme-color" content="#0a0a0c"><meta property="og:type" content="website"><meta property="og:site_name" content="Rogue Paradigm"><meta property="og:title" content="COILBREAKER"><meta property="og:description" content="Steer a scrap-metal snake through hordes of machines. Its weapons fire on their own, and where they sit on the head, body or tail changes how they fire."><meta property="og:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><link rel="canonical" href="https://rogueparadigm.com/coilbreaker/"><meta property="og:url" content="https://rogueparadigm.com/coilbreaker/"><meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="en" href="https://rogueparadigm.com/coilbreaker/?lang=en"><link rel="alternate" hreflang="fr" href="https://rogueparadigm.com/coilbreaker/?lang=fr"><link rel="alternate" hreflang="x-default" href="https://rogueparadigm.com/coilbreaker/">
 <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
 <link rel="preload" href="assets/BarlowCondensed-BlackItalic.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,7 +22,7 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-copy">
     <h1 id="hero-title" class="logo-title"><img class="game-logo" src="assets/coilbreaker-logo.png" alt="COILBREAKER" width="1000" height="328"></h1>
-    <p class="body intro" data-i18n="heroCopy">You drive a scrap-metal snake through a scrapyard full of machines. Its weapons fire on their own: bolted to the head, the machine gun fires ahead; on the tail, it covers your back. The snake grows as you arm it. Don’t run into yourself.</p>
+    <p class="body intro" data-i18n="heroCopy">A survivor roguelite where you steer a scrap-metal snake through hordes of machines. Its weapons fire on their own, and where they sit on the head, body or tail changes how they fire. The snake grows as you arm it, and its head must not touch its own body.</p>
     <a class="action steam-link" href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;utm_content=hero" target="_blank" rel="noopener noreferrer"><span class="action-text" data-i18n="wishlist">Add to your wishlist</span><span class="action-stripes" aria-hidden="true"></span></a>
     <p class="demo-line" data-i18n="demoLine">Free demo coming to Steam</p>
   </div>
@@ -37,13 +37,14 @@
 
 <section class="section" id="game" aria-labelledby="mount-title">
   <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="mount-title" class="title" data-i18n="mountTitle">Where to place the weapon</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <img class="capture wide" data-screen="14" src="assets/screen-14-en.webp" data-i18n-alt="altMount" alt="Placing the Saws: choosing their spot on the snake" width="1920" height="1080" loading="lazy">
-  <p class="body" data-i18n="mountCopy">At each level-up you pick a weapon, then where to bolt it: the head, a body segment or the tail. The screen shows what the weapon will do in each spot.</p>
+  <img class="capture wide" data-screen="14" src="assets/screen-14-en.webp" data-i18n-alt="altMount" alt="Placing the Nail Gun: two previews, on the tail and on a new block" width="1920" height="1080" loading="lazy">
+  <p class="body" data-i18n="mountCopy">On the tail, the Nail Gun fires backwards. On the body, it fires to the sides.</p>
 </section>
 
 <section class="section" aria-labelledby="body-title">
-  <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="body-title" class="title" data-i18n="bodyTitle">Don’t run into yourself</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <p class="body" data-i18n="bodyCopy">The more weapons your snake carries, the longer it gets. If your head hits your body, you lose 25 health and your weapons cut out for as long as it stays there.</p>
+  <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="body-title" class="title" data-i18n="bodyTitle">The snake’s body</span><span class="slashes" aria-hidden="true">////</span></h2>
+  <img class="capture wide" data-screen="18" src="assets/screen-18-en.webp" data-i18n-alt="altBody" alt="The snake’s head touches its body: health drops from 170 to 145" width="1920" height="1080" loading="lazy">
+  <p class="body" data-i18n="bodyCopy">Each block makes the snake longer. If its head touches its body, you lose 25 health and your weapons stop firing until it is clear.</p>
 </section>
 
 <section class="section" id="screens" aria-labelledby="screens-title">

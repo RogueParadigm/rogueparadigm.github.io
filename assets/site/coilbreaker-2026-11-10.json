@@ -5,45 +5,45 @@
   "files": [
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\01-horde.png",
-      "source_sha256": "2304f54b40793ffaa81a90c169ba359d57b6fc0688e7cde808d4dc7ac9009305",
+      "source_sha256": "e0fe43b9d1ec7ccccc192a19ae277379d4b2b8502d8906234d9ace082c331118",
       "output": "coilbreaker/assets/screen-13-fr.webp",
-      "bytes": 396446,
-      "sha256": "c4ec856765a074a95d6118083b40fb2aaccf3aae6d7cd8eb0b674636eda45d04"
+      "bytes": 352930,
+      "sha256": "14db2647e47941fc26e0e7ffa83abb836be776ca159606021e261b3a3e2872bf"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\01-horde.png",
-      "source_sha256": "2304f54b40793ffaa81a90c169ba359d57b6fc0688e7cde808d4dc7ac9009305",
+      "source_sha256": "e0fe43b9d1ec7ccccc192a19ae277379d4b2b8502d8906234d9ace082c331118",
       "output": "coilbreaker/assets/screen-13-fr-thumb.webp",
-      "bytes": 110142,
-      "sha256": "55668ed28391ff4ce53cff02038c7faac434b8dd45511581ffe87bc40ec38b48"
+      "bytes": 95534,
+      "sha256": "2fffdd11bfb28d675fc3c04a162158e08794f76b6c1dd7585b57b0c5ccd117b8"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\02-pose.png",
-      "source_sha256": "68eeca005f4b01c93920c253008cc010f54f7f0b61912433977aa1d4497e83f6",
+      "source_sha256": "9ef1454558ef4188e8f7d74dfd87d19c998d331b2d4325ec4c3afcad2585a02d",
       "output": "coilbreaker/assets/screen-14-fr.webp",
-      "bytes": 210118,
-      "sha256": "f2cd420e0e1c8b93431a45d1e5a7b72f03d840e807f76482733caaa95e7ba55f"
+      "bytes": 215986,
+      "sha256": "161dac186e629b7961edff4c7c62e8f0c3621341606905b1c33c544de1e1fa57"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\02-pose.png",
-      "source_sha256": "68eeca005f4b01c93920c253008cc010f54f7f0b61912433977aa1d4497e83f6",
+      "source_sha256": "9ef1454558ef4188e8f7d74dfd87d19c998d331b2d4325ec4c3afcad2585a02d",
       "output": "coilbreaker/assets/screen-14-fr-thumb.webp",
-      "bytes": 55476,
-      "sha256": "c1584a0aeb186ae19f8218595ca6219a50726574de8be45299998e12272a9d2d"
+      "bytes": 58992,
+      "sha256": "0ee8ebc6e1f3e8de8de1636cd225d7f43e23d2f8be781a7c278e696d34b2b610"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\08-fin-de-partie.png",
-      "source_sha256": "d13a93232cfb93bcb33295678c7868cfd39bf54b518ea374652eb28a126e80f5",
+      "source_sha256": "75dc3feadd69ac9b9f775f7dcbc984566d6b7755cfdb6a25101f3907e5ed25cd",
       "output": "coilbreaker/assets/screen-15-fr.webp",
-      "bytes": 411016,
-      "sha256": "93c553aa00b0325e23f45d522805b8fda11f133107b1abc75cd96d94d9a66dd7"
+      "bytes": 472202,
+      "sha256": "56e3ad09ddaa24e9eecaa2fbb0846e3255647725b13aca0251cbebc3e89240cb"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\08-fin-de-partie.png",
-      "source_sha256": "d13a93232cfb93bcb33295678c7868cfd39bf54b518ea374652eb28a126e80f5",
+      "source_sha256": "75dc3feadd69ac9b9f775f7dcbc984566d6b7755cfdb6a25101f3907e5ed25cd",
       "output": "coilbreaker/assets/screen-15-fr-thumb.webp",
-      "bytes": 109204,
-      "sha256": "8504bd711a3e747dfe99649202ee7fefccd6dcaf4e3d008d71202c5b09c26901"
+      "bytes": 125734,
+      "sha256": "f0387a079f94cb39702d76b65904f7598527ee631948cd50f315c91490309313"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\07-pilote.png",
@@ -61,73 +61,87 @@
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\09-debut.png",
-      "source_sha256": "31a111854e273c041fb2b0a2479e8ecc1b0478fece65441f15e8f62562401a49",
+      "source_sha256": "4d1d3ce7dc4595b993ccf203d84f36bd2a6e2c873e6ed2ccee11b9d1d9480b30",
       "output": "coilbreaker/assets/screen-17-fr.webp",
-      "bytes": 258444,
-      "sha256": "4efd6cdf1bfdbc7731086ede718545cb73da81a93398293b41fef281afe314b1"
+      "bytes": 264460,
+      "sha256": "f51309ca835c0b9d6983e4a71b8f2cb5c551e0ab05b3cb3e9b10fcc2536817e3"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\09-debut.png",
-      "source_sha256": "31a111854e273c041fb2b0a2479e8ecc1b0478fece65441f15e8f62562401a49",
+      "source_sha256": "4d1d3ce7dc4595b993ccf203d84f36bd2a6e2c873e6ed2ccee11b9d1d9480b30",
       "output": "coilbreaker/assets/screen-17-fr-thumb.webp",
-      "bytes": 68994,
-      "sha256": "0beb74cce6651f3b91e92f32857829d8a3eb3409021a46d27fd4bb685558a3ba"
+      "bytes": 72594,
+      "sha256": "9edfed6d4107e92c70360a45622db86fe492a89622eef694732c3636ec7a8473"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-corps.png",
+      "source_sha256": "11e1bd017d3c115d3c98fff936db23b3e6cbfde6bd52043dd9b64d8645e006b1",
+      "output": "coilbreaker/assets/screen-18-fr.webp",
+      "bytes": 258186,
+      "sha256": "6a0508eaf514f754e0958f4c2897e6d5a37c739a2a1ce9096cd04e0d1a3fe7f0"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-corps.png",
+      "source_sha256": "11e1bd017d3c115d3c98fff936db23b3e6cbfde6bd52043dd9b64d8645e006b1",
+      "output": "coilbreaker/assets/screen-18-fr-thumb.webp",
+      "bytes": 68106,
+      "sha256": "acc8cb31910ee113286612532ed02a3c0bd3efa6b16a12a3026891c6549e9a54"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-fr.mp4",
-      "source_sha256": "41bba0ebacef5ae6c689381369a1ee62b8bd254d7570721b045de716af556f5a",
+      "source_sha256": "31ecbf87b6855116654a8fe2a7e79ffc71dccd412bc3fa3b40905ff631106405",
       "output": "coilbreaker/assets/trailer-fr.mp4",
-      "bytes": 23098403,
-      "sha256": "ad7b18f09ac80d2207cc3662108086f03509e16b2cd52edca1a123d6d479b412"
+      "bytes": 23435421,
+      "sha256": "d66594f3c593fb7edeff5f9262614cf2a1e506359db4a80e754bf70615807a90"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-fr.mp4",
-      "source_sha256": "41bba0ebacef5ae6c689381369a1ee62b8bd254d7570721b045de716af556f5a",
+      "source_sha256": "31ecbf87b6855116654a8fe2a7e79ffc71dccd412bc3fa3b40905ff631106405",
       "output": "coilbreaker/assets/trailer-poster-fr.webp",
-      "bytes": 254872,
-      "sha256": "a030a622ddc862e03ed1a32cd7d55d5d31b7f50285716820140b66c4ba49e1ca"
+      "bytes": 295616,
+      "sha256": "6e4521bbb5428826ebddd42fbe5117439ccc97d24c4183135318638ebd3c6574"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\01-horde.png",
-      "source_sha256": "711e1a71ab80af390ddeefed85c94c8acde020ad448cbdc18840442cb24fa45a",
+      "source_sha256": "085674e488a8d8c4ad4b75046c4cf36c8dbd5e105a2cce38b8dce36ec8ccec70",
       "output": "coilbreaker/assets/screen-13-en.webp",
-      "bytes": 398486,
-      "sha256": "d50e79d58f3651cde34ff74f73553140a4bb8cd06f08de508b36e1c0e3fe4b23"
+      "bytes": 352114,
+      "sha256": "113009705ddd914c4d58f44ea075035256cb2e0a030a7551f1a92eb59fd41f89"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\01-horde.png",
-      "source_sha256": "711e1a71ab80af390ddeefed85c94c8acde020ad448cbdc18840442cb24fa45a",
+      "source_sha256": "085674e488a8d8c4ad4b75046c4cf36c8dbd5e105a2cce38b8dce36ec8ccec70",
       "output": "coilbreaker/assets/screen-13-en-thumb.webp",
-      "bytes": 110470,
-      "sha256": "f0157617dafbecb173b98df519ba49e08cd2488cc4fe040cd19b7596461b4d44"
+      "bytes": 95232,
+      "sha256": "eb67670477494a6e07bdf485179e03ef48181e875b1529e0f46bc1affd3debb3"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\02-pose.png",
-      "source_sha256": "2a0c6efddcfdbfb36f300d91a1741abb661cdf3f29a684cfc51400b52a93d67f",
+      "source_sha256": "0ed3b241b9609b00c8f18614ae1355e0fdc5abafc5ad6df015f9bb7f3371969d",
       "output": "coilbreaker/assets/screen-14-en.webp",
-      "bytes": 206924,
-      "sha256": "d8196aee3cd2bdbbe7832ef93f6c70f7399b177a73229118af02b1e839cd545b"
+      "bytes": 210942,
+      "sha256": "24e84a534977e8b7843bdc32c9134f4ccb85e0a080c3083c776f2dd6967fbafc"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\02-pose.png",
-      "source_sha256": "2a0c6efddcfdbfb36f300d91a1741abb661cdf3f29a684cfc51400b52a93d67f",
+      "source_sha256": "0ed3b241b9609b00c8f18614ae1355e0fdc5abafc5ad6df015f9bb7f3371969d",
       "output": "coilbreaker/assets/screen-14-en-thumb.webp",
-      "bytes": 54664,
-      "sha256": "82ddad50e47ac839a638a7f3c5e44db6408494f4566d731ee972d1fccd56602d"
+      "bytes": 57046,
+      "sha256": "8ad1fd658ab593dde13470ea739fa9beb8538ddb928e325688159b131f60fcf4"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\08-fin-de-partie.png",
-      "source_sha256": "7f68e6077cd77088343c97ac0217819194ac5fb5cf30da2335eb4c20cc04742e",
+      "source_sha256": "57d8622569cc34acda039208931a1b0c6e30678140c01fd8ee6e4d652c587f17",
       "output": "coilbreaker/assets/screen-15-en.webp",
-      "bytes": 410012,
-      "sha256": "dc3a1cb50d0e776146a4527ee7e8efa94352c2d6de59126b27dec3d5594db735"
+      "bytes": 465440,
+      "sha256": "77e5749935c7f41069844326a3abd75aa54a6679fc735c1e74ea9b24a95862b1"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\08-fin-de-partie.png",
-      "source_sha256": "7f68e6077cd77088343c97ac0217819194ac5fb5cf30da2335eb4c20cc04742e",
+      "source_sha256": "57d8622569cc34acda039208931a1b0c6e30678140c01fd8ee6e4d652c587f17",
       "output": "coilbreaker/assets/screen-15-en-thumb.webp",
-      "bytes": 108882,
-      "sha256": "cd4b729223a14d8ae5b08c578f13ef879001aea977fc13deb77300d204e380dc"
+      "bytes": 124066,
+      "sha256": "6dfb9e74c19c9d0219df33fba1afead71cf30a118fe204d311aabf119fb88a58"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\07-pilote.png",
@@ -145,31 +159,45 @@
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\09-debut.png",
-      "source_sha256": "bbe79767abd82903850e50a3e46f36dfc2bcbe75c5af97bb30cb367ecf337789",
+      "source_sha256": "b4584ace732cf7a58b9f4da77d83fa92949534443d88fa2d292584edd26b30a3",
       "output": "coilbreaker/assets/screen-17-en.webp",
-      "bytes": 257632,
-      "sha256": "05046e3c81c984544fbfa4c532252c4290c0d06b7a552661ec2c245e777aa503"
+      "bytes": 263356,
+      "sha256": "fe2bd767ebfae0d8aa5ec893617c2d511e4f80214fb3058ab05f2d797daf3f60"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\09-debut.png",
-      "source_sha256": "bbe79767abd82903850e50a3e46f36dfc2bcbe75c5af97bb30cb367ecf337789",
+      "source_sha256": "b4584ace732cf7a58b9f4da77d83fa92949534443d88fa2d292584edd26b30a3",
       "output": "coilbreaker/assets/screen-17-en-thumb.webp",
-      "bytes": 69296,
-      "sha256": "82fc9e8248547f5cd6136fb71587be77acb9c44a58df1e9b20fa838fa3ca45c3"
+      "bytes": 73430,
+      "sha256": "f1086a16d932fc84c3bcc77ec2ecd172ac88b20842a4a9b63dba302971d0f05c"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-corps.png",
+      "source_sha256": "de5d622fa94d4f39258367cfa94905d78bbc5d54a493dc6df1a3f0a65c2f67e1",
+      "output": "coilbreaker/assets/screen-18-en.webp",
+      "bytes": 257066,
+      "sha256": "f402b4d95a8a2bc45a14f8a1af4e4eb0e515f1295dcba25eea051bc02cfbf41f"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-corps.png",
+      "source_sha256": "de5d622fa94d4f39258367cfa94905d78bbc5d54a493dc6df1a3f0a65c2f67e1",
+      "output": "coilbreaker/assets/screen-18-en-thumb.webp",
+      "bytes": 67714,
+      "sha256": "dcbb9e556a26986ac64993e4c02fceb84fcd0856f138a067b384e7b4f1eec3a8"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-en.mp4",
-      "source_sha256": "c2acd5b7382f28b7c9606ed0ed9547aee6d594db63d983529512bf78dd6e9755",
+      "source_sha256": "9cd4bcb718cabe12a5afe0ef294691fb5c2cb1ba5e220bf9281008e4414bcc11",
       "output": "coilbreaker/assets/trailer-en.mp4",
-      "bytes": 22943481,
-      "sha256": "7d2764b273f698057e2241e6b66dedccea02284cc76f325341d1ea3fd70fc12b"
+      "bytes": 23438754,
+      "sha256": "d97632e26d1db4e06c64bc0319fbe8e806620a3a42712b113fa8cc05f97bce36"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-en.mp4",
-      "source_sha256": "c2acd5b7382f28b7c9606ed0ed9547aee6d594db63d983529512bf78dd6e9755",
+      "source_sha256": "9cd4bcb718cabe12a5afe0ef294691fb5c2cb1ba5e220bf9281008e4414bcc11",
       "output": "coilbreaker/assets/trailer-poster-en.webp",
-      "bytes": 254922,
-      "sha256": "398c91c170d15ffc49aa1ec34161c28fdf338878e465de7d5f12b599554cded5"
+      "bytes": 295770,
+      "sha256": "169f1a11bee9f2f4d5dee4dd93c4c8b286cc624250c04d8cf006cb6cc137e3d2"
     }
   ]
 }

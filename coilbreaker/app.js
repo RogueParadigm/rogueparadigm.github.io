@@ -3,29 +3,29 @@ const $ = id => document.getElementById(id);
 const strings = {
 fr: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Aller au contenu",navGame:"Le jeu",navScreens:"Captures",
- heroCopy:"Tu conduis un serpent de ferraille dans une casse pleine de machines. Ses armes tirent seules : vissée sur la tête, la mitrailleuse tire devant ; sur la queue, elle couvre tes arrières. Le serpent s’allonge à mesure que tu l’armes. Ne te rentre pas dedans.",
+ heroCopy:"Un survivor roguelite où tu pilotes un serpent de ferraille à travers des hordes de machines. Ses armes tirent toutes seules, et leur place sur la tête, le corps ou la queue change leur façon de tirer. Le serpent s’allonge à mesure que tu l’armes, et sa tête ne doit pas toucher son corps.",
  wishlist:"Ajouter à ma liste de souhaits",demoLine:"Démo gratuite à venir sur Steam",trailer:"Bande-annonce",
- mountTitle:"Où poser l’arme",mountCopy:"À chaque niveau, tu choisis une arme, puis l’endroit où la visser : la tête, un wagon ou la queue. L’écran montre ce que l’arme fera à chaque place.",
- bodyTitle:"Ne te rentre pas dedans",bodyCopy:"Plus ton serpent est armé, plus il est long. Si ta tête touche ton corps, tu perds 25 points de vie et tes armes se coupent tant qu’elle y reste.",
+ mountTitle:"Où poser l’arme",mountCopy:"En queue, la Cloueuse tire vers l’arrière. Sur le corps, elle tire sur les flancs.",
+ bodyTitle:"Le corps du serpent",bodyCopy:"Chaque bloc allonge le serpent. Si sa tête touche son corps, tu perds 25 points de vie et tes armes se coupent tant qu’elle y reste.",
  galleryTitle:"Captures",shot0:"Début de partie",shot1:"Fin de partie",shot2:"Choix de la pilote",
  offerTitle:"Démo et accès anticipé",
  offerDemo:"<b>Démo.</b> Gratuite. Un terrain, la Casse, avec trois serpents, cinq armes et quatre pilotes. Une partie dure vingt minutes.",
  offerEarly:"<b>Accès anticipé, prévu en décembre 2026.</b> Plus de serpents et d’armes, et Freya, une pilote absente de la démo. D’autres terrains ensuite.",
  credit:"Un jeu d’Elys",press:"Kit presse",legal:"Mentions légales",close:"Fermer",previous:"Précédente",next:"Suivante",
- altMount:"Pose des Scies : choix de leur place sur le serpent",altShot0:"Le serpent traverse la Casse entre les premières machines",altShot1:"La horde de 19:31 autour du serpent",altShot2:"L’écran des pilotes"
+ altMount:"Pose de la Cloueuse : deux aperçus, en queue et sur un nouveau bloc",altBody:"La tête du serpent touche son corps : la vie passe de 170 à 145",altShot0:"Le serpent traverse la Casse entre les premières machines",altShot1:"La horde de 19:31 autour du serpent",altShot2:"L’écran des pilotes"
 },
 en: {
  title:"COILBREAKER | Rogue Paradigm",skip:"Skip to content",navGame:"The game",navScreens:"Screenshots",
- heroCopy:"You drive a scrap-metal snake through a scrapyard full of machines. Its weapons fire on their own: bolted to the head, the machine gun fires ahead; on the tail, it covers your back. The snake grows as you arm it. Don’t run into yourself.",
+ heroCopy:"A survivor roguelite where you steer a scrap-metal snake through hordes of machines. Its weapons fire on their own, and where they sit on the head, body or tail changes how they fire. The snake grows as you arm it, and its head must not touch its own body.",
  wishlist:"Add to your wishlist",demoLine:"Free demo coming to Steam",trailer:"Trailer",
- mountTitle:"Where to place the weapon",mountCopy:"At each level-up you pick a weapon, then where to bolt it: the head, a body segment or the tail. The screen shows what the weapon will do in each spot.",
- bodyTitle:"Don’t run into yourself",bodyCopy:"The more weapons your snake carries, the longer it gets. If your head hits your body, you lose 25 health and your weapons cut out for as long as it stays there.",
+ mountTitle:"Where to place the weapon",mountCopy:"On the tail, the Nail Gun fires backwards. On the body, it fires to the sides.",
+ bodyTitle:"The snake’s body",bodyCopy:"Each block makes the snake longer. If its head touches its body, you lose 25 health and your weapons stop firing until it is clear.",
  galleryTitle:"Screenshots",shot0:"Early in a run",shot1:"Late in a run",shot2:"Choosing a driver",
  offerTitle:"Demo and Early Access",
  offerDemo:"<b>Demo.</b> Free. One stage, the Scrapyard, with three snakes, five weapons and four drivers. A run lasts twenty minutes.",
  offerEarly:"<b>Early Access, planned for December 2026.</b> More snakes and weapons, and Freya, a driver who is not in the demo. More stages later.",
  credit:"A game by Elys",press:"Press kit",legal:"Legal notices",close:"Close",previous:"Previous",next:"Next",
- altMount:"Placing the Saws: choosing their spot on the snake",altShot0:"The snake crosses the Scrapyard among the first machines",altShot1:"The 19:31 horde around the snake",altShot2:"The driver screen"
+ altMount:"Placing the Nail Gun: two previews, on the tail and on a new block",altBody:"The snake’s head touches its body: health drops from 170 to 145",altShot0:"The snake crosses the Scrapyard among the first machines",altShot1:"The 19:31 horde around the snake",altShot2:"The driver screen"
 }
 };
 let language = new URLSearchParams(location.search).get("lang");

@@ -1,6 +1,8 @@
 // Médias de la proposition du 10 nov. 2026 pour la page COILBREAKER (branche de brouillon, pas de déploiement).
 // Source : _atelier/COILBREAKER/2026-11-10-vitrine-propositions (prises du Ferrailleur des 9 et 10 nov., jeu 0.20.10
 // lancé en --early-access ; montage « youtube » de tools/bandes_annonces/montages-2026-11-10.json).
+// Refait après la critique d'Opus du 10 nov. : prises sans Scies, écran de pose à deux aperçus (screen-14), la tête
+// qui touche le corps (screen-18).
 //   node assets/site/update-coilbreaker-2026-11-10.cjs [dossier des propositions] [--sans-video]
 // Les captures prennent des numéros neufs : les anciennes images restent dans le dépôt.
 const fs = require('fs'), path = require('path');
@@ -9,7 +11,7 @@ const args = process.argv.slice(2), skipVideo = args.includes('--sans-video');
 const source = path.resolve(args.find(a => !a.startsWith('--')) || 'E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions');
 const root = path.resolve(__dirname, '../..'), assets = path.join(root, 'coilbreaker/assets');
 // screen-NN de la page : capture de galerie-<langue>/ de la proposition.
-const shots = {13: '01-horde', 14: '02-pose', 15: '08-fin-de-partie', 16: '07-pilote', 17: '09-debut'};
+const shots = {13: '01-horde', 14: '02-pose', 15: '08-fin-de-partie', 16: '07-pilote', 17: '09-debut', 18: '11-corps'};
 // Vidéo : 49 s, vidéo 3,6 Mb/s + AAC 128 kb/s (environ 23 Mo), plafond 6 Mb/s.
 const VIDEO_KBPS = 3600, POSTER_AT = '1.0';
 const manifest = {date: '2026-11-10', source, jeu: '0.20.10, branche outils/bandes-annonces-2026-11, --early-access', files: []};
