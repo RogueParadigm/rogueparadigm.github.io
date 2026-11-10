@@ -1,6 +1,6 @@
 {
   "steam_page": "https://store.steampowered.com/app/5236670/COILBREAKER/",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "recipe": "assets/site/update-coilbreaker-demo.cjs (hashes in assets/site/coilbreaker-demo-2026-11-06.json)",
   "game": "COILBREAKER fe8000fc (chantier/demo-ea-novembre), launched with --early-access, render D",
   "images": [
@@ -54,6 +54,12 @@
       "source": "_atelier/COILBREAKER/2026-11-09-vitrine/galerie-{fr,en}/07-horde.png (11) et 08-fin-de-partie.png (12), prises du 9 nov. 2026, jeu 0.20.8",
       "transformation": "WebP 88 en 1920, vignettes 960 en 82",
       "raison": "Elys, 9 nov. : « t'as mis des captures des \"boss\" et on les voit même pas. Mets justes des captures normales »"
+    },
+    {
+      "files": "assets/screen-{13..17}-{fr,en}.webp et -thumb.webp, assets/trailer-{fr,en}.mp4, trailer-poster-{fr,en}.webp",
+      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions : galerie-{fr,en}/ 01-horde (13), 02-pose (14), 08-fin-de-partie (15), 07-pilote (16), 09-debut (17) ; COILBREAKER-youtube-{fr,en}.mp4 (49 s). Prises du Ferrailleur des 9 et 10 nov. 2026 (jeu 0.20.10, --early-access), recettes tools/bandes_annonces/galerie-2026-11-10.json et montages-2026-11-10.json du dépôt COILBREAKER (branche outils/bandes-annonces-2026-11)",
+      "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : WebP 88 en 1920, vignettes 960 en 82 ; x264 3,6 Mb/s High 4.1, AAC 128 kb/s ; affiche = image à 1 s",
+      "raison": "Proposition du 10 nov. 2026 (branche draft/coilbreaker-2026-11-10, pas en ligne) : la bande-annonce et les captures en ligne montrent encore le Mécano et l'ancien portrait d'Elys"
     }
   ],
   "fonts": {
