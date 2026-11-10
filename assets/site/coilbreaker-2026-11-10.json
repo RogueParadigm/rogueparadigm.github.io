@@ -18,20 +18,6 @@
       "sha256": "2fffdd11bfb28d675fc3c04a162158e08794f76b6c1dd7585b57b0c5ccd117b8"
     },
     {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\02-pose.png",
-      "source_sha256": "9ef1454558ef4188e8f7d74dfd87d19c998d331b2d4325ec4c3afcad2585a02d",
-      "output": "coilbreaker/assets/screen-14-fr.webp",
-      "bytes": 215986,
-      "sha256": "161dac186e629b7961edff4c7c62e8f0c3621341606905b1c33c544de1e1fa57"
-    },
-    {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\02-pose.png",
-      "source_sha256": "9ef1454558ef4188e8f7d74dfd87d19c998d331b2d4325ec4c3afcad2585a02d",
-      "output": "coilbreaker/assets/screen-14-fr-thumb.webp",
-      "bytes": 58992,
-      "sha256": "0ee8ebc6e1f3e8de8de1636cd225d7f43e23d2f8be781a7c278e696d34b2b610"
-    },
-    {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\08-fin-de-partie.png",
       "source_sha256": "75dc3feadd69ac9b9f775f7dcbc984566d6b7755cfdb6a25101f3907e5ed25cd",
       "output": "coilbreaker/assets/screen-15-fr.webp",
@@ -74,6 +60,20 @@
       "sha256": "9edfed6d4107e92c70360a45622db86fe492a89622eef694732c3636ec7a8473"
     },
     {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-mitrailleuse.png",
+      "source_sha256": "285dcd18a2b78352bbc7d1bb62738d5cfd3def18f80d46683473141b78656f05",
+      "output": "coilbreaker/assets/screen-19-fr.webp",
+      "bytes": 209198,
+      "sha256": "4b7f30e2393f6597fcd8d6c540f822f6681a93ca56044ef2c798418880031dfc"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-fr\\11-mitrailleuse.png",
+      "source_sha256": "285dcd18a2b78352bbc7d1bb62738d5cfd3def18f80d46683473141b78656f05",
+      "output": "coilbreaker/assets/screen-19-fr-thumb.webp",
+      "bytes": 57078,
+      "sha256": "82f0dcec7cae7a63611c3b58de4071d20c2507681b455b05e12b7483dc3c9623"
+    },
+    {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-fr.mp4",
       "source_sha256": "79e759af2de1a58e741fd306d6c7a57b387a72f5728c1984818bd59ba764c536",
       "output": "coilbreaker/assets/trailer-fr.mp4",
@@ -100,20 +100,6 @@
       "output": "coilbreaker/assets/screen-13-en-thumb.webp",
       "bytes": 95232,
       "sha256": "eb67670477494a6e07bdf485179e03ef48181e875b1529e0f46bc1affd3debb3"
-    },
-    {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\02-pose.png",
-      "source_sha256": "0ed3b241b9609b00c8f18614ae1355e0fdc5abafc5ad6df015f9bb7f3371969d",
-      "output": "coilbreaker/assets/screen-14-en.webp",
-      "bytes": 210942,
-      "sha256": "24e84a534977e8b7843bdc32c9134f4ccb85e0a080c3083c776f2dd6967fbafc"
-    },
-    {
-      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\02-pose.png",
-      "source_sha256": "0ed3b241b9609b00c8f18614ae1355e0fdc5abafc5ad6df015f9bb7f3371969d",
-      "output": "coilbreaker/assets/screen-14-en-thumb.webp",
-      "bytes": 57046,
-      "sha256": "8ad1fd658ab593dde13470ea739fa9beb8538ddb928e325688159b131f60fcf4"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\08-fin-de-partie.png",
@@ -156,6 +142,20 @@
       "output": "coilbreaker/assets/screen-17-en-thumb.webp",
       "bytes": 73430,
       "sha256": "f1086a16d932fc84c3bcc77ec2ecd172ac88b20842a4a9b63dba302971d0f05c"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-mitrailleuse.png",
+      "source_sha256": "ef0af9357ef22f918e4e0dd252710043a80ae7c3a33c4102ed3cb425724728e1",
+      "output": "coilbreaker/assets/screen-19-en.webp",
+      "bytes": 208438,
+      "sha256": "1df3c9b5bb12662acbc80c1ea46c38a7499344e7439d8efa0c6b21dbf5fcaf4f"
+    },
+    {
+      "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\galerie-en\\11-mitrailleuse.png",
+      "source_sha256": "ef0af9357ef22f918e4e0dd252710043a80ae7c3a33c4102ed3cb425724728e1",
+      "output": "coilbreaker/assets/screen-19-en-thumb.webp",
+      "bytes": 56656,
+      "sha256": "85cf3839cb280aa6ad1ac0f40380dd307447e6120b0e78358ec9a55cad326a66"
     },
     {
       "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-10-vitrine-propositions\\COILBREAKER-youtube-en.mp4",

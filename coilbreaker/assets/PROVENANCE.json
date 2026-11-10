@@ -60,6 +60,12 @@
       "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions : galerie-{fr,en}/ 01-horde (13), 02-pose (14), 08-fin-de-partie (15), 07-pilote (16), 09-debut (17) ; COILBREAKER-youtube-{fr,en}.mp4 (47 s, remonté le 10 nov. sans le plan où la tête touche le corps). Prises du Ferrailleur des 9 et 10 nov. 2026 (jeu 0.20.10, --early-access), recettes tools/bandes_annonces/galerie-2026-11-10.json et montages-2026-11-10.json du dépôt COILBREAKER (branche outils/bandes-annonces-2026-11)",
       "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : WebP 88 en 1920, vignettes 960 en 82 ; x264 3,6 Mb/s High 4.1, AAC 128 kb/s ; affiche = image à 1 s",
       "raison": "Proposition du 10 nov. 2026 (branche draft/coilbreaker-2026-11-10, pas en ligne) : la bande-annonce et les captures en ligne montrent encore le Mécano et l'ancien portrait d'Elys ; refait après les réponses d'Elys du 10 nov. : « Le serpent qui se touche la queue, ça arrive jamais. » (la capture screen-18 et la section « Le corps du serpent » sont retirées)"
+    },
+    {
+      "files": "assets/screen-19-{fr,en}.webp et -thumb.webp",
+      "source": "_atelier/COILBREAKER/2026-11-10-vitrine-propositions : galerie-{fr,en}/11-mitrailleuse.png, image du début de partie (0:06) de la prise des menus du 10 nov. 2026 (jeu 0.20.10, --early-access) ; recette tools/bandes_annonces/galerie-2026-11-10.json du dépôt COILBREAKER (branche outils/bandes-annonces-2026-11). Aucune nouvelle prise",
+      "transformation": "assets/site/update-coilbreaker-2026-11-10.cjs : WebP 88 en 1920, vignette 960 en 82",
+      "raison": "Elys, 10 nov. 2026 au soir : « J'aime pas le texte avec la clouteuse, je préférai l'exemple avec la mitrailleuse ». « Où poser l'arme » reprend la phrase de la mitrailleuse du texte Steam en ligne et montre la Mitrailleuse en tête ; screen-14 (l'écran de pose de la Cloueuse) ne sert plus, ses fichiers restent dans le dépôt"
     }
   ],
   "fonts": {

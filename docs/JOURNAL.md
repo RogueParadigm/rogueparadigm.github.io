@@ -1,3 +1,13 @@
+## 2026-11-10 — Brouillon COILBREAKER : la mitrailleuse à la place de la Cloueuse (pas en ligne)
+
+- Branche `draft/coilbreaker-2026-11-10`, poussée, **pas fusionnée dans `main`** : rien n'est en ligne.
+- Elys (soir) : « J'aime pas le texte avec la clouteuse, je préférai l'exemple avec la mitrailleuse ». Sous « Où poser l'arme », la phrase du texte Steam en ligne (« Une mitrailleuse sur la tête tire devant toi ; sur la queue, elle tire derrière. », FR et EN) remplace celle de la Cloueuse, et la capture `screen-19` (début de partie, la Mitrailleuse en tête, prises existantes) remplace l'écran de pose de la Cloueuse (`screen-14`, gardé dans le dépôt).
+- Elys : « Sinon le reste ça va. » Rien d'autre ne change ; ce n'est pas un accord de mise en ligne.
+- La capture ne montre que la Mitrailleuse en tête : aucune prise ne la montre en queue. Dit à Elys dans la page.
+- Recette : `assets/site/update-coilbreaker-2026-11-10.cjs` (`--sans-video` garde la bande-annonce dans le manifeste), `assets/site/README-2026-11-10.md`, `coilbreaker/assets/PROVENANCE.json`.
+- Contrôle sans fenêtre (1440, 820, 390 px, FR et EN, kit presse) : aucune erreur console ni réseau au second passage. Aperçus : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions/site-apercus/` ; ceux d'avant : `avant-reponses-2/site-apercus/` du même dossier.
+- Attend Elys : la mise en ligne (question 4 de `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions/propositions.html`) ; si elle retient une capsule où Elys est refaite d'après sa référence, l'image de partage et le kit presse sont à refaire avant.
+
 ## 2026-11-10 — Brouillon COILBREAKER refait après les réponses d'Elys (pas en ligne)
 
 - Branche `draft/coilbreaker-2026-11-10`, poussée, **pas fusionnée dans `main`** : rien n'est en ligne.

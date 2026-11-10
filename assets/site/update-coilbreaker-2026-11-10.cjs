@@ -20,7 +20,10 @@ const args = process.argv.slice(2), skipVideo = args.includes('--sans-video');
 const source = path.resolve(args.find(a => !a.startsWith('--')) || 'E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-10-vitrine-propositions');
 const root = path.resolve(__dirname, '../..'), assets = path.join(root, 'coilbreaker/assets'), press = path.join(root, 'coilbreaker/press/assets');
 // screen-NN de la page : capture de galerie-<langue>/ de la proposition.
-const shots = {13: '01-horde', 14: '02-pose', 15: '08-fin-de-partie', 16: '07-pilote', 17: '09-debut'};
+// Elys, 10 nov. au soir : « J'aime pas le texte avec la clouteuse, je préférai l'exemple avec la mitrailleuse ».
+// « Où poser l'arme » montre la Mitrailleuse en tête au début d'une partie (screen-19) ; l'écran de pose de la Cloueuse
+// (screen-14) ne sert plus, ses fichiers restent dans le dépôt.
+const shots = {13: '01-horde', 15: '08-fin-de-partie', 16: '07-pilote', 17: '09-debut', 19: '11-mitrailleuse'};
 // Vidéo : 47 s, vidéo 3,6 Mb/s + AAC 128 kb/s (environ 22 Mo), plafond 6 Mb/s.
 const VIDEO_KBPS = 3600, POSTER_AT = '1.0';
 const manifest = {date: '2026-11-10', source, jeu: '0.20.10, branche outils/bandes-annonces-2026-11, --early-access', files: []};
@@ -33,7 +36,9 @@ const note = (from, to) => manifest.files.push({source: from, source_sha256: has
       await capture(from, full, thumb); note(from, full); note(from, thumb);
     }
     const film = path.join(source, `COILBREAKER-youtube-${lang}.mp4`), trailer = path.join(assets, `trailer-${lang}.mp4`);
-    if (!skipVideo) { encode(film, trailer, VIDEO_KBPS); note(film, trailer); }
+    // --sans-video garde la bande-annonce déjà encodée et la laisse dans le manifeste.
+    if (!skipVideo) encode(film, trailer, VIDEO_KBPS);
+    if (fs.existsSync(trailer)) note(film, trailer);
     const affiche = path.join(assets, `trailer-poster-${lang}.webp`);
     await poster(film, affiche, POSTER_AT); note(film, affiche);
   }
