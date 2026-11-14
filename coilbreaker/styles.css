@@ -121,3 +121,5 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--second);outline-off
   .shot:first-child{grid-column:auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+.note{color:#9a968d;font-size:17px;margin-top:18px}

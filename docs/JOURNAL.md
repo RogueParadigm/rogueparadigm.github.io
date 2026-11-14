@@ -1,3 +1,12 @@
+## 2026-11-14 — Page COILBREAKER en 3D, mise à jour intermédiaire (brouillon)
+
+- Elys : « Là, c'est pas du tout comme le jeu, ça me fait perdre des wishlists. » Le jeu est passé en 3D ; la page montrait la 2D. Branche `draft/coilbreaker-3d-2026-11-14`, non fusionnée, non déployée : fusion après son « je publie » sur la page de questions.
+- Accroche : capture 3D du barrage, sans bouton de bande-annonce (la vidéo 2D n'est plus proposée, fichiers gardés). « Où poser l'arme » : l'écran POSER 3D (Cloueuse), texte suivi. Galerie : le Désert, le début de partie, le hangar (`screen-3d-NN`, une seule version, interface en français). Ligne sous la galerie : captures de la version 3D en cours.
+- Accès anticipé « prévu au premier trimestre 2027 » (Elys, 11 nov.) à la place de décembre 2026. Vignette de l'accueil, image de partage et visuel du kit presse : capsule A3D (capture 3D, Elys et Freya, logo) ; capsule B possible par `--capsule B`.
+- Kit presse : cinq captures 3D, « En 3D, vu de dessus », bande-annonce annoncée comme refaite, ZIP refait.
+- Recette : `assets/site/update-coilbreaker-3d.py`, `README-3d-2026-11-14.md`, empreintes `coilbreaker-3d-2026-11-14.json`. Sources et page de questions : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-14-page-3d-urgente/` (`questions.html`).
+- Reste : captures en anglais, bande-annonce et capsules sur le build final (`PLANS-A-TOURNER.md` de l'atelier).
+
 ## 2026-11-09 — Galerie COILBREAKER sans les captures de boss
 
 - Elys : « t'as mis des captures des "boss" et on les voit même pas. Mets justes des captures normales ». Les deux captures de boss sont remplacées par « Début de partie » et « Dernière minute » (`screen-11`, `screen-12`, prises du 9 nov.) ; légendes et textes alternatifs FR/EN. « Choix de la pilote » reste, à refilmer avec les nouveaux portraits.

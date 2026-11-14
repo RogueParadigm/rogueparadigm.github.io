@@ -1,0 +1,174 @@
+{
+ "date": "2026-11-14",
+ "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente",
+ "capsule": "A3D",
+ "jeu": "démo 3D de la branche portage/3d, captures d'Elys du 14 nov. 2026",
+ "files": [
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\01-barrage.png",
+   "source_sha256": "9e968bd758759d4bbfb8e7291221f543928b0cdde688b70e74629e405f37c183",
+   "output": "coilbreaker/assets/screen-3d-01.webp",
+   "bytes": 230030,
+   "sha256": "e41da53f6ad85470f8bbd3e38be6928bd5ac4ee153be95cb955202eeadb64da5"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\01-barrage.png",
+   "source_sha256": "9e968bd758759d4bbfb8e7291221f543928b0cdde688b70e74629e405f37c183",
+   "output": "coilbreaker/assets/screen-3d-01-thumb.webp",
+   "bytes": 65438,
+   "sha256": "278d42988f617ccda8494e6e0b9599f084f58ae1c39a7af59c74a2610c8c0375"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\01-barrage.png",
+   "source_sha256": "9e968bd758759d4bbfb8e7291221f543928b0cdde688b70e74629e405f37c183",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-01.jpg",
+   "bytes": 400913,
+   "sha256": "5c97c49b9950a45b0ccfbb384dbd392d4f826e370a79b7b0be7e80c07b7efe85"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\01-barrage.png",
+   "source_sha256": "9e968bd758759d4bbfb8e7291221f543928b0cdde688b70e74629e405f37c183",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-01-thumb.jpg",
+   "bytes": 55657,
+   "sha256": "b9934948a8bd86ca898cec66e06b063b166cc66da4876a30a317164ccb4647dc"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\02-butte.png",
+   "source_sha256": "79369b136465518242c4be79c3829bb877a9c6ded9afb8113da8f5939c253b9b",
+   "output": "coilbreaker/assets/screen-3d-02.webp",
+   "bytes": 146858,
+   "sha256": "4b5c24810ce9255595b3c2ffead43b06eef3094f32ff0dea8fa28df1f3984292"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\02-butte.png",
+   "source_sha256": "79369b136465518242c4be79c3829bb877a9c6ded9afb8113da8f5939c253b9b",
+   "output": "coilbreaker/assets/screen-3d-02-thumb.webp",
+   "bytes": 45322,
+   "sha256": "4f5790678eb64d4a055d3e72cef982d70225b72e9cd398be843d4c361e6d3a07"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\02-butte.png",
+   "source_sha256": "79369b136465518242c4be79c3829bb877a9c6ded9afb8113da8f5939c253b9b",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-02.jpg",
+   "bytes": 286382,
+   "sha256": "801f823edf21f9b7e90040e37ad1b1364fbb1537919c2e8f69972c71d005501b"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\02-butte.png",
+   "source_sha256": "79369b136465518242c4be79c3829bb877a9c6ded9afb8113da8f5939c253b9b",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-02-thumb.jpg",
+   "bytes": 43373,
+   "sha256": "9b978354ebc6a09e59adabff98c83f659c1c783fe7c93aea637a45511aba27ac"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\03-horde.png",
+   "source_sha256": "7b1bc19138e8d647005b398573d6bd0049fca97c741ed51ac433911fd575e0aa",
+   "output": "coilbreaker/assets/screen-3d-03.webp",
+   "bytes": 144018,
+   "sha256": "dd7e665d640f339869ddccf69e5cf12408da290c8880ca7e338268f25cd71752"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\03-horde.png",
+   "source_sha256": "7b1bc19138e8d647005b398573d6bd0049fca97c741ed51ac433911fd575e0aa",
+   "output": "coilbreaker/assets/screen-3d-03-thumb.webp",
+   "bytes": 40504,
+   "sha256": "0cb0042af0df890f5d9ca24cd92725baec8ed242d46fe83d4f832d18f1876926"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\03-horde.png",
+   "source_sha256": "7b1bc19138e8d647005b398573d6bd0049fca97c741ed51ac433911fd575e0aa",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-03.jpg",
+   "bytes": 259446,
+   "sha256": "94fc5ef47290dc6a2d8490c02e8aff9be0ec19a5bdee7b134ce7c6369321682d"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\03-horde.png",
+   "source_sha256": "7b1bc19138e8d647005b398573d6bd0049fca97c741ed51ac433911fd575e0aa",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-03-thumb.jpg",
+   "bytes": 35378,
+   "sha256": "348e616314ab2530c91eb6cc50888d94b61de1c8d01a081ac6c46f2da8224fe5"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\04-poser.png",
+   "source_sha256": "131038440ac451d656e4cc05d50db816cc7a536dd853b7f9f11ff674c5310270",
+   "output": "coilbreaker/assets/screen-3d-04.webp",
+   "bytes": 203514,
+   "sha256": "928dfab2ea6aaa7c5cde2c3e64d78afd051b1b74a0721537159f3c45b94a1278"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\04-poser.png",
+   "source_sha256": "131038440ac451d656e4cc05d50db816cc7a536dd853b7f9f11ff674c5310270",
+   "output": "coilbreaker/assets/screen-3d-04-thumb.webp",
+   "bytes": 56652,
+   "sha256": "79c11cfc1445f59269d23076250f905dc54fa791721bc9d75e71e2908255c038"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\04-poser.png",
+   "source_sha256": "131038440ac451d656e4cc05d50db816cc7a536dd853b7f9f11ff674c5310270",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-04.jpg",
+   "bytes": 409629,
+   "sha256": "6b2f1bcf74ecb1cc0fa4e7424dc640e9ee0539e8239127b73e3dfbb3a3ea988c"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\04-poser.png",
+   "source_sha256": "131038440ac451d656e4cc05d50db816cc7a536dd853b7f9f11ff674c5310270",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-04-thumb.jpg",
+   "bytes": 57436,
+   "sha256": "abc29733307b6bd0b3fca931e3696cec6d55dbdf75bf611ed05660a9f82344ce"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\05-preparation.png",
+   "source_sha256": "d57237bbb823c1b62879b4d8ccb40bf3809321b50193a888be5c634ffe43a74c",
+   "output": "coilbreaker/assets/screen-3d-05.webp",
+   "bytes": 247726,
+   "sha256": "c349e0400089b75ffd3ddc766a4cd69e5c28debffc84535a839d8a128173cd87"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\05-preparation.png",
+   "source_sha256": "d57237bbb823c1b62879b4d8ccb40bf3809321b50193a888be5c634ffe43a74c",
+   "output": "coilbreaker/assets/screen-3d-05-thumb.webp",
+   "bytes": 77162,
+   "sha256": "06bf7af81c9c0b00bf525c0a45ca580aa2302a9d28d52d8084021f68d55d33cc"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\05-preparation.png",
+   "source_sha256": "d57237bbb823c1b62879b4d8ccb40bf3809321b50193a888be5c634ffe43a74c",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-05.jpg",
+   "bytes": 462912,
+   "sha256": "920c847730998d5ea410d86383ee2a006a3f679740fbd4be81ad74a8f21b371a"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\captures\\steam\\jeu\\05-preparation.png",
+   "source_sha256": "d57237bbb823c1b62879b4d8ccb40bf3809321b50193a888be5c634ffe43a74c",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-05-thumb.jpg",
+   "bytes": 66928,
+   "sha256": "ac0d8a6f77ad14b442304a517c5e7f57283acfdf5b059e03903e9ac070283699"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\capsules\\A3D\\main.png",
+   "source_sha256": "40310a0bdab0ad1c06d3d457ff74cfb9bb902e4da53e339a4ee3fdcbfd3e8c46",
+   "output": "coilbreaker/assets/share.jpg",
+   "bytes": 222888,
+   "sha256": "611677a0542683bb7fa36041fbc7e2a532d03e36b3944672e708d6d66228f917"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\capsules\\A3D\\main.png",
+   "source_sha256": "40310a0bdab0ad1c06d3d457ff74cfb9bb902e4da53e339a4ee3fdcbfd3e8c46",
+   "output": "coilbreaker/press/assets/key-art-16x9.jpg",
+   "bytes": 256183,
+   "sha256": "5ffbdfa56d0908a36170012ac7bc2463ccee130f605c72b661113d5bf48b66aa"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-urgente\\capsules\\A3D\\header.png",
+   "source_sha256": "5036dae1c787db25bb95d416dcec01daff132a00d511f7fb08b77dd9ad2351f1",
+   "output": "coilbreaker/assets/steam-header.webp",
+   "bytes": 99450,
+   "sha256": "068ed033548c7f5a0aeeb30a0f7edec146363df417b981c4a3a6d3f759fba6f4"
+  },
+  {
+   "output": "coilbreaker/press/assets/COILBREAKER-press-kit.zip",
+   "bytes": 9107871,
+   "sha256": "8949214f5a8c8ae6d114907c0130cf297f2fe7897fca6ceded47da286110f3f5"
+  }
+ ]
+}

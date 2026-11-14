@@ -27,33 +27,33 @@
     <p class="demo-line" data-i18n="demoLine">Free demo coming to Steam</p>
   </div>
   <div class="hero-screen">
-    <button class="plate screen-button" type="button" id="open-trailer"><span class="plate-in">
-      <img data-screen="04" src="assets/screen-04-en.webp" alt="" width="1920" height="1080" fetchpriority="high">
-      <span class="play"><i aria-hidden="true"></i><span data-i18n="trailer">Trailer</span> · 0:58</span>
-    </span></button>
+    <div class="plate screen-button"><span class="plate-in">
+      <img src="assets/screen-3d-01.webp" data-i18n-alt="altHero" alt="The snake on the dam road, in 3D" width="1920" height="1080" fetchpriority="high">
+    </span></div>
     <img class="pilot" src="assets/elys-pilote.webp" alt="" width="600" height="800">
   </div>
 </section>
 
 <section class="section" id="game" aria-labelledby="mount-title">
   <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="mount-title" class="title" data-i18n="mountTitle">Where to place the weapon</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <img class="capture wide" data-screen="06" src="assets/screen-06-en.webp" data-i18n-alt="altMount" alt="Placing the ball bearings: choosing their spot on the snake" width="1920" height="1080" loading="lazy">
-  <p class="body" data-i18n="mountCopy">On the tail, the ball bearings drop behind you. On the body, they fly out to one side, then the other.</p>
+  <img class="capture wide" src="assets/screen-3d-04.webp" data-i18n-alt="altMount" alt="Placing the nail gun: choosing its spot on the snake" width="1920" height="1080" loading="lazy">
+  <p class="body" data-i18n="mountCopy">On the tail, the nail gun fires behind you. On the body, it fires to one side, then the other.</p>
 </section>
 
 <section class="section" id="screens" aria-labelledby="screens-title">
   <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="screens-title" class="title" data-i18n="galleryTitle">Screenshots</span><span class="slashes" aria-hidden="true">////</span></h2>
   <div class="gallery">
-    <button class="shot" type="button" data-shot="0"><img class="capture" data-screen="11" data-thumb src="assets/screen-11-en-thumb.webp" data-i18n-alt="altShot0" alt="The snake crosses the Scrapyard among the first machines" width="960" height="540" loading="lazy"><span data-i18n="shot0">Early in a run</span></button>
-    <button class="shot" type="button" data-shot="1"><img class="capture" data-screen="12" data-thumb src="assets/screen-12-en-thumb.webp" data-i18n-alt="altShot1" alt="The last-minute horde around the snake" width="960" height="540" loading="lazy"><span data-i18n="shot1">The last minute</span></button>
-    <button class="shot" type="button" data-shot="2"><img class="capture" data-screen="08" data-thumb src="assets/screen-08-en-thumb.webp" data-i18n-alt="altShot2" alt="The driver screen" width="960" height="540" loading="lazy"><span data-i18n="shot2">Choosing a driver</span></button>
+    <button class="shot" type="button" data-shot="0"><img class="capture" src="assets/screen-3d-02-thumb.webp" data-i18n-alt="altShot0" alt="The Ferrailleur near a mesa in the Desert" width="960" height="540" loading="lazy"><span data-i18n="shot0">The Desert</span></button>
+    <button class="shot" type="button" data-shot="1"><img class="capture" src="assets/screen-3d-03-thumb.webp" data-i18n-alt="altShot1" alt="The first buggies around the snake" width="960" height="540" loading="lazy"><span data-i18n="shot1">Early in a run</span></button>
+    <button class="shot" type="button" data-shot="2"><img class="capture" src="assets/screen-3d-05-thumb.webp" data-i18n-alt="altShot2" alt="The Preparation screen: the Ferrailleur in the hangar" width="960" height="540" loading="lazy"><span data-i18n="shot2">The hangar</span></button>
   </div>
+  <p class="body note" data-i18n="galleryNote">Screenshots of the 3D version in progress, 14 November 2026. The trailer will be redone on this version.</p>
 </section>
 
 <section class="section offer" aria-labelledby="offer-title">
   <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="offer-title" class="title" data-i18n="offerTitle">Demo and Early Access</span><span class="slashes" aria-hidden="true">////</span></h2>
   <p class="body" data-i18n="offerDemo"><b>Demo.</b> Free. One stage, the Scrapyard, with three snakes, five weapons and four drivers. A run lasts twenty minutes.</p>
-  <p class="body" data-i18n="offerEarly"><b>Early Access, planned for December 2026.</b> More snakes and weapons, and Freya, a driver who is not in the demo. More stages later.</p>
+  <p class="body" data-i18n="offerEarly"><b>Early Access, planned for the first quarter of 2027.</b> More snakes and weapons, and Freya, a driver who is not in the demo. More stages later.</p>
 </section>
 </main>
 
@@ -61,6 +61,5 @@
 </div>
 
 <dialog id="gallery-dialog" class="media-dialog" data-i18n-label="galleryTitle" aria-label="Screenshots"><button class="close-dialog" type="button" data-close="gallery-dialog" aria-label="Close">×</button><figure><img id="lightbox-image" alt="" width="1920" height="1080"><figcaption><button type="button" id="previous-shot" aria-label="Previous">←</button><span id="lightbox-caption"></span><button type="button" id="next-shot" aria-label="Next">→</button></figcaption></figure></dialog>
-<dialog id="trailer-dialog" class="media-dialog" data-i18n-label="trailer" aria-label="Trailer"><button class="close-dialog" type="button" data-close="trailer-dialog" aria-label="Close">×</button><video id="trailer-video" controls playsinline preload="none" poster="assets/trailer-poster-en.webp"></video></dialog>
 <noscript><p class="noscript"><a href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;utm_content=noscript">COILBREAKER on Steam</a></p></noscript>
 </body></html>

@@ -1,9 +1,25 @@
 {
   "steam_page": "https://store.steampowered.com/app/5236670/COILBREAKER/",
-  "updated": "2026-11-09",
-  "recipe": "assets/site/update-coilbreaker-demo.cjs (hashes in assets/site/coilbreaker-demo-2026-11-06.json)",
-  "game": "COILBREAKER fe8000fc (chantier/demo-ea-novembre), launched with --early-access, render D",
+  "updated": "2026-11-14",
+  "recipe": "assets/site/update-coilbreaker-3d.py (hashes in assets/site/coilbreaker-3d-2026-11-14.json) ; README-3d-2026-11-14.md",
+  "game": "COILBREAKER, branche portage/3d (démo 3D en cours), captures d'Elys du 14 nov. 2026 ; les entrées plus anciennes décrivent les fichiers 2D restés dans le dépôt sans lien",
   "images": [
+    {
+      "files": "assets/screen-3d-{01..05}.webp, assets/screen-3d-{01..05}-thumb.webp, press/assets/coilbreaker-screenshot-{01..05}.jpg et -thumb.jpg",
+      "source": "_atelier/COILBREAKER/2026-11-14-page-3d-urgente/captures/steam/jeu/ : captures d'Elys du 14 nov. 2026 dans la démo 3D (1920 × 1080), recadrées sans retouche par preparer_captures.py (provenance : captures.json)",
+      "transformation": "WebP 88 en 1920, vignettes 960 en 82 ; JPEG 90 et vignettes 640 en 85. Une seule version, interface en français",
+      "raison": "Elys, 14 nov. : « Là, c'est pas du tout comme le jeu, ça me fait perdre des wishlists. » Mise à jour intermédiaire qui retire les visuels 2D"
+    },
+    {
+      "files": "assets/share.jpg, assets/steam-header.webp, press/assets/key-art-16x9.jpg, press/assets/COILBREAKER-press-kit.zip",
+      "source": "_atelier/COILBREAKER/2026-11-14-page-3d-urgente/capsules/A3D/ (capsules_3d.py : capture 3D du barrage à l'échelle 1, Elys et Freya du 9 nov., logo du 5 nov.) ; en attente du choix d'Elys entre A3D et B",
+      "transformation": "share : centre 1232 × 647 → 1200 × 630 JPEG 90 ; key art : 1232 × 693 → 1200 × 675 JPEG 92 ; header : WebP 90 ; zip stocké sans recompression (cinq PNG, quatre capsules, deux logos)"
+    },
+    {
+      "files": "assets/trailer-{en,fr}.mp4, trailer-poster-{en,fr}.webp, screen-{01..12}-{en,fr}.webp, press/assets/coilbreaker-screenshot-{06..10}.jpg",
+      "source": "version 2D (voir les entrées suivantes)",
+      "transformation": "plus référencés par les pages depuis le 14 nov. 2026 ; gardés dans le dépôt"
+    },
     {
       "files": "assets/screen-{01..10}-{en,fr}.webp, assets/screen-{01..10}-{en,fr}-thumb.webp",
       "source": "_atelier/COILBREAKER/2026-11-06-bandes-annonces/galerie-{fr,en}/ (Steam gallery, frames of real takes rendered by the game; provenance in galerie.json)",
