@@ -1,0 +1,244 @@
+{
+ "date": "2026-11-14",
+ "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage",
+ "capsule": "A3D",
+ "jeu": "démo 3D de la branche portage/3d, captures tournées exprès le 14 nov. 2026 (captures/captures.json de l'atelier)",
+ "files": [
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\01-horde.png",
+   "source_sha256": "79718377aff30db42af177c0c330ade40bba288cf550c26599886f1289a2a070",
+   "output": "coilbreaker/assets/screen-3d-01-fr.webp",
+   "bytes": 467922,
+   "sha256": "dd9368260e145a3621a09df1b5507062c84adb4969ccab03954bbb4b2a70dd20"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\01-horde.png",
+   "source_sha256": "79718377aff30db42af177c0c330ade40bba288cf550c26599886f1289a2a070",
+   "output": "coilbreaker/assets/screen-3d-01-fr-thumb.webp",
+   "bytes": 120368,
+   "sha256": "c61e7def43526f29f050098185ec157dfa3e67b09e7967147fc60c6aa787d7e3"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\01-horde.png",
+   "source_sha256": "cd9e686272fafa1ffaf87d99ad1b9df3d3b44839223722d0d028a89a98ae031c",
+   "output": "coilbreaker/assets/screen-3d-01-en.webp",
+   "bytes": 468502,
+   "sha256": "ff943c7a47e6272547f5eac015d1cd67384eca3d010c6fd4aed19043897e4e19"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\01-horde.png",
+   "source_sha256": "cd9e686272fafa1ffaf87d99ad1b9df3d3b44839223722d0d028a89a98ae031c",
+   "output": "coilbreaker/assets/screen-3d-01-en-thumb.webp",
+   "bytes": 120314,
+   "sha256": "7f36dbeda66528d7b0f2763cfa3bcf095c76f373d78c5a81f4369ca811b1cd52"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\01-horde.png",
+   "source_sha256": "cd9e686272fafa1ffaf87d99ad1b9df3d3b44839223722d0d028a89a98ae031c",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-01.jpg",
+   "bytes": 669487,
+   "sha256": "c4b69df12603acaf91baea4d9f7a7afc5dbe7e09f1647ee02c828d82f8287ff5"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\01-horde.png",
+   "source_sha256": "cd9e686272fafa1ffaf87d99ad1b9df3d3b44839223722d0d028a89a98ae031c",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-01-thumb.jpg",
+   "bytes": 79118,
+   "sha256": "69cbb5b774855db238b6c5ed80098effbf2bfb7c74c3b9d0ac63f6b8934ddfff"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\02-carriere.png",
+   "source_sha256": "7a2d77b8a446bba84039847b1988cf231ec7150e36665c4dcc7282f2cba8904b",
+   "output": "coilbreaker/assets/screen-3d-02-fr.webp",
+   "bytes": 265196,
+   "sha256": "a558a21c40fea1831a730ecc8072038f8814faf2d1ca144940ab46a5af94b9ca"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\02-carriere.png",
+   "source_sha256": "7a2d77b8a446bba84039847b1988cf231ec7150e36665c4dcc7282f2cba8904b",
+   "output": "coilbreaker/assets/screen-3d-02-fr-thumb.webp",
+   "bytes": 75298,
+   "sha256": "243ea714992babafbba5fb14c0bd2e9deadc1932916ee50f465ed333d3bc5155"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\02-carriere.png",
+   "source_sha256": "923a6798f35172fd6b1693c70770b9c04a015326ba37968d52cae701d2f846b5",
+   "output": "coilbreaker/assets/screen-3d-02-en.webp",
+   "bytes": 262400,
+   "sha256": "9a62ae250ed46b3c72110d49f0c64b20b1e92f47d69ed2cfba9410fe3f49e9f4"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\02-carriere.png",
+   "source_sha256": "923a6798f35172fd6b1693c70770b9c04a015326ba37968d52cae701d2f846b5",
+   "output": "coilbreaker/assets/screen-3d-02-en-thumb.webp",
+   "bytes": 75436,
+   "sha256": "7c962ad1edb8f4d313c409765baf2203342032596e6b001daec7b3a22c92e3db"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\02-carriere.png",
+   "source_sha256": "923a6798f35172fd6b1693c70770b9c04a015326ba37968d52cae701d2f846b5",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-02.jpg",
+   "bytes": 440728,
+   "sha256": "f398274bf2fdf9ffbd8156f6556ed680a59be43a08b0880bfe6a6ce08d45f880"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\02-carriere.png",
+   "source_sha256": "923a6798f35172fd6b1693c70770b9c04a015326ba37968d52cae701d2f846b5",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-02-thumb.jpg",
+   "bytes": 58811,
+   "sha256": "354b203e720f31ae9ff4427735658691ae29d35f16fc0915a0db3b9729bfc8e3"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\03-barrage.png",
+   "source_sha256": "04f3c7ff3fe620072d6223b1ff2d2e32bd28f421424b76cb2c1a0217bc15ab12",
+   "output": "coilbreaker/assets/screen-3d-03-fr.webp",
+   "bytes": 293456,
+   "sha256": "38db4c5c8198101790b19e7c79a4ccbaa6c58246209636a3188f1b5705d6c69e"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\03-barrage.png",
+   "source_sha256": "04f3c7ff3fe620072d6223b1ff2d2e32bd28f421424b76cb2c1a0217bc15ab12",
+   "output": "coilbreaker/assets/screen-3d-03-fr-thumb.webp",
+   "bytes": 83004,
+   "sha256": "4075badc4f19601847743480510ef1bf83784e87e003714392baaf4ac1f234e1"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\03-barrage.png",
+   "source_sha256": "76787da2ba40af96a66100d2968738683fbc35fe6354bac3d6e000665a26f7a5",
+   "output": "coilbreaker/assets/screen-3d-03-en.webp",
+   "bytes": 298874,
+   "sha256": "00313b17c3c205ffb79a11f063928429b852556274e961cd7c66bc6b539c8414"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\03-barrage.png",
+   "source_sha256": "76787da2ba40af96a66100d2968738683fbc35fe6354bac3d6e000665a26f7a5",
+   "output": "coilbreaker/assets/screen-3d-03-en-thumb.webp",
+   "bytes": 83074,
+   "sha256": "1eb3a237b28b1e75d98c6030355284d3f2a26172d3c7489f23ff61cc53940346"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\03-barrage.png",
+   "source_sha256": "76787da2ba40af96a66100d2968738683fbc35fe6354bac3d6e000665a26f7a5",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-03.jpg",
+   "bytes": 481008,
+   "sha256": "e4ddc8bf2d7f8dc42d4ff3938553317c26050206751eaa040dd2eecb9aac0427"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\03-barrage.png",
+   "source_sha256": "76787da2ba40af96a66100d2968738683fbc35fe6354bac3d6e000665a26f7a5",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-03-thumb.jpg",
+   "bytes": 63066,
+   "sha256": "81a3d07e616e4de66c2fccf24b4093f134ad6159a8a981e60b13eddb6619e26e"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\04-belier.png",
+   "source_sha256": "1538e61071579ae86c83b67126374856b24d98abf354985cb126ffaee31750c4",
+   "output": "coilbreaker/assets/screen-3d-04-fr.webp",
+   "bytes": 273870,
+   "sha256": "6c20add409a5838d32cf8cb125cde7e678e1237c07b44aa925af4b53c688a47e"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\04-belier.png",
+   "source_sha256": "1538e61071579ae86c83b67126374856b24d98abf354985cb126ffaee31750c4",
+   "output": "coilbreaker/assets/screen-3d-04-fr-thumb.webp",
+   "bytes": 76062,
+   "sha256": "09ae88c5011c62942e64ef92f4f053d63ed6cc8f000ca364a83dd146977d1374"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\04-belier.png",
+   "source_sha256": "59ffd3d60a17a0c538ab8cfd549bb0da43b5819f333b94d77dd736925dac0255",
+   "output": "coilbreaker/assets/screen-3d-04-en.webp",
+   "bytes": 272508,
+   "sha256": "4327705b1abd11c1fc385b53fd1a64d6c592f61aafcf48141efe9a4b32069e77"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\04-belier.png",
+   "source_sha256": "59ffd3d60a17a0c538ab8cfd549bb0da43b5819f333b94d77dd736925dac0255",
+   "output": "coilbreaker/assets/screen-3d-04-en-thumb.webp",
+   "bytes": 75656,
+   "sha256": "f7a1d5462ebecd2784ee944fd0ec4cff677273a2c0a745dd8c212b64e0a25b98"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\04-belier.png",
+   "source_sha256": "59ffd3d60a17a0c538ab8cfd549bb0da43b5819f333b94d77dd736925dac0255",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-04.jpg",
+   "bytes": 451898,
+   "sha256": "784baea96dd3cb75b40ec4a58d96f287d58bfb7ae5ce6c337fb8b27ee59cc93b"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\04-belier.png",
+   "source_sha256": "59ffd3d60a17a0c538ab8cfd549bb0da43b5819f333b94d77dd736925dac0255",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-04-thumb.jpg",
+   "bytes": 58279,
+   "sha256": "22bcc5122b4caac12b9d074032b24c823888d9ebdb69a087e4b301fd3daef217"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\05-anneau.png",
+   "source_sha256": "93460022200821682641569ca0554f9668dbc352f0b365870a93de05e2d208ba",
+   "output": "coilbreaker/assets/screen-3d-05-fr.webp",
+   "bytes": 365510,
+   "sha256": "0744abf1b5f782de58d4046368fcc5a225b6b722813fa7923aa56b7aee4887a8"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\fr\\05-anneau.png",
+   "source_sha256": "93460022200821682641569ca0554f9668dbc352f0b365870a93de05e2d208ba",
+   "output": "coilbreaker/assets/screen-3d-05-fr-thumb.webp",
+   "bytes": 99180,
+   "sha256": "7540f05b7a3215f9079587ab0e5ae0cdf9b322e4ca700b8f06b3191d0458a51c"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\05-anneau.png",
+   "source_sha256": "e6ed513a80202c96205eddcd34edaed2f2ef296fec750bd5a7a8c531dbfdbd6e",
+   "output": "coilbreaker/assets/screen-3d-05-en.webp",
+   "bytes": 364948,
+   "sha256": "fb9965e00c368327fffaf8eede93e197afb107f722e03be455efcefc3d628186"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\05-anneau.png",
+   "source_sha256": "e6ed513a80202c96205eddcd34edaed2f2ef296fec750bd5a7a8c531dbfdbd6e",
+   "output": "coilbreaker/assets/screen-3d-05-en-thumb.webp",
+   "bytes": 99226,
+   "sha256": "bfee4145e0368d1695cc91e64134dc239b2284151e7662acaa02a24310850e0d"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\05-anneau.png",
+   "source_sha256": "e6ed513a80202c96205eddcd34edaed2f2ef296fec750bd5a7a8c531dbfdbd6e",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-05.jpg",
+   "bytes": 559257,
+   "sha256": "4fd7678242ee122a2f8ccbb55453b751162fce99308ea01cb0cdee4ff36be576"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\captures\\en\\05-anneau.png",
+   "source_sha256": "e6ed513a80202c96205eddcd34edaed2f2ef296fec750bd5a7a8c531dbfdbd6e",
+   "output": "coilbreaker/press/assets/coilbreaker-screenshot-05-thumb.jpg",
+   "bytes": 70146,
+   "sha256": "6caa3419035878c30dbe18aa8dd865b22bd765ab2acee42df4ee5acb91c79562"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\capsules\\A3D\\main.png",
+   "source_sha256": "afa30909f83c1d47b2035cc4a5a9ef6ea05e1eb9605fcce0c1c66606b83e6163",
+   "output": "coilbreaker/assets/share.jpg",
+   "bytes": 221548,
+   "sha256": "9d91236473416597e8be3514f3ba385cd751327206087457f0b7957d486b4e53"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\capsules\\A3D\\main.png",
+   "source_sha256": "afa30909f83c1d47b2035cc4a5a9ef6ea05e1eb9605fcce0c1c66606b83e6163",
+   "output": "coilbreaker/press/assets/key-art-16x9.jpg",
+   "bytes": 252717,
+   "sha256": "30166176fb1a428596c13a9784e6dcb0dfb5e024275e7bcc86c9f02362c8c1d8"
+  },
+  {
+   "source": "E:\\Dev\\GameDev\\_atelier\\COILBREAKER\\2026-11-14-page-3d-tournage\\capsules\\A3D\\header.png",
+   "source_sha256": "dbbceccd512fbbbc955965320eb30c5c2e03b6ffd67336d843afd9a040f3a5d4",
+   "output": "coilbreaker/assets/steam-header.webp",
+   "bytes": 107446,
+   "sha256": "aee05071b6193b72c09583cecc882fee0ac65d61b81a78634090aa3261620a5e"
+  },
+  {
+   "output": "coilbreaker/press/assets/COILBREAKER-press-kit.zip",
+   "bytes": 23062188,
+   "sha256": "4ea96b29b8c6a17b6bcf6848f9e39be7d088c021038f819d136d1a21ee209968"
+  }
+ ]
+}
