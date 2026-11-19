@@ -1,3 +1,10 @@
+## 2026-11-19 — Vignette du Ferrailleur et charte de COILBREAKER
+
+- La carte de l’accueil présente la capsule Steam principale du Ferrailleur. L’image entière reste visible dans la carte.
+- La page du jeu et le kit presse reprennent la palette et les plaques de l’interface D en français et en anglais. La roadmap reste entre le jeu et la FAQ.
+- Publications depuis `main`. Pages : https://rogueparadigm.com/ et https://rogueparadigm.com/coilbreaker/.
+- Aperçus du rendu : `E:/Dev/GameDev/_atelier/COILBREAKER/2026-11-19-site-charte/`.
+
 ## 2026-11-19 — Roadmap et kit presse COILBREAKER
 
 - Sur la page du jeu, la roadmap prend la place de la démo entre le jeu et la FAQ, en français et en anglais. La fiche presse indique que la démo est à venir.
