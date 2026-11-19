@@ -1,0 +1,19 @@
+COILBREAKER — Kit presse
+
+COILBREAKER est un survivor en 3D vu de dessus. Tu pilotes un serpent mécanique dans La Casse. Ses armes tirent automatiquement et la direction du tir dépend de leur place sur le serpent.
+
+Développement et édition — Rogue Paradigm · Elys · France
+Plateforme — Windows · Steam
+Accès anticipé — 1ᵉʳ trimestre 2027
+Prix — À annoncer
+Genre — Survivor roguelite · Solo
+Démo — À venir.
+Langues — Interface et sous-titres en français, anglais, allemand, espagnol, italien, portugais du Brésil, russe, japonais, coréen et chinois simplifié. Voix en français et en anglais.
+
+L’objectif pour la version 1.0 est d’atteindre au moins quatre biomes au total, La Casse comprise. Elys prévoit d’ajouter des armes, des serpents et des pilotes. Les combats par vagues et un mode plus proche du roguelike font partie des pistes à tester.
+
+Tu peux diffuser COILBREAKER en direct et publier des vidéos du jeu, monétisées ou non.
+L’IA générative a servi à créer et retoucher des visuels et à aider à la traduction. Les répliques de Sentinelle en français et en anglais sont des fichiers audio préparés avec ElevenLabs et, pour certaines répliques, des outils locaux de synthèse vocale. Aucun contenu n’est généré par IA pendant la partie.
+
+Steam: https://store.steampowered.com/app/5236670/
+Contact: elys@rogueparadigm.com

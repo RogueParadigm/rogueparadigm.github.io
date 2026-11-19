@@ -1,0 +1,19 @@
+COILBREAKER — Press kit
+
+COILBREAKER is a top-down 3D survivor game. You steer a mechanical snake through the Scrapyard. Weapons fire automatically, and their firing direction depends on where you mount them.
+
+Developer and publisher — Rogue Paradigm · Elys · France
+Platform — Windows · Steam
+Early Access — Q1 2027
+Price — To be announced
+Genre — Survivor roguelite · Single-player
+Demo — Coming soon.
+Languages — Interface and subtitles in English, French, German, Spanish, Italian, Brazilian Portuguese, Russian, Japanese, Korean and Simplified Chinese. English and French voice work.
+
+The goal for version 1.0 is at least four biomes in total, including the Scrapyard. Elys plans to add weapons, snakes and drivers. Wave-based combat and a mode closer to a roguelike are ideas she wants to try.
+
+You may stream COILBREAKER and publish videos of it, monetized or not.
+Generative AI was used to create and edit visuals and assist with translation. Sentinelle’s French and English lines are prerecorded audio generated with ElevenLabs and, for some lines, local speech synthesis tools. No AI content is generated during gameplay.
+
+Steam: https://store.steampowered.com/app/5236670/
+Contact: elys@rogueparadigm.com

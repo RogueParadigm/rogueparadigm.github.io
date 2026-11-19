@@ -1,66 +1,18 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>COILBREAKER | Rogue Paradigm</title>
-<meta name="description" content="Steer a mechanical snake against hundreds of machines. At each level-up, gain upgrades or weapons and choose their position on the snake. Coming to Steam.">
-<meta name="theme-color" content="#0a0a0c"><meta property="og:type" content="website"><meta property="og:site_name" content="Rogue Paradigm"><meta property="og:title" content="COILBREAKER"><meta property="og:description" content="Steer a mechanical snake against hundreds of machines. At each level-up, gain upgrades or weapons and choose their position on the snake."><meta property="og:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="https://rogueparadigm.com/coilbreaker/assets/share.jpg"><link rel="canonical" href="https://rogueparadigm.com/coilbreaker/"><meta property="og:url" content="https://rogueparadigm.com/coilbreaker/"><meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" hreflang="en" href="https://rogueparadigm.com/coilbreaker/?lang=en"><link rel="alternate" hreflang="fr" href="https://rogueparadigm.com/coilbreaker/?lang=fr"><link rel="alternate" hreflang="x-default" href="https://rogueparadigm.com/coilbreaker/">
-<link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
-<link rel="preload" href="assets/BarlowCondensed-BlackItalic.ttf" as="font" type="font/ttf" crossorigin>
-</head>
-<body>
-<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
-<div class="wrap">
-<header class="site-header">
-<a class="studio" href="https://rogueparadigm.com/" aria-label="Rogue Paradigm"><img src="assets/rogue-paradigm.png" alt="Rogue Paradigm by Elys" width="190" height="53"></a>
-<nav aria-label="Navigation"><a href="#game" data-i18n="navGame">The game</a><a href="#screens" data-i18n="navScreens">Screenshots</a><a class="steam-link" href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;utm_content=header" target="_blank" rel="noopener noreferrer">Steam</a></nav>
-<div class="languages" aria-label="Language"><button type="button" data-language="fr" aria-pressed="false">FR</button><span aria-hidden="true">/</span><button type="button" data-language="en" aria-pressed="true">EN</button></div>
-</header>
-
-<main id="main">
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <h1 id="hero-title" class="logo-title"><img class="game-logo" src="assets/coilbreaker-logo.png" alt="COILBREAKER" width="1000" height="328"></h1>
-    <p class="body intro" data-i18n="heroCopy">You steer a mechanical snake against hundreds of machines. At each level-up, you gain upgrades or weapons and choose their position on the snake.</p>
-    <a class="action steam-link" href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;utm_content=hero" target="_blank" rel="noopener noreferrer"><span class="action-text" data-i18n="wishlist">Add to your wishlist</span><span class="action-stripes" aria-hidden="true"></span></a>
-    <p class="demo-line" data-i18n="demoLine">Free demo coming to Steam</p>
-  </div>
-  <div class="hero-screen">
-    <button class="plate screen-button" type="button" id="open-trailer"><span class="plate-in">
-      <img data-screen="04" src="assets/screen-04-en.webp" alt="" width="1920" height="1080" fetchpriority="high">
-      <span class="play"><i aria-hidden="true"></i><span data-i18n="trailer">Trailer</span> · 0:58</span>
-    </span></button>
-    <img class="pilot" src="assets/elys-pilote.webp" alt="" width="600" height="800">
-  </div>
-</section>
-
-<section class="section" id="game" aria-labelledby="mount-title">
-  <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="mount-title" class="title" data-i18n="mountTitle">Where to place the weapon</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <img class="capture wide" data-screen="06" src="assets/screen-06-en.webp" data-i18n-alt="altMount" alt="Placing the ball bearings: choosing their spot on the snake" width="1920" height="1080" loading="lazy">
-  <p class="body" data-i18n="mountCopy">On the tail, the ball bearings drop behind you. On the body, they fly out to one side, then the other.</p>
-</section>
-
-<section class="section" id="screens" aria-labelledby="screens-title">
-  <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="screens-title" class="title" data-i18n="galleryTitle">Screenshots</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <div class="gallery">
-    <button class="shot" type="button" data-shot="0"><img class="capture" data-screen="11" data-thumb src="assets/screen-11-en-thumb.webp" data-i18n-alt="altShot0" alt="The snake crosses the Scrapyard among the first machines" width="960" height="540" loading="lazy"><span data-i18n="shot0">Early in a run</span></button>
-    <button class="shot" type="button" data-shot="1"><img class="capture" data-screen="12" data-thumb src="assets/screen-12-en-thumb.webp" data-i18n-alt="altShot1" alt="The last-minute horde around the snake" width="960" height="540" loading="lazy"><span data-i18n="shot1">The last minute</span></button>
-    <button class="shot" type="button" data-shot="2"><img class="capture" data-screen="08" data-thumb src="assets/screen-08-en-thumb.webp" data-i18n-alt="altShot2" alt="The driver screen" width="960" height="540" loading="lazy"><span data-i18n="shot2">Choosing a driver</span></button>
-  </div>
-</section>
-
-<section class="section offer" aria-labelledby="offer-title">
-  <h2 class="heading"><span class="slashes" aria-hidden="true">////</span><span id="offer-title" class="title" data-i18n="offerTitle">Demo and Early Access</span><span class="slashes" aria-hidden="true">////</span></h2>
-  <p class="body" data-i18n="offerDemo"><b>Demo.</b> Free. One stage, the Scrapyard, with three snakes, five weapons and four drivers. A run lasts twenty minutes.</p>
-  <p class="body" data-i18n="offerEarly"><b>Early Access, planned for December 2026.</b> More snakes and weapons, and Freya, a driver who is not in the demo. More stages later.</p>
-</section>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="COILBREAKER est un survivor où tu pilotes un serpent mécanique.">
+<link rel="canonical" href="https://rogueparadigm.com/coilbreaker/index.html"><link rel="alternate" hreflang="fr" href="https://rogueparadigm.com/coilbreaker/index.html"><link rel="alternate" hreflang="en" href="https://rogueparadigm.com/coilbreaker/en.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Rogue Paradigm"><meta property="og:url" content="https://rogueparadigm.com/coilbreaker/index.html"><meta property="og:title" content="COILBREAKER"><meta property="og:description" content="COILBREAKER est un survivor où tu pilotes un serpent mécanique."><meta property="og:image" content="https://rogueparadigm.com/coilbreaker/assets/hero.webp"><meta name="twitter:card" content="summary_large_image"><script src="lang.js"></script><title>COILBREAKER | Rogue Paradigm</title><link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="site.css"><script src="site.js" defer></script></head>
+<body><a class="skip" href="#jeu">Aller au jeu</a>
+<header><div class="shell nav"><a href="https://rogueparadigm.com/" aria-label="Rogue Paradigm"><img class="studio" src="assets/rogue-paradigm.png" alt="Rogue Paradigm"></a><nav aria-label="Navigation"><a href="#jeu">Le jeu</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a></nav><div class="locale"><a hreflang="fr" lang="fr" href="index.html" aria-current="page">FR</a><a hreflang="en" lang="en" href="en.html">EN</a></div></div></header>
+<main>
+<section class="hero" aria-labelledby="hero-title"><div class="shell hero-inner">
+<h1 id="hero-title"><img src="assets/coilbreaker-logo.png" alt="COILBREAKER"></h1><p class="intro">COILBREAKER est un survivor où tu pilotes un serpent mécanique.</p>
+<div class="actions"><a class="btn buy" href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;l=french"><span>Ajouter à ma liste de souhaits</span><b aria-hidden="true">↗</b></a><button class="btn watch" id="watch" type="button"><i aria-hidden="true"></i>Bande-annonce</button></div>
+<p class="release"><span></span>Accès anticipé sur Steam · T1 2027</p></div></section>
+<section class="play shell" id="jeu"><div class="story"><h2>Le jeu</h2><p class="lead">À chaque niveau, tu peux choisir une nouvelle arme, renforcer une arme que tu possèdes déjà ou prendre une amélioration passive pour ton serpent.</p><div class="choices"><button type="button" aria-controls="clip0" aria-pressed="true">Où poser ton arme ?<span aria-hidden="true">↗</span></button><button type="button" aria-controls="clip1" aria-pressed="false">Explorer La Casse<span aria-hidden="true">↗</span></button><button type="button" aria-controls="clip2" aria-pressed="false">Au garage<span aria-hidden="true">↗</span></button></div></div><div class="clips"><figure id="clip0"><video src="assets/boucle-pose-fr.mp4" poster="assets/boucle-pose-fr-apercu.jpg" controls playsinline preload="none" aria-label="Où poser ton arme ?"></video><figcaption>Selon l’endroit où tu poses ton arme sur le serpent, elle peut tirer vers l’avant, vers l’arrière ou sur les côtés.</figcaption></figure><figure id="clip1" hidden><video src="assets/boucle-chaine.mp4" poster="assets/boucle-chaine-apercu.jpg" controls playsinline preload="none" aria-label="Explorer La Casse"></video><figcaption>La Casse est le premier niveau du jeu. Tu peux l’explorer librement. Certains lieux t’offrent des bonus, d’autres changent le cours de la partie.</figcaption></figure><figure id="clip2" hidden><video src="assets/boucle-hangar.mp4" poster="assets/boucle-hangar-apercu.jpg" controls playsinline preload="none" aria-label="Au garage"></video><figcaption>Entre deux parties, tu peux changer la couleur de ton serpent et son arme de départ. Tu peux aussi débloquer de nouveaux pilotes et des améliorations permanentes qui faciliteront tes prochaines parties.</figcaption></figure></div></section>
+<section class="road" id="roadmap"><div class="shell"><h2><img src="assets/roadmap-fr.png" alt="Roadmap · Accès anticipé"></h2><div class="roadbody"><article><h3>Modes de jeu</h3><p>Le mode actuel est l’<strong>Expédition</strong>. Tu explores La Casse en détruisant des hordes de machines. Certains points d’intérêt te donnent des améliorations. D’autres te permettent d’agir sur le rythme de la partie.</p><p>J’aimerais essayer d’autres modes pendant l’accès anticipé, comme un mode par vagues ou un mode plus proche du roguelike. Les retours des joueurs m’aideront à décider lesquels garder et lesquels retirer.</p></article><article><h3>Armes, serpents, améliorations et pilotes</h3><p>J’ajouterai de nouvelles armes, de nouveaux serpents et de nouveaux pilotes tout en continuant à équilibrer le jeu au fil des mises à jour.</p></article><article><h3>Biomes</h3><p>La Casse est le premier biome. J’en vise au moins quatre au total d’ici la fin de l’accès anticipé.</p></article><p>Tu as une idée de mode de jeu ? Viens m’en parler sur <a href="https://rogueparadigm.com/discord/">Discord</a>.</p></div></div></section>
+<section class="faq shell" id="faq"><h2>Questions fréquentes</h2><div><details><summary>Pourquoi choisir l’accès anticipé ?</summary><p>Je veux équilibrer les armes et les améliorations en tenant compte de vos parties. J’aimerais aussi essayer d’autres modes de jeu. Vos retours m’aideront à décider lesquels garder.</p></details><details><summary>Pendant combien de temps le jeu sera-t-il en accès anticipé ?</summary><p>Je prévois environ un an d’accès anticipé. Cette durée pourra évoluer selon les essais de modes de jeu et le temps nécessaire pour terminer les biomes.</p></details><details><summary>En quoi la version complète sera-t-elle différente ?</summary><p>Je vise au moins quatre biomes au total pour la version 1.0, La Casse comprise. Je compte aussi ajouter des armes, des serpents et des pilotes. Parmi les modes que j’aimerais tester, il y a des combats par vagues et un mode plus proche du roguelike.</p></details><details><summary>Que contient la version en développement ?</summary><p>La version en développement comprend une partie complète dans La Casse. Tu choisis ton itinéraire et l’emplacement de tes armes sur le serpent. Certains lieux te donnent des bonus, d’autres changent le déroulement de la partie. Entre deux sorties, tu peux changer ton équipement et débloquer des améliorations permanentes au garage.</p></details><details><summary>Le prix changera-t-il après l’accès anticipé ?</summary><p>Oui. Le prix augmentera à la sortie de la version 1.0.</p></details><details><summary>Comment participer au développement ?</summary><p>Tu peux m’écrire sur le Discord du studio ou dans les discussions Steam. Tu peux me dire si une arme te paraît trop forte ou trop faible. Tu peux aussi proposer un mode de jeu ou me dire ce que tu as pensé de ceux que tu as essayés.</p></details></div></section>
 </main>
-
-<footer class="site-footer"><a href="https://rogueparadigm.com/" class="footer-brand">Rogue Paradigm</a><span data-i18n="credit">A game by Elys</span><a href="https://rogueparadigm.com/discord/">Discord</a><a href="press/" data-i18n="press">Press kit</a><a href="https://rogueparadigm.com/legal-notices.html" data-i18n="legal">Legal notices</a></footer>
-</div>
-
-<dialog id="gallery-dialog" class="media-dialog" data-i18n-label="galleryTitle" aria-label="Screenshots"><button class="close-dialog" type="button" data-close="gallery-dialog" aria-label="Close">×</button><figure><img id="lightbox-image" alt="" width="1920" height="1080"><figcaption><button type="button" id="previous-shot" aria-label="Previous">←</button><span id="lightbox-caption"></span><button type="button" id="next-shot" aria-label="Next">→</button></figcaption></figure></dialog>
-<dialog id="trailer-dialog" class="media-dialog" data-i18n-label="trailer" aria-label="Trailer"><button class="close-dialog" type="button" data-close="trailer-dialog" aria-label="Close">×</button><video id="trailer-video" controls playsinline preload="none" poster="assets/trailer-poster-en.webp"></video></dialog>
-<noscript><p class="noscript"><a href="https://store.steampowered.com/app/5236670/COILBREAKER/?utm_source=rogueparadigm.com&amp;utm_medium=website&amp;utm_campaign=coilbreaker_site&amp;utm_content=noscript">COILBREAKER on Steam</a></p></noscript>
+<footer><div class="shell"><span>COILBREAKER · Rogue Paradigm</span><div><a href="https://rogueparadigm.com/discord/">Discord</a><a href="press/index.html">Kit presse</a><a href="https://rogueparadigm.com/legal-notices.html">Mentions légales</a></div></div></footer>
+<dialog id="cinema" aria-label="Bande-annonce"><div class="bar"><strong>Bande-annonce</strong><button type="button" id="close">Fermer ×</button></div><video controls playsinline preload="none" poster="assets/boucle-horde-apercu.jpg" src="assets/trailer.mp4"></video></dialog>
 </body></html>

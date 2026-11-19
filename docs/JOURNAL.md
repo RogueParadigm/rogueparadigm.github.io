@@ -1,3 +1,10 @@
+## 2026-11-19 — Roadmap et kit presse COILBREAKER
+
+- Sur la page du jeu, la roadmap prend la place de la démo entre le jeu et la FAQ, en français et en anglais. La fiche presse indique que la démo est à venir.
+- Le kit téléchargeable garde son adresse et réunit les captures, les logos, les capsules, l’illustration, la bande-annonce et les deux fiches texte.
+- Les quatre pages, les vidéos et l’archive ont été vérifiées avant publication sur la branche `main`.
+- Page publique : https://rogueparadigm.com/coilbreaker/ ; presse : https://rogueparadigm.com/coilbreaker/press/.
+
 ## 2026-11-09 — Galerie COILBREAKER sans les captures de boss
 
 - Elys : « t'as mis des captures des "boss" et on les voit même pas. Mets justes des captures normales ». Les deux captures de boss sont remplacées par « Début de partie » et « Dernière minute » (`screen-11`, `screen-12`, prises du 9 nov.) ; légendes et textes alternatifs FR/EN. « Choix de la pilote » reste, à refilmer avec les nouveaux portraits.
