@@ -1,3 +1,9 @@
+## 2026-11-19 — Anglais par défaut sur COILBREAKER
+
+- Sur `main`, la page du jeu et le kit presse servent directement le HTML anglais aux adresses de dossier. Le sélecteur FR pointe vers `fr.html`.
+- Les liens `en.html` et les anciens paramètres de langue restent utilisables. Le sitemap référence les deux langues.
+- Essai public : https://rogueparadigm.com/coilbreaker/.
+
 ## 2026-11-19 — Vignette du Ferrailleur et charte de COILBREAKER
 
 - La carte de l’accueil présente la capsule Steam principale du Ferrailleur. L’image entière reste visible dans la carte.
